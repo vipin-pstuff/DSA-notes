@@ -1,4 +1,4 @@
-# JS DSA topics outline
+# Python DSA Topics
 
 - Introduction
     - [ ] what is Data Structure & Algorithm (DSA)
@@ -9,4 +9,3 @@
 
 - Basics
     - [ ] Array
-

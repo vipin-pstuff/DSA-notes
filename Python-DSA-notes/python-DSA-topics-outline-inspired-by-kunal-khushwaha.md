@@ -1,6 +1,5 @@
 # Python DSA Topics Outline
 
-- [x] Complete Git & Github
 - [x] Intro of Programming
     - [x] Types of languages
     - [x] memory management
