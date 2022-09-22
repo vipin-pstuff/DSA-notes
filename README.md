@@ -1,3 +1,3 @@
 # DSA Stuff
 
-- [Python DSA topics outline](./Python-DSA-notes/DSA-topics-outline.md)
+- [Javascript DSA topics outline](./JS-DSA-notes/JS-DSA-topics-outline.md)
