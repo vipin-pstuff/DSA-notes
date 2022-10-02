@@ -1,0 +1,1 @@
+https://stackoverflow.com/questions/69266066/how-to-print-pattern-printing-using-javascript-loop

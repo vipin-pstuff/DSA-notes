@@ -1,0 +1,112 @@
+# Types of Languages
+
+- reference : Kunal Khushwaha java DSA course
+
+## Notes - types of languages  
+
+- `why we need programming languages` : 
+    - internally , computer store data in 0 & 1 (binary numbers)
+        - further , we'll see later on about how binary numbers stored in the memory
+        - & how to convert decimal numbers into binary numbers & etc...
+    - so whenever we're executing instructions through programming languages <br>
+        then means we're instructing/saying to the computer let's say do this , tell me the time , etc... <br>
+        so in this execution , CPU & RAM used & we'll see later on how all these things work
+    - so things become difficult to write all those instructions in 0 & 1 . That's why we have programming languages <br>
+        which allow us to write programs/instructions to say the computer to execute/run/perform that task/program
+    - so that's why we have programming languages in order to write human readable format <br>
+        behind the scene , computer will translate those code/programs/instructions in 0 & 1 
+
+- `types of languages` : 
+    - `Procedural` : 
+        - specifies a series of well-structured steps & procedures to compose/run a program <br>
+            or we can say contains a systematic order of statements , functions & commands to complete a task
+        - means doing a task step by step
+        - Eg : Java , python , C++ follow this property of procedural  
+    - `functional` : 
+        - is like a module
+        - writing a program only in pure functions i.e never modify variables , but only create new ones as an output
+        - used in situations where we have to perform lots of different operations on the same set of data , like ML
+        - Eg : let's say we have 10 files & each file we need to perform addition 
+            - then we can't write code of "sum of two numbers" for each 10 files
+            - so by using functional programming , we can define a boilerplate of that task 
+            - so that we can perform same task again & again & even easier to catch errors <br>
+                & in future we just need to change the function only not 
+        - first class functions : 
+            - means eg : 
+                ```js
+                let a = 10 , b = 20 ;
+                let c = b
+                ```
+            - so here we can see that we re-used the value of `b` in `c` variable 
+            - so same with function we can do like re-assigning function variable name <br>
+                to the other function . that means first class functions
+        - Eg : this functional programming property followed by JS , python
+    - `Object Oriented` : 
+        - means resolves around objects
+        - Code + Data = object
+        - Eg : `when we say that data is a object datatype` : 
+            - just create a collection of data which contain all the addresses of people <br>
+                so type of this data will be string or paragraph. so here we're storing single data of same datatype
+            - but create a collection of all the students where each student has 3 properties like name , roll no , marks <br>
+                now what'll be the datatype of each student of which type . 
+            - So we can't say one single datatype like string or integer because we're storing multiple/collection of datatypes <br>
+                so one single datatype of that data i.e student . so it's datatype will be a custom datatype <br>
+                which we can specify by using classes
+            - so that collection of all will be called classes & instance of the class is called an object/instance
+            - Eg : of class & object 
+                - every humans is a class of Human & every humans is a object/instance of that Human class <br>
+                - means a class is like a template/property like humans has two eyes , two ears , etc <br>
+                    which is a property or template
+                - so by using this template , God has created many objects means these are actual objects in the RAM <br>
+                    so when we say `a = 10` then here `a` is a variable `10` is actually a object <br> 
+                    which is inside real thing in the memory ✅
+        - OOPS just a another programming paradigm which is used to divide all the code in different chunks <br> 
+            to make easy for programmer to develop , debug , reuse & maintain software
+            - Eg : OOPS
+                - we have a car & it has properties like color , car category , engine type 
+                - now let's say you want to change the type of the engine like from diesel to petrol or vice versa <br>
+                    or from fuel to electrical . so if we change a particular thing then the entire car will get change 
+                - means when we go to car mechanic & you want to change the engine  then think will that car mechanic <br>
+                    will change the entire car or the particular part . so it'll change the particular part
+                - so same thing like if we divide the code of the application into different parts <br>
+                    like engine has separate code base & same thing for different parts <br>
+                    & if we want to change the thing of that application then change the part of the program ✅
+        - it's developed to make it easier to develop , debug , reuse & maintain software
+
+- C++ , Java , JS , python supports all these ways of programming 
+
+## Static VS Dynamic languages
+
+- Eg : let's say we have 
+    ```js
+    let name = "Teen" // datatype will be string
+    let rollno = 56 // datatype will be integer or number
+    let marks = 47.8 // datatype will be decimal or float
+    ```
+    - now how do we & how does a programming language know what is the datatype of these variables
+    - so we have the two ways i.e static & dynamic 
+
+<table>
+<tr><td width="400px">
+
+### Static languages
+
+- perform datatype checking at compile time
+- errors will show at compile time
+- declare datatype before you use it 
+- more control
+
+</td><td width="400px">
+
+### Dynamic languages
+
+- perform datatype checking at runtime
+- errors might not show till program is run
+- no need to declare datatype of variables
+- save time in writing code but might give error at runtime
+
+</td></tr>
+</table>
+
+
+
