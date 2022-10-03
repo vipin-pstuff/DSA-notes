@@ -86,6 +86,70 @@
     - now how do we & how does a programming language know what is the datatype of these variables
     - so we have the two ways i.e static & dynamic 
 
+- `compile time (in static Vs Dynamic language)` : 
+    - means as we know that we wrote the program in programming languages <br>
+        & computer will compile/interpret that thing into machine code (0s & 1s) . so that computer can understand that 
+    - so this conversion is known as compilation ✅ 
+    - means source code gets converted into machine code . so this is known as compilation of the program
+
+- `runtime` : 
+    - means the program is running after compilation 
+    - means when once the program/source code is converted into machine code <br> 
+        & that machine code is running i.e where runtime things happens ✅
+
+- Eg : `of datatype checking in Static Vs Dynamic language ✅` : 
+    - example - of datatype checking  
+        - in Dynamic language
+            ```js
+            let a = 10
+            const name = "Teen Gen"
+            ```
+            - here we're not defining the datatype . so when this complete source code gets <br>
+                compiled into machine code then the JS (Dynamic language) will think about 
+            - so here we don't need to define the datatype of that variable while writing the source code 
+        - in static language
+            ```cpp
+            int a = 10
+            ```
+            - here we define the datatype of the variable while writing the code . so CPP is the static language
+            - so here while the program is compiling <br>
+                means while the computer is converting your source code into machine code) <br>
+            - so during this conversion time , the static programming language should know <br>
+                what is the datatype of `a` variable ✅
+            - so here datatype checking will done during compile time only
+    - example - of how error comes 
+        - in static language
+            ```cpp
+            int a = "Kunal"
+            ```
+            - here we'll get error because during your source code is compiling <br>
+                computer will say you define this `a` variable as integer but value is in string
+            - so we'll get error in compile time
+            ```cpp
+            int a = 10
+            a = "Yaa"
+            ```
+            - we'll get an error because at compilation time , we define `a` as integer <br>
+                but then we're assigning string value to `a` variable
+            - but we can actually do this 
+                ```cpp
+                int a = 10 
+                a = 89
+                ``` 
+            ```cpp
+            'a' + 10
+            ```
+            - here we're adding a string with an integer , so we'll get an error 
+        - in dynamic language
+            ```js
+            let a = 10
+            a = "Yaa"
+            ```
+            - previously `a` was integer , now it's string
+            - so here we'll not get error because in dynamic language , at compile time doesn't care about datatype 
+            - so we can change datatype of the variable at compile time <br>
+                so `a` variable was pointing to `10` , now `a` variable is pointing to `"Yaa"` ✅
+
 <table>
 <tr><td width="400px">
 
@@ -107,6 +171,3 @@
 
 </td></tr>
 </table>
-
-
-
