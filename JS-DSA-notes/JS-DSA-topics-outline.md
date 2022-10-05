@@ -6,7 +6,7 @@
     - [ ] what is Data Structure & Algorithm (DSA)
     - [ ] Types of Data Structure : Physical vs Logical Data Structures
     - [ ] ADT (Abstract Datatype)
-    - [ ] Time & Space Complexity
+    - [ ] Big O Notation : Time & Space Complexity
 
 - flow of the program
     - [x] Flowcharts
