@@ -171,3 +171,38 @@
 
 </td></tr>
 </table>
+
+## compiler vs interpreter 
+
+- for more : https://techprogramiz.blogspot.com/2020/03/translator-and-compiler-vs-interpreter.html
+
+<table>
+<tr><td width="400px">
+
+### compiler
+
+- `input` : it takes entire program as input at a time
+- `output` : Intermediate Object code is generated
+- `speed` : it execute conditional control statements fast
+- `memory` : more memory is required. Due to the creation of object code 
+- `need compile` : program need not to be compiled every time
+- `error` : it display error after entire program is checked
+- `Example` : C , C++ , typescript
+- `Error detection` : difficult
+
+</td><td width="400px">
+
+### interpreter 
+
+- `input` : it takes single instruction as input at a time
+- `output` : No Intermediate Object code is generated
+- `speed` : it execute conditional control statements slower than compiler
+- `memory` : less memory is required. It doesn't create intermediate object code 
+- `need compile` : every time higher level program is converted into lower level program
+- `error` : it display error after each instruction interpreted & stopped in that line of code only & further code will not be executed until error didn't removed 
+- `Example` : JS , python
+- `Error detection` : easier comparatively
+
+</td></tr>
+</table>
+
