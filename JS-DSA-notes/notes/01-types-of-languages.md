@@ -177,7 +177,7 @@
 - for more : https://techprogramiz.blogspot.com/2020/03/translator-and-compiler-vs-interpreter.html
 
 <table>
-<tr><td width="400px">
+<tr><td width="500px">
 
 ### compiler
 
@@ -190,7 +190,7 @@
 - `Example` : C , C++ , typescript
 - `Error detection` : difficult
 
-</td><td width="400px">
+</td><td width="500px">
 
 ### interpreter 
 
