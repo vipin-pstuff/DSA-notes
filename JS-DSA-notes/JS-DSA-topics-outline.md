@@ -2,7 +2,7 @@
 
 - Introduction
     - [x] Types of languages
-    - [ ] memory management : Stack vs Heap Memory 
+    - [x] memory management : Stack vs Heap Memory 
     - [ ] what is Data Structure & Algorithm (DSA)
     - [ ] Types of Data Structure : Physical vs Logical Data Structures
     - [ ] ADT (Abstract Datatype)
