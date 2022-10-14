@@ -1,3 +1,9 @@
-# ADT in js 
+# ADT & various types of list
 
-- Extra Resources : https://www.codecademy.com/article/goku-kun/introduction-to-adts-in-javascript
+- ADT in javascript : 
+    - Extra Resources : https://www.codecademy.com/article/goku-kun/introduction-to-adts-in-javascript
+- ADT in C++ : 
+- ADT in Java : 
+- ADT in python : 
+
+
