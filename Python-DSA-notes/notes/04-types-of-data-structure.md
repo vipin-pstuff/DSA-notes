@@ -80,14 +80,31 @@
 - `what is Non-linear Data structure` : 
     - means when all the elements aren't arranged in a linear/sequential order . <br>
         means there's no linear arrangement of the elements 
-    - Eg : tree data structure like this
+    - Eg : tree data structure like this <br>
         ![different Non-linear DS example](../notes-pics/04-lecture/neso-academy/lecture-4-2.png)
-        - 01:34 - timeline - lecture 4
+        - this data structure i.e tree is non-linear <br>
+            because we can see that each node doesn't have one predecessor & one successor 
+        - we can see that top most node has one predecessor & one successor <br> 
+            but next left node doesn't have one predecessor & one successor , it has two successors i.e 
+            ![different Non-linear DS example](../notes-pics/04-lecture/neso-academy/lecture-4-3.png)
+    - Eg : graph
 
+- for further information , we have `static data structure & dynamic data structure`
+    - `static data structure` : 
+        - in this data structures , the memory is allocated at compile time . That's why , maximum size is fixed
+        - `Advantage of static DS` : we can access data very fast
+        - `Disadvantage of static DS` : but we have slower insertion & deletion
+        - Eg : array data structure is a static DS because before creating array , we need to defined the size of an array <br>
+            later on , we'll see why we have that disadvantage
+    - `dynamic data structure` : 
+        - in this data structures , the memory is allocated at run time . That's why , maximum size is flexible
+        - means when the memory is allocated at run time when user will define/decide the size <br>
+            then we can see maximum size is flexible
+        - `Advantage of static DS` : faster insertion & deletion
+        - `Disadvantage of static DS` : but slower access
+        - Eg : linked list
+    - so data structure is bad , good data structure will depends on user requirement or problem requirement
 
-
-
+## Lecture of other YT
 
 - other reference YT : https://www.youtube.com/watch?v=w4LkuBGzPzs
-
-
