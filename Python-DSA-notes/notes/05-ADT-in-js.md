@@ -80,7 +80,66 @@
 
 - `difference b/w data types vs abstract data types` : 
     - `what is datatype ?` : 
-        -   
+        - 2 important things about data types ✅
+            - `1` : it defines a certain `domain` of values
+            - `2` : it defines what `operations` are allowed on those values
+        - Eg : of datatype defines what `operations` are allowed on those values
+            - `int` datatype
+                - takes only integer values 
+                - Operations can be for performed on that integer value <br>
+                    like addition , subtraction , multiplication bitwise operations , etc
+            - in `float` datatype , we can do this <br>
+                ![float datatype](../notes-pics/05-lecture/neso-academy/lecture-5-1.png)
+    - there're 2 things in data types i.e predefined/inbuilt datatypes & user defined datatype
+    - `what is user defined data types` : ✅
+        - before understanding what is abstract datatype , we must know user defined data types
+        - based on primitive datatypes , there's a concept of user defined data types
+        - means the `operations & values` of user defined data types are not specified in the programming language itself <br>
+            but is specified by the user 💡💡💡
+            - here operations & values are not predefine inside the programming language itself
+        - example - user defined data types : structure , union & enumeration 
+            - by using structures , we're defining our own type by combining other primitive data types
+                ```cpp
+                struct point {
+                    int x;
+                    int y;
+                }
+                ```
+                - here we combine two integers from the new type i.e point (which is user defined datatype)
 
+- `what is ADT`? :
+    - ADTs are like user defined data types which `defines operations on values using functions` <br>
+        `without specifying what's there inside the function & how the operations are performed` 💡💡💡
+    - Eg : stack ADT
+        - A stack consists of elements of same type arranged in a sequential order <br>
+        - Ques : so here elements are allowed of what type i.e same type 💡💡💡
+        - so operations which are allowed on stack ADT i.e  
+            ![operations can be performed by Stack ADT](../notes-pics/05-lecture/neso-academy/lecture-5-2.png)
+        - so here we're using these methods/function , so we know what those methods can accept & what they return <br>
+            but without knowing about internal/inside details 💡💡💡
+    - think ADT as a `black box` which hides the inner structure & design of the datatype from the user
+    - & there're multiple ways to implement an ADT 💡💡💡
+    - Eg : A stack ADT can be implemented using arrays or linked lists 
+        - `Note` : so here stack is itself a data structure & we can implement stack ADT <br>
+            by using other data structures like arrays , etc 💡💡💡
+    
+- `why do we need ADT ?` : ✅
+    - basic things to know : ✅
+        - `1` : the program which uses data structures is called a `client` program 💡💡💡 <br>
+            `2` : & it has access to the ADT i.e interface <br>
+            `3` : the program which implements the data structure is known as the `implementation` 💡💡💡
+        - so here have two program i.e client & implementations programs
+        - difference b/w client program & implementation program
+            - implementation program : means the program which implements the data structure 
+            - client program : means who just use the data structure
+    - `advantages of ADT` : 
+        - eg : if someone wants to use the stack in the program , then he can simply use push & pop operations <br>  
+            without knowing it's implementation . so user don't need to know the internal details of push & pop operations
+        - & if in future , the implementation of stack is changed from array to linked list <br>
+            then the client program will work in the same way without begin affected 💡💡💡
+        - so client program or user can use interface without knowing inside
 
-
+  - conclusion : 
+    - `ADT provides` abstraction means hiding details from the user <br>
+        because user just want to use that thing without knowing the internal details of that thing <br>
+        so this separation is required 
