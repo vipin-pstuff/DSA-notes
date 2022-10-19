@@ -125,3 +125,51 @@
                 ![undo & redo feature via stack data structure](../notes-pics/03-lecture/neso-academy/lecture-3-9.png) <br>
                 but James & Lucy are not friend that's why we don't have edge b/w them
             - so store this information , graph data structure is used
+
+## lecture - Codesikho YT
+
+- `why we need DSA ?` : 
+    - Eg : let's say you have 1 million post out of which you need only first 10 post <br>
+        but you want to show post related to user only in a particular order
+        - or how you'll be able to decide that which post should be shown first , etc.. <br>
+            so everything will be decided based on a set of rules i.e algorithm 💡💡💡
+        - & a data structure will be used with that algorithm
+    - `1` : you also want to show result as fast as possible means less time as much as possible 
+    - `2` : you want to optimize memory consumption 
+
+- `what is Data structure ?` : 
+    - means it's a way to organize your data
+    - types of data structures : Array , linked list , stack , binary tree , graph , binary search tree , heap , misc , matrix , queue , hashing
+    - `why these different Data structures are made , why we don't have only one ✅` : 
+        - basically , major operations are CRUD
+        - so there's one data structure which can be fast for creation , <br>
+            there's another data structure which can be fast for update , etc
+        - so based on requirement , we need to identify which data structure can be better  
+        - Eg : you have the website where you'll announce the results & there're 2 lakh students <br>
+            & at the same time , all those students will check their results at the same time <br>
+            so here you want that your READ operation should be fast & if WRITE operation is slow then it's fine <br>
+            but priority is READ operation should be fast . so for READ operation , we'll choose a data structure <br>
+            which has READ operation fast 💡💡💡
+
+- `what is an algorithm ?` : 
+    - means it's a way to solve a problem or it's a procedure & set of rules to solve a problem 💡💡💡
+    - Eg : we have to fetch 10 post out of 1 million in a particular order according to user preference <br>
+        so for this we need to set an algorithm i.e search engine algorithm (made by google) to find <br>
+        out data related to a search string & you need to fetch that post based on many factors <br>
+        like which post has many likes & engagement 
+        - so basically , you need to write an algorithm based on those factors <br>
+            & if those posts have those factors then you'll show at the top in the UI <br>
+            & those posts which has less engagement then you need to show at the very bottom
+        - so you as a programmer need to decide which kind-of rule/conditions you want <br>
+            to make for that algorithm based on your requirement 
+        - so through search engine algorithm (of google) , you want to show data based on that searched string <br> 
+            but again question will come i.e which website will be shown at the top & which one will be at the bottom <br>
+            & depends on many many factors & this is called algorithm
+    - so complexity of algorithm will be defined based on your requirements/needs 💡💡💡
+
+- `example of DS & algo` : ✅ 
+    - Eg : let's say you want to sort numbers means you need to put numbers in ascending order <br>
+        means smallest number comes first & biggest number at last
+    - so this is your input -> `[4,2,3,1]` & we want output like this `[1, 2, 3, 4]` <br>
+        so to achieve this , we need to think about logic or need to make set of rules . so that we can achieve this task
+    - so that set of rules or steps or process i.e called algorithm & data structure is used i.e array
