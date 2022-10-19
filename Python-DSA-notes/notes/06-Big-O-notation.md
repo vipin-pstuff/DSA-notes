@@ -13,12 +13,18 @@
     - https://www.youtube.com/watch?v=zwyNXEzY4UE&ab_channel=CodeSikho
     - https://www.youtube.com/watch?v=hRtuPwyZj5k&ab_channel=CodeSplitter
     - codesikho
+    - https://www.freecodecamp.org/news/big-o-cheat-sheet-time-complexity-chart/
+
+## lecture - abdul bari sir
+
+- starts from here 
+
+## lecture - codebasics YT
 
 ## lecture - neso academy
 
 
 
 
-## lecture - codebasics YT
 
 
