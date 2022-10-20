@@ -62,7 +62,7 @@
         & to complete that work properly , you should know how to run those tools i.e algorithm 💡💡💡
     - so by using those tools properly , we can increase the performance & speed of our code , gets optimize 
 
-## lecture - Neso Academy (intro Data structures)
+## lecture - Neso Academy YT (intro Data structures)
 
 - Introduction to Data Structures : https://www.youtube.com/watch?v=xLetJpcjHS0&list=PLBlnK6fEyqRj9lld8sWIUNwlKfdUoPd1Y
 

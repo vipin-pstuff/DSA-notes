@@ -138,9 +138,9 @@
         - now programs ends
     - so here we can see that when activation record gets created then each activation record created <br>
         like from bottom to top like stairs 💡💡💡 <br> 
-        <img src="../notes-pics/02-lecture/stack-pic-1.png" alt="stack" width="300"/>
-        <img src="../notes-pics/02-lecture/stack-pic-2.jpg" alt="stack" width="200"/>
-        <img src="../notes-pics/02-lecture/stack-pic-3.png" alt="stack" width="300"/>
+        <img src="../notes-pics/02-lecture/abdul-bari/stack-pic-1.png" alt="stack" width="300"/>
+        <img src="../notes-pics/02-lecture/abdul-bari/stack-pic-2.jpg" alt="stack" width="200"/>
+        <img src="../notes-pics/02-lecture/abdul-bari/stack-pic-3.png" alt="stack" width="300"/>
         - but when the each function is done then step by step each activation record pop-out/deleted from top to bottom <br>
     - so the way , each activation record are created from bottom to top then at the time of delete <br>
         execution record gets deleted from top to bottom . so this mechanism is called `stack` <br>
@@ -255,7 +255,7 @@
             then there's no free space left in Heap memory 💡💡💡
         - so that's why as a best practice , when you don't need Heap memory then release the memory 💡💡💡
 
-## Lecture - Kunal khushwaha
+## lecture - Kunal khushwaha
 
 - when we write `a = 10` & in programming , memory management , there're 2 types of memories
     - `1` : stack

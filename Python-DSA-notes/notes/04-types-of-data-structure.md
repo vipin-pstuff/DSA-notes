@@ -62,7 +62,7 @@
             or any inbuilt Data structure 💡💡💡
         - means logical data structures are implemented via those different physical data structures 💡💡💡
 
-## Lecture - Neso Academy
+## lecture - Neso Academy YT
 
 - 2 types of data structures 
     - linear DS
@@ -105,6 +105,13 @@
         - Eg : linked list
     - so data structure is bad , good data structure will depends on user requirement or problem requirement
 
-## Lecture of other YT
+## lecture - other YT
 
 - other reference YT : https://www.youtube.com/watch?v=w4LkuBGzPzs
+
+## Mine Notes
+
+- static vs dynamic DS : https://www.geeksforgeeks.org/static-data-structure-vs-dynamic-data-structure/
+- Physical vs Logical Data Structure : https://dotnettutorials.net/lesson/physical-vs-logical-data-structure/
+- cheatsheet : https://excalidraw.com/#json=6Bkdq0m-bOzV7o6ecx8FU,IylSWiVY2sAUa3FDK73Yow
+    ![types of DS](../notes-pics/04-lecture/mine-notes/lecture-4-0.png)
