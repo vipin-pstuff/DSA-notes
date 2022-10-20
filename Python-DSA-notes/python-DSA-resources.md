@@ -6,14 +6,8 @@
 - BigO notation 
     - codebasics (hindi)
     - https://www.youtube.com/watch?v=ZOffhW8qs6s&ab_channel=StartPracticing
-    - https://www.youtube.com/watch?v=u8JZ9gU5o4g&list=PLxCzCOWd7aiHcmS4i14bI0VrMbZTUvlTa&ab_channel=GateSmashers
-        - https://www.youtube.com/watch?v=7dz8Iaf_weM&ab_channel=GateSmashers
-        - https://www.youtube.com/watch?v=19N3gWGBh5E&ab_channel=GateSmashers
-        - https://www.youtube.com/watch?v=gBz44smaa9A&ab_channel=GateSmashers
-        - https://www.youtube.com/watch?v=EH8wQaRI6YE&ab_channel=GateSmashers
     - https://www.youtube.com/watch?v=2bdAkGZbFWE&ab_channel=SMARTBUTCLEVER
     - https://www.youtube.com/watch?v=csXn4Av7Qks&ab_channel=5MinutesEngineering
-    - https://www.youtube.com/watch?v=vgSKOMsjLbc&ab_channel=CodeWithHarry
     - https://www.youtube.com/watch?v=itn09C2ZB9Y&ab_channel=WebDevSimplified
     - https://www.youtube.com/watch?v=3Wwq9yN4NoQ&ab_channel=DIVVELASRINIVASARAO (cheatsheet)
     - ZTM course
@@ -24,14 +18,20 @@
     - codesikho
     - https://www.youtube.com/playlist?list=PL7ersPsTyYt2F9hktOuM64J5dAAL3zSIB (MySirG.com)
     - https://www.youtube.com/watch?v=N89PN_uyelU&ab_channel=AnujBhaiya
+    - https://www.youtube.com/watch?v=QovOdd80A4s&ab_channel=CodeHelp-byBabbar 
     - https://www.youtube.com/watch?v=nO1Y8lR9swI&ab_channel=ComputerShastra
     - https://www.youtube.com/watch?v=1RkRDkG8z24&ab_channel=EasyEngineeringClasses
-    - https://www.youtube.com/watch?v=QovOdd80A4s&ab_channel=CodeHelp-byBabbar 
     - https://www.youtube.com/watch?v=LPybGvRD0wc&ab_channel=ThapaTechnical (JS) (not so great , good to know)
     - https://www.youtube.com/watch?v=mkV7D7IoEG8&ab_channel=LetMeCode (python)
     - https://www.youtube.com/watch?v=iOrpyrU1cP4&list=PLFkGT3yG6ujnhZ7Pkkq_6YYqqrZTZMDgp&ab_channel=LetMeCode (python)
     - https://www.youtube.com/shorts/_t4xOAxj7NE (shorts video)
+    - https://www.youtube.com/watch?v=u8JZ9gU5o4g&list=PLxCzCOWd7aiHcmS4i14bI0VrMbZTUvlTa&ab_channel=GateSmashers
+        - https://www.youtube.com/watch?v=7dz8Iaf_weM&ab_channel=GateSmashers
+        - https://www.youtube.com/watch?v=19N3gWGBh5E&ab_channel=GateSmashers
+        - https://www.youtube.com/watch?v=gBz44smaa9A&ab_channel=GateSmashers
+        - https://www.youtube.com/watch?v=EH8wQaRI6YE&ab_channel=GateSmashers
     - code with harry
+        - https://www.youtube.com/watch?v=vgSKOMsjLbc&ab_channel=CodeWithHarry
         - https://www.youtube.com/watch?v=5g7K86jYto8&ab_channel=CodeWithHarry
         - https://www.youtube.com/watch?v=STL8ESuETmM&ab_channel=CodeWithHarry
     - blog
