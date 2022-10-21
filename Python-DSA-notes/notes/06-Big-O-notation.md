@@ -243,6 +243,141 @@
 
 ## lecture - Kunal Kushwaha
 
+- agenda : 
+    - intro of Space & Time Complexity
+    - compare various cases
+    - what is BigO notation & other Asymptotic notation
+    - what is a mathematical aspect of it
+    - what is a intuition behind it & what does it mean in simple words
+    - how to solve recurrence relation like linear recurrence , divide & conqueror recurrence (which is a part of recursion)
+    
+- `what is time complexity ?` : 
+    - let's say we have two machine i.e an old computer & M1 macbook(which is very fast)
+        ![taking 2 different machines with same algo](../notes-pics/06-lecture/kunal/lecture-6-0.png)
+    - now Question : `is which time has better time complexity ?` : 
+        - if you said that old computer or M1 macbook then you're wrong in both the ways
+        - Ans : is that both machines have the same time complexity 💡💡💡
+            because `Time complexity != time taken` 💡💡💡
+        - & you may heard that `time complexity = total amount of time taken to run the program` ❌ <br>
+            this is wrong statement 
+    - so `what's time complexity if time complexity is not equal-to time taken ?` : 
+        - let's say we created a graph for both the machines
+            ![creating graph as an example for both machines with same algo](../notes-pics/06-lecture/kunal/lecture-6-1.png)
+            - so for old machine , we have straight line & for M1 macbook , we have straight line but with less slope <br>
+                the theta angle is smaller of M1 macbook than older machine 💡💡💡
+            - so even though the time taken by both the machine is different but the relationship <br>
+                b/w the size of the array & the time taken is same means linear 💡💡💡
+            - Eg : if we have 20K size then estimate amount of time taken will be around 20K which is obvious
+                - so old machine will take 20K time & if the size is 20K in M1 macbook then same algo will take around 2K seconds
+            - so 5K size of the array will take 5.1K seconds which is shown in the graph <br>
+                but in macbook machine , on 5K size of the array will take 200 seconds
+            - so how you're able to give the estimate time for both the machines
+        - so what is time complexity ? ✅
+            - so time complexity will be that graph or that mathematical function hich is on graph i.e called time complexity 
+            - means time complexity is a function that tells us how the time is going to grow as data/inputs grows 💡💡💡
+            - so on that graph , for both the machines , time is growing linear as the size is growing <br>
+                value maybe different but in both the cases , time is growing linear 
+            - time complexity doesn't gives us time , it's a function which gives us the relationship about <br>
+                how the time will grow as the inputs/data grows 💡💡🔥 <br>
+                it's not the time = time taken to run the algorithm that's wrong
+            - we'll represent the time complexity via Asymptotic notations 
+- `why that relationship is important ?` & `we'll see why do we skip less dominating term & constant` <br>
+    & `why do we also take worst case ?` ✅ 
+    - let's take example of two algorithm i.e linear search & binary search 
+    - so time complexity of learn search grows linearly means `n` & binary search grows with `logn` , <br>
+        so what does these means 
+        ![time complexity graph of two algo : linear search & binary search](../notes-pics/06-lecture/kunal/lecture-6-2.png)
+        - so time taken by linear search is greater than time taken by binary search 💡💡💡 , so difference gets increased
+        - so that `O(log n) (of binary search)` will take less time & `o(n) (of linear search)` will take more time  
+        - so `O(log n)` is better & efficient time complexity that's why we care 💡💡💡
+    - let's take constant time complexity 
+        - `constant` : means doesn't matter what the size is , time will always be constant 💡💡💡
+        - so on graph , constant will be shown like this
+            ![constant time complexity graph](../notes-pics/06-lecture/kunal/lecture-6-3.png)
+            - so here `O(n)` is taking more time , then `O(logn)` is taking less time & constant `O(N)` is take even less time 
+            - but while calculating the time complexity , we don't care about the small numbers 💡💡💡 <br>
+                so in time complexity , always look at the bigger numbers 
+            - so when your data/inputs goes in large size , then think always about worst case 💡💡💡
+            - so time complexity wise , which one is smaller i.e `O(n) < O(log n) < O(n)` 💡💡💡
+        - so which algo is better here i.e binary search is better
+- `what do we need to consider when thinking about complexity ?` 🔥
+    - `1` : always look for worst case time complexity
+        - Eg : let's say your website is running & 10 users are using your webapp <br>
+            so is that more worry/concern for your infrastructure or code optimization <br>
+            or is the worry about what if 2Million people start using your webapp
+        - so in which situation , has higher change of crashing your webapp ? 10 people or 2million <br>
+            so 2Million will create impact & this is your worst case 💡💡💡
+        - so when thinking about time complexity , always look at worst case time complexity 💡💡💡 <br>
+            so always look at worst case while designing your algorithm 💡💡💡
+        - & definitely , you can optimize your best case but more concern about worst case complexity 💡💡💡
+    - `2` : always look at time complexity for large/infinite data
+        ![explanation of why we need to always look at time complexity for large/infinite data](../notes-pics/06-lecture/kunal/lecture-6-4.png)
+        - see inside the circle , this statement `O(n) < O(log n) < O(n)` is not true right now 
+        - so earlier , we said that constant takes less amount of time but when the array decrease <br>
+            then constant time complexity is taking more time then O(log n) then O(n) , <br>
+            & you're correct which might be possible
+        - but for small amount of data , we know that relatively , it'll take more or less or random time <br>
+            but overall the entire time for all those time complexity will be small because array of size or data is small 💡💡💡
+        - & if you're handing the small data & your code is optimize then the code will handle that small data <br>
+            doesn't matter which time complexity is working on but the problem will arise when the array of size or data size <br>
+            started increase a lot then you need to worry 💡💡💡
+        - so that's why we're worry about large size of the data , so always look at time complexity for large or infinite data
+    - `3` : Eg : if we have the graph like this <br>
+        ![linear graph = O(n) time complexity](../notes-pics/06-lecture/kunal/lecture-6-5.png)
+        - so in whatever the way , those lines are going , but overall those are going linear <br>
+            but actual value is different , so value can be like this or whatever value can be possible 
+            ![linear graph = O(n) time complexity](../notes-pics/06-lecture/kunal/lecture-6-6.png) <br>
+            so even though , the values are different but those are going linearly 
+        - & these constants values are defining the slope of the line ✔️💡
+        - `3.1` : even though the value of actual time is different & all they're growing linearly 
+        - `3.2` : we actually don't care about the actual time taken  
+            - because actual time take will depends on machine to machine , <br>
+                that's why we only care about relationship b/w how the time will grow when the input/data grows
+            - `Ques : reason why we skip all the constants ✅` : do we really need to worry about those constants time complexity values
+                - if we say slope like this `y = 3x + 5` & even though this is giving the correct answer <br>
+                    so do we need that correct answer or do we need only the relationship <br>
+                    & for this `y = 3x + 5` , time complexity will be linear i.e O(n) 
+                - so do we need to care about what that extra time is taking <br>
+                    no , we just need to care about how the line if growing
+                - so do we need those constants i.e 3 & 5 of `y = 3x + 5` , Ans is No 💡💡💡 <br>
+                    because if plot the graph of this `y = 3x + 5` then the line also go linear <br>
+                    that's why we e skip all the constants 💡💡💡
+        - `3.4` : always skip less dominating terms ✅
+            - Eg : let's say the graph is of O(n^3 + log n)
+                - now from `3.2` , so if we're talking about large amount of data , let's say 1million of data <br>
+                    then what'll be the approx total time will be taken . <br>
+                    let's say for 1million size of the array & O(n^3) then time complexity will be like 1 million cube in seconds 
+                - so 1 million of data is O(1million)^3 + log (1million)) , so log of 1 million will be 6 seconds <br>
+                    so 1million^3 in seconds + 6 sec like this <br>
+                    ![time complexity of 1 million](../notes-pics/06-lecture/kunal/lecture-6-7.png) 
+                    - so here , does that 6 seconds comparing with 1 million^3 has any significance
+                    - so 6 seconds is very small that's why skip this   
+    - `Ques` : find out the time complexity from the given equation ✅
+        ![finding out the time complexity](../notes-pics/06-lecture/kunal/lecture-6-8.png) 
+        - here skip all the constants then we'll get this 
+            ![skipping the constants](../notes-pics/06-lecture/kunal/lecture-6-9.png) 
+        - now skip the less dominating terms , so we're skipping N^2 & N then we'll get this answer 
+            ![answer is](../notes-pics/06-lecture/kunal/lecture-6-10.png) 
+        - now , plotting the graph 
+            ![plotting the graph](../notes-pics/06-lecture/kunal/lecture-6-11.png) 
+            - so here `O(log(n))` is taken as greater than O(1) & then more time will be taken by `O(N)` than `O(log(n))` <br>
+                if you're considering the 2nd line of the array size in the graph
+            - now `y = 2^n` is very very bad time complexity which means exponential complexity <br>
+                eg : fibonacci which was exponential . so if we consider the 1st line of the array size in the graph <br>
+                then for such a small data , time limit has exceeded a lot means for the small data <br>
+                it's taking too much time which is not visible in the graph which is very bad 💡💡💡
+            - that's why for `n = 50` , you're not getting the answer in fibonacci question 💡💡💡
+        - & these're not just the time complexity which exists , so you have to figure out . for eg : if we get n * log then means  
+            - `log` means larger number which is going to be more than `n` , so `n log` will come b/w them like this  
+                ![n log^n time complexity](../notes-pics/06-lecture/kunal/lecture-6-12.png) 
+            - because we're multiplying from n with log^n then obviously it'll greater ✔️
+- `Big O notation & other Asymptotic notations ?` ✅ : 
+    - first , we'll see meaning of them in the form of simple word & mathematical representation
+    - `1` : BigO notation
+        - word definition : 38:10 timeline
+
+
+
 ## lecture - codebasics YT
 
 ## lecture - LetMeCode YT
