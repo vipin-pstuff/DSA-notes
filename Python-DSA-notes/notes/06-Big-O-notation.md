@@ -168,7 +168,7 @@
     - we want to know how much spaces is consumed in main memory during the execution of the program
     - Eg : in that same array , total 7 elements are there but in future it could be any number of times <br>
         so total `n` elements are there 
-    - here we're not calculating bytes , we want to know the spaces dependent on what i.e `n` <br>  
+    - here we're not calculating bytes , we want to know the spaces dependent on what i.e `n` <br>
         so if the value of `n` is more then the spaces will be more 💡💡💡
     - Eg : of linked list 
         - so along with the elements we the space for links also , so let's say 2n , so again `O(n)`
@@ -180,8 +180,74 @@
         - here n nodes are there , so space complexity will be `O(n)`
     - here we'll see examples , & just by looking at the program code without look at the process , we'll take out time complexity 
 
+- Eg : calculating time & space complexity
+    - how to analyze , so we assume that every simple statement in a function or a program takes 1 unit of time <br>
+        & what is simple statement ? , means the statement may be having automatic operations assignment or a conditional <br> 
+        statement if it's more complex then we have to study that also in detail
+    - Example 1 : of swap code <br>
+        ![swap code](../notes-pics/06-lecture/abdul-bari/code-1.png)
+        - here we're inter-changing the value of x & y
+        - & each statement will take 1 unit of time because those are just an assignment , so total time is 3 <br>
+            so the `f(n) = 3` like this <br>
+            ![swap code](../notes-pics/06-lecture/abdul-bari/code-2.png)
+        - so here 3 is constant like this O(1) 
+        - & `why it's contant` : because here degree of n is 0(zero) , so power of 0 is equal-to O(1) like this
+            ![swap code](../notes-pics/06-lecture/abdul-bari/code-3.png)
+    - Example 2 : of sum code <br>
+        ![sum code](../notes-pics/06-lecture/abdul-bari/code-4.png)
+        - here `s = 0` will take 1 unit of time
+        - now in for loop , first we have assignment then condition then assignment 💡 <br>
+            & this for loop will not be executed only one time , it'll execute for `n` times
+        - so initially , `i = 0` will run only 1 time & that increment `i++` will happen `n` times <br> 
+            & condition also `i < n` will run n times but if one time condition will fail , so it'll stop <br>
+            so time of that condition will be `n + 1` 💡💡💡 
+            ![sum code](../notes-pics/06-lecture/abdul-bari/code-5.png)
+            - so time will be `n + 1` if we're not taking constant or `2(n+1)` if we're taking constant
+        - now `s = s + A[i]` is assignment & arithmetic operator , so this will execute as long as our loop is running <br>
+            so how many times it'll run i.e `n` times 💡💡💡 & `return s` will run 1 time 
+        - calculate totla time , so first 2n comes becuz there're two times n & 1 are 3 times , so total time will be like this <br>
+            ![sum code](../notes-pics/06-lecture/abdul-bari/code-6.png)
+            - so basically , when you have only one for loop then time complexity will be O(n) or order of n
+            - or we can read & get the total time complexity , so we know we have 2 ways to calculate the time complexity
+        - so you ask questions from yourself in order to get the time complexity ✅
+            - like we're doing sum of all elements in an array
+            - so how much it'll take , so it depends on number of elements 
+            - how many elements are there i.e n elements
+            - so time is how much i.e O(n)
+    - Example 3 : matrix addition <br>
+        ![matrix addition](../notes-pics/06-lecture/abdul-bari/code-7.png)
+        - so outer for loop will take `n + 1` time
+        - now inner loop will take `n` & that statement inside inner loop , will also take n time like this
+            ![matrix addition](../notes-pics/06-lecture/abdul-bari/code-8.png)
+        - now how much total time will take that inner loop , so shall we write n + 1 or n * (n + 1) <br>
+            so we have nested loop , so it should be multiplication 💡💡💡
+        - & that statement which is inside that inner loop , will repeat n more times , so n * n
+        - now we can make a function to calculate total time like this <br>
+            so `n * n` & `n * n` will be `2n^2` & `+` then 2n (becuz we have 2 times n) & then + 1 like this
+            ![matrix addition](../notes-pics/06-lecture/abdul-bari/code-9.png) <br>
+            so this is time that we got
+        - so skip the constant & skip those number which are less than `n^2` so we'll get `O(n²)`
+        - now we're saying order of n^2 but you can say big O of n^2 like this `O(n²)` <br>
+            or theta of n² -> θ(n²) or omega of n²
+        - so other Asymptotic notation we'll see at the end of the lecture
+    - Example 4 : function with loop <br>
+        ![loop inside function](../notes-pics/06-lecture/abdul-bari/code-10.png) <br>
+        - so inside func2() is will take 1 , so func1() will take O(1) , this answer is wrong
+        - because func2() contain a loop , so that loop will take order of n times , so it'll be `n` <br>
+            so the time is taken by the func2() is not 1 , it'll be n , so that's why func1() will also take n 
+        - so total time will be taken by func1() i.e O(n) 💡💡💡
+        - so mostly , loops makes time as n or n^2 or n^3 ,so it's depends on loop that you're using 💡💡💡 <br>
+            & same concept will be same for while loop also
+        - but the loop is behaving in a different way like logn or something else then you need to read the code <br>
+            then get the time complexity 
+
+## lecture - Kunal Kushwaha
 
 ## lecture - codebasics YT
+
+## lecture - LetMeCode YT
+
+## lecture - love babbar
 
 ## lecture - neso academy
 
