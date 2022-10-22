@@ -517,6 +517,10 @@
     - Ques : for insertion sort , 
         ![insertion sort](../notes-pics/06-lecture/kunal/lecture-6-29.png) 
 
+- how to find time complexity for recursive algorithms & more about recursion : 
+    - & how to solve mathematically to get the complexity
+    - then check this video No. 24 , timeline - 1:06:10
+
 ## lecture - codebasics YT
 
 ## lecture - LetMeCode YT
