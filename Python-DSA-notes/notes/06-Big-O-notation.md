@@ -421,7 +421,40 @@
         - Ans : O(N^2) & Ω(N^2)
         - now mathematician said this is very repetitive , so that's why Theta notation is created
     - `3` : Theta Notation
-        timeline - 47:39
+        - if we say `θ(N^2)` means this
+            ![theta notation](../notes-pics/06-lecture/kunal/lecture-6-18.png) 
+        - word definition : theta notation means combining both upper bound & lower bound
+        - but in reality or while doing practice , we only consider Big O notation <br>
+            because it talks about the worst case 💡💡💡
+    - now there are two more little notation i.e little O notation & little Omega notation 
+        - `4` : little O notation
+            - we know that Big O notation is giving the upper bound <br>
+                so this little O notation also give upper bound but it's not strict upper bound 💡💡💡
+            - word definition : it's loosely upper bound 
+                - difference b/w Big O notation & little O notation 
+                    - in Big O notation : let's say we have `f = O(g)` <br>
+                        which means f is not faster than g then it means `f <= g`
+                    - in Little O notation : f = O(g) then means `f < g` means strictly slower than g 💡💡💡
+            - mathematical representation : 
+                - so if you're saying f is strictly lower than g , you can say numerator is <br>
+                    slower than denominator , so we'll get 0
+                ![theta notation in maths form](../notes-pics/06-lecture/kunal/lecture-6-19.png) 
+                ![calculation - for how we got o(zero)](../notes-pics/06-lecture/kunal/lecture-6-20.png) 
+        - `5` : little omega notation 
+            - Big Omega is giving the lower bound & little omega also give the lower bound <br>
+                but it'll be loosely lower bound 💡💡💡
+            - word definition : difference b/w Big omega & little omega
+                - in Big Omega , if we say `f = Ω(g)` means `f >= g` which is giving lower bound
+                - in little omega , `f = w(g)` means strictly lower bound means f > g
+            - mathematical representation : if f > g means if numerator is greater than denominator then we'll get infinity
+                ![little omega notation - math representation](../notes-pics/06-lecture/kunal/lecture-6-21.png) 
+            - Example is : 
+                ![example of little omega notation](../notes-pics/06-lecture/kunal/lecture-6-22.png) 
+    - use it when you want strictly less than or greater than <br>
+        but in practice & for interview , for algorithms & compare program , we use Big O notation 💡💡💡
+
+    55:29 timeline        
+            
 
 
 ## lecture - codebasics YT
