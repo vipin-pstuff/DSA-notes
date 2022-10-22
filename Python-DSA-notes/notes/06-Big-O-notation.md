@@ -460,7 +460,7 @@
         - so the space complexity means the input that you're taking an array of size N <br>
             & the extra space that algorithm is using 💡💡💡
         - people say space complexity = only the extra space we're taking , which is wrong
-        - so space complexity = extra space + original space which is required by the input 💡💡💡  
+        - so space complexity = extra space + original space which is required by the input 🔥  
     - in interview , we can't really do about the thing that we need input for <br>
         we only care about how much extra space used by an algorithm 
         - Eg : in binary search , the space complexity is constant <br>
@@ -468,19 +468,54 @@
         - but you'll say that while doing binary search , we were using three variables <br>
             & these variables also use some extra space , so how we can say that space complexity is constant <br>
             Ans : if the size of an array is 100 or 1000 or 10K or 1 million or any size <br>
-            then for every single time , we're going to those 3 variables that's why space complexity is constant 💡💡💡
+            then for every single time , we're going to those 3 variables that's why space complexity is constant 🔥
     - Ques : take an input of size N & create a new array of size 2N & add the duplicate numbers in that new array
         - Ans : so space complexity = N for input that we're taking + the entire thing <br>
             i.e creating a new array & copying the whole element inside tht new array then adding a new element
         - so in order to solve the problem , a new array is created , so that size actually dependent on size N <br>
             hence , the space complexity is O(N)
-        - so space complexity = space for the input + auxiliary space 💡💡💡
-        - & we always talk about the auxiliary space while finding the space complexity 💡💡💡
+        - so space complexity = space for the input + auxiliary space 🔥
+        - & we always talk about the auxiliary space while finding the space complexity 🔥
     - space complexity of different algorithms : 
         ![space complexity of different algorithms](../notes-pics/06-lecture/kunal/lecture-6-23.png) 
+        - binary search has O(N) , linear search doesn't taking any extra space or constant
+        - bubble sort has O(N) because we're not making any new array
+        - insertion sort , selection sort , count sort , so all these are taking constant space complexity <br>
+            means no new array are begin created
 
-    57:54
-
+- Ques & Ans : ✅
+    - Ques : we have nested loop & inside that inner loop , we're doing some operation
+        - now find the time complexity of this program
+        ![ques 1](../notes-pics/06-lecture/kunal/lecture-6-24.png) 
+        - Ans : outer loop is taking N times , so outer loop will take i.e O(N) <br>
+            now multiple with whatever time is taken by inner loop i.e N , so time complexity will be O(N * N) <br>
+            but this is wrong because outer loop is not doing i++ , `i` is `i = i + K`
+        - so think about hou much inner loop is taking , so inner loop is running K time <br>
+            & for every time , inner loop is taking `t` amount of time , so total time will be `KT` time 💡💡💡
+        - so inner loop taking time `O(KT)` , so time complexity will be O(KT * ) <br> 
+            now how many times the entire program that inner loop is running <br>
+            which means how many times that outer loop is running , so O(KT * times outer loop is running) <br>
+            now we need to find the out the value of "times outer loop is running"
+        - solution with calculation : 
+            - so for outer loop , we have the condition , i starts from 1 & outer loop will break when i <= N <br> 
+                & i is incrementing with k i.e `i = i + K`
+            - so it'll be like i = 1 , 1 + K then , 1 + 2K then 1 + 3K , 1 + 4K ...... & at the end value will be x like this 
+                ![things which we have inside outer loop](../notes-pics/06-lecture/kunal/lecture-6-25.png) 
+            - now if the `K` is the last value which is satisfying the `i <= N` condition , so we can say K <= N <br>
+                or we can say that loop is running 1 , 2 time , 3 time , so we can say this at the end `1 + xK` like this <br>
+                ![things which we have inside outer loop](../notes-pics/06-lecture/kunal/lecture-6-26.png) 
+                - so `1 + xk` will satisfy that condition of outer loop i.e `i <= N`
+            - so we can say `1 + xK` , her `x` is the number of times the outer loop is running 💡💡💡 , so `1 + xK <= N` 
+            - so `xK <= N - 1` , so `x = N - 1/K` , so `O(Kt * (N - 1)/k)` & here `k` will gets cancelled out <br>
+            - now skip the constants , we'll get this output : O(t * N) <br>
+                here `t` is the some operation means here in this program `t` is constant , so we can take O(Nt) or O(N)
+    - Ques : for bubble sort , time complexity will be 
+        ![time complexity of bubble sort](../notes-pics/06-lecture/kunal/lecture-6-27.png) 
+        - check the video of this for complete analysis
+    - Ques : for selection sort , 
+        ![selection sort time complexity](../notes-pics/06-lecture/kunal/lecture-6-28.png) 
+    - Ques : for insertion sort , 
+        ![insertion sort](../notes-pics/06-lecture/kunal/lecture-6-29.png) 
 
 ## lecture - codebasics YT
 
