@@ -453,8 +453,33 @@
     - use it when you want strictly less than or greater than <br>
         but in practice & for interview , for algorithms & compare program , we use Big O notation 💡💡💡
 
-    55:29 timeline        
-            
+- `space complexity & auxiliary space` : 
+    - space complexity means input space & the auxiliary space 💡💡💡 <br>
+        & the auxiliary space is the extra space or temporary space taken/used by an algorithm
+    - Eg : if the question say that take an input of an array of size N & do something with it
+        - so the space complexity means the input that you're taking an array of size N <br>
+            & the extra space that algorithm is using 💡💡💡
+        - people say space complexity = only the extra space we're taking , which is wrong
+        - so space complexity = extra space + original space which is required by the input 💡💡💡  
+    - in interview , we can't really do about the thing that we need input for <br>
+        we only care about how much extra space used by an algorithm 
+        - Eg : in binary search , the space complexity is constant <br>
+            which means the auxiliary space is constant because binary search is not taking any extra space 💡💡💡
+        - but you'll say that while doing binary search , we were using three variables <br>
+            & these variables also use some extra space , so how we can say that space complexity is constant <br>
+            Ans : if the size of an array is 100 or 1000 or 10K or 1 million or any size <br>
+            then for every single time , we're going to those 3 variables that's why space complexity is constant 💡💡💡
+    - Ques : take an input of size N & create a new array of size 2N & add the duplicate numbers in that new array
+        - Ans : so space complexity = N for input that we're taking + the entire thing <br>
+            i.e creating a new array & copying the whole element inside tht new array then adding a new element
+        - so in order to solve the problem , a new array is created , so that size actually dependent on size N <br>
+            hence , the space complexity is O(N)
+        - so space complexity = space for the input + auxiliary space 💡💡💡
+        - & we always talk about the auxiliary space while finding the space complexity 💡💡💡
+    - space complexity of different algorithms : 
+        ![space complexity of different algorithms](../notes-pics/06-lecture/kunal/lecture-6-23.png) 
+
+    57:54
 
 
 ## lecture - codebasics YT
