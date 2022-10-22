@@ -13,9 +13,11 @@
 
 - Data structures are building blocks or raw material for any software programs 
     - use right data structure for a problem 
-        - Eg : you're building a window & you're using brinks which is wrong , so we need to use wooden material like this
+        - Eg : you're building a window & you're using bricks then you'll able to make a window <br>
+            but that window doesn't look good which is wrong , so we need to use wooden material like this
         ![use right DS for a problem](../notes-pics/03-lecture/codebasics/lecture-3-3.png)
-        - so as a software engineer , pick the right data structure for a problem
+        - so as a software engineer , pick the right data structure for a problem in order to optimize the code <br>
+            in terms of space & time complexity
     - Linkedlist , tree , array , etc like this <br>
         ![use right DS for a problem](../notes-pics/03-lecture/codebasics/lecture-3-4.png)
         - they are just containers to store data in a specific memory layout
@@ -138,7 +140,7 @@
     - `2` : you want to optimize memory consumption 
 
 - `what is Data structure ?` : 
-    - means it's a way to organize your data
+    - a thing where can store our data or means it's a way to organize your data 💡💡💡
     - types of data structures : Array , linked list , stack , binary tree , graph , binary search tree , heap , misc , matrix , queue , hashing
     - `why these different Data structures are made , why we don't have only one ✅` : 
         - basically , major operations are CRUD
