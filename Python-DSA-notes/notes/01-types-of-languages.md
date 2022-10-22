@@ -5,7 +5,8 @@
 ## Notes - types of languages  
 
 - `why we need programming languages` : 
-    - internally , computer store data in 0 & 1 (binary numbers)
+    - internally , computer store data in 0 & 1 (binary numbers) <br>
+        & In binary, `0` represents `off`, and `1` represents `on`. 💡💡💡
         - further , we'll see later on about how binary numbers stored in the memory
         - & how to convert decimal numbers into binary numbers & etc...
     - so whenever we're executing instructions through programming languages <br>
@@ -206,3 +207,7 @@
 </td></tr>
 </table>
 
+
+## Extra stuff 
+
+- what's coding : https://www.freecodecamp.org/news/what-is-coding/

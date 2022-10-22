@@ -173,3 +173,7 @@
     - so this is your input -> `[4,2,3,1]` & we want output like this `[1, 2, 3, 4]` <br>
         so to achieve this , we need to think about logic or need to make set of rules . so that we can achieve this task
     - so that set of rules or steps or process i.e called algorithm & data structure is used i.e array
+
+## lecture - letMeCode YT
+
+- https://www.youtube.com/watch?v=iOrpyrU1cP4&list=PLFkGT3yG6ujnhZ7Pkkq_6YYqqrZTZMDgp&ab_channel=LetMeCode

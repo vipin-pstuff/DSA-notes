@@ -348,6 +348,7 @@
             ````
             c = a + b --> this will get the value from Heap memory
                 |
+                V
                 this will get the value from Heap memory
 
                 - & then both value of a & b will get combined & stored inside c reference variable 
