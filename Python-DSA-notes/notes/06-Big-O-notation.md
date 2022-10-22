@@ -260,7 +260,7 @@
             because `Time complexity != time taken` 💡💡💡
         - & you may heard that `time complexity = total amount of time taken to run the program` ❌ <br>
             this is wrong statement 
-    - so `what's time complexity if time complexity is not equal-to time taken ?` : 
+    - so `what's time complexity if time complexity is not equal-to time taken ?` : ✅ 
         - let's say we created a graph for both the machines
             ![creating graph as an example for both machines with same algo](../notes-pics/06-lecture/kunal/lecture-6-1.png)
             - so for old machine , we have straight line & for M1 macbook , we have straight line but with less slope <br>
@@ -273,7 +273,7 @@
                 but in macbook machine , on 5K size of the array will take 200 seconds
             - so how you're able to give the estimate time for both the machines
         - so what is time complexity ? ✅
-            - so time complexity will be that graph or that mathematical function hich is on graph i.e called time complexity 
+            - so time complexity will be that graph or that mathematical function which is on graph i.e called time complexity 
             - means time complexity is a function that tells us how the time is going to grow as data/inputs grows 💡💡💡
             - so on that graph , for both the machines , time is growing linear as the size is growing <br>
                 value maybe different but in both the cases , time is growing linear 
@@ -338,10 +338,11 @@
                     so do we need that correct answer or do we need only the relationship <br>
                     & for this `y = 3x + 5` , time complexity will be linear i.e O(n) 
                 - so do we need to care about what that extra time is taking <br>
-                    no , we just need to care about how the line if growing
+                    no , we just need to care about how the line is growing
                 - so do we need those constants i.e 3 & 5 of `y = 3x + 5` , Ans is No 💡💡💡 <br>
-                    because if plot the graph of this `y = 3x + 5` then the line also go linear <br>
-                    that's why we e skip all the constants 💡💡💡
+                    because if we plot the graph of this `y = 3x + 5` then the line also go linear like this <br>
+                    ![graph of y = 3x + 5](../notes-pics/06-lecture/kunal/lecture-6-6-0.png) <br>
+                    that's why we skip all the constants 💡💡💡
         - `3.4` : always skip less dominating terms ✅
             - Eg : let's say the graph is of O(n^3 + log n)
                 - now from `3.2` , so if we're talking about large amount of data , let's say 1million of data <br>
@@ -374,8 +375,53 @@
 - `Big O notation & other Asymptotic notations ?` ✅ : 
     - first , we'll see meaning of them in the form of simple word & mathematical representation
     - `1` : BigO notation
-        - word definition : 38:10 timeline
-
+        - word definition : Eg : let's say you wrote an algorithm which has time complexity i.e O(N^3)
+            - so what does that mean BigO of N^3 & N^3 means size of the array <br>
+                will grow as the input grows in an N cube fashion & here BigO is saying means this is the upper bound 💡💡💡
+            - means the graph that you have has the upper bound <br>
+                `upper bound` : means the complexity/relationship/graph can't exceed N^3 💡💡💡
+            - Eg : your algo that you wrote maybe solved in constant time or O(n) time or O(n log) time <br>
+                or O(log n) time or O(N^2) time or O(N^2 logn) or O(n^3) but it never be solved/exceed time complexity <br>
+                or relationship/graph/function/value will never exceed more than N^3 💡💡💡
+                - means time complexity can't be lik O(N^4) or O(n^3 log N)
+            - `O(N^3)` means has upper bound
+        - mathematical representation : of `O(N^3)`
+            ![mathematical representation](../notes-pics/06-lecture/kunal/lecture-6-13.png) 
+            - means it has some/finite value , that circle which we marked means number is larger like infinity <br>
+                as we seen that always look at time complexity for large/infinite data
+        - Eg : so according to mathematical representation : 
+            ![acc. to mathematical representation](../notes-pics/06-lecture/kunal/lecture-6-14.png) 
+            ![acc. to mathematical representation](../notes-pics/06-lecture/kunal/lecture-6-15.png) 
+            - limit/lim means when the value of N reaches infinity or close to infinity
+            - so if we solve the question then we'll get this answer
+                ![answer we'll get](../notes-pics/06-lecture/kunal/lecture-6-16.png) 
+                - Note : if we divide anything by infinity , we'll get 0(zero) ✔️
+            - so `6 < infinity` is equal-to this mathematical representation 💡💡💡
+                ![mathematical representation](../notes-pics/06-lecture/kunal/lecture-6-13.png) 
+                - which is less than infinity
+                - so here `6` is the finite value which we're getting , becuz it's showing an upper bound 💡💡💡 
+        - so our algorithm will never exceed that `O(N^3)` & our algo can be better than this like O(1) <br>
+            but it'll never exceed Order of N cube 💡💡💡
+    - `2` : Big Omega notation
+        - it's opposite of BigO notation 💡💡💡
+        - word definition : Eg : if you say that an algo has the time complexity of `Ω(N^3)`
+            - then it means an algo will take at-least N^3 or N cube time complexity , means lower bound 💡💡💡
+            - means an algo can take N^4 time or N^3 log n time <br>
+                but time complexity will never can't go less/below the N^3 because of lower bound 💡💡💡
+            - so minimum N^3 time complexity is required 
+        - mathematical representation : <br>
+            ![mathematical representation of N^3 in terms of Big Omega notation](../notes-pics/06-lecture/kunal/lecture-6-17.png) 
+            - so Big Omega is the opposite of BigO Notation
+        - BigO notation is most important because we always look at worst case time complexity 💡💡💡 <br>
+            but in Big Omega notation , time complexity of an algo can go further than the worst case <br>
+            that's why we need the worst case 💡💡💡
+    - now sometimes , we also want to specify the running time which is equal-to whatever equation that we have <br>
+        means an equation have both upper bound & lower bound together
+        - Ques : let's say an algo has lower & upper bound as O(N^2) , so how we can represent this
+        - Ans : O(N^2) & Ω(N^2)
+        - now mathematician said this is very repetitive , so that's why Theta notation is created
+    - `3` : Theta Notation
+        timeline - 47:39
 
 
 ## lecture - codebasics YT
@@ -385,6 +431,10 @@
 ## lecture - love babbar
 
 ## lecture - neso academy
+
+## lecture - ZTM 
+
+![cheatsheet of BigO](../notes-pics/06-lecture/ZTM/cheatsheet.png)
 
 
 
