@@ -4,25 +4,26 @@
     - https://doc.clickup.com/43233653/d/197cbn-144/typesof-data-structuresin-python
 
 - BigO notation 
-    - codebasics (hindi)
+    - codebasics (hindi) 👍
+    - abdul bari 👍
+    - neso academy 👍
+    - https://www.youtube.com/watch?v=luXiytGnYpY&ab_channel=TheCodeSkool 👍
+    - https://www.youtube.com/watch?v=QovOdd80A4s&ab_channel=CodeHelp-byBabbar 👍
+    - https://www.youtube.com/watch?v=mkV7D7IoEG8&ab_channel=LetMeCode (python) 👍
+    - https://www.youtube.com/watch?v=itn09C2ZB9Y&ab_channel=WebDevSimplified 👍
+    - ZTM course 👍
     - https://www.youtube.com/watch?v=ZOffhW8qs6s&ab_channel=StartPracticing
     - https://www.youtube.com/watch?v=2bdAkGZbFWE&ab_channel=SMARTBUTCLEVER
     - https://www.youtube.com/watch?v=csXn4Av7Qks&ab_channel=5MinutesEngineering
-    - https://www.youtube.com/watch?v=itn09C2ZB9Y&ab_channel=WebDevSimplified
     - https://www.youtube.com/watch?v=3Wwq9yN4NoQ&ab_channel=DIVVELASRINIVASARAO (cheatsheet)
-    - ZTM course
-    - abdul bari
-    - neso academy
     - https://www.youtube.com/watch?v=zwyNXEzY4UE&ab_channel=CodeSikho
     - https://www.youtube.com/watch?v=hRtuPwyZj5k&ab_channel=CodeSplitter
     - codesikho
     - https://www.youtube.com/playlist?list=PL7ersPsTyYt2F9hktOuM64J5dAAL3zSIB (MySirG.com)
     - https://www.youtube.com/watch?v=N89PN_uyelU&ab_channel=AnujBhaiya
-    - https://www.youtube.com/watch?v=QovOdd80A4s&ab_channel=CodeHelp-byBabbar 
     - https://www.youtube.com/watch?v=nO1Y8lR9swI&ab_channel=ComputerShastra
     - https://www.youtube.com/watch?v=1RkRDkG8z24&ab_channel=EasyEngineeringClasses
     - https://www.youtube.com/watch?v=LPybGvRD0wc&ab_channel=ThapaTechnical (JS) (not so great , good to know)
-    - https://www.youtube.com/watch?v=mkV7D7IoEG8&ab_channel=LetMeCode (python)
     - https://www.youtube.com/watch?v=iOrpyrU1cP4&list=PLFkGT3yG6ujnhZ7Pkkq_6YYqqrZTZMDgp&ab_channel=LetMeCode (python)
     - https://www.youtube.com/shorts/_t4xOAxj7NE (shorts video)
     - https://www.youtube.com/watch?v=u8JZ9gU5o4g&list=PLxCzCOWd7aiHcmS4i14bI0VrMbZTUvlTa&ab_channel=GateSmashers

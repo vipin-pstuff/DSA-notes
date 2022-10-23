@@ -643,9 +643,18 @@
 - Big O notation : https://www.youtube.com/watch?v=mkV7D7IoEG8&list=PLFkGT3yG6ujnhZ7Pkkq_6YYqqrZTZMDgp&index=4&ab_channel=LetMeCode
 - space complexity : https://www.youtube.com/watch?v=tYs4kNweRrU&list=PLFkGT3yG6ujnhZ7Pkkq_6YYqqrZTZMDgp&index=5&ab_channel=LetMeCode
 
+
+
+
 ## lecture - love babbar
 
 ## lecture - neso academy
+
+## lecture - theCodeSkool
+
+- BigO notation & time complexities : https://www.youtube.com/watch?v=luXiytGnYpY&ab_channel=TheCodeSkool
+- some common time complexities <br>
+    ![some common time complexities](../notes-pics/06-lecture/theCodeSkool/lecture-6-0.png) 
 
 ## lecture - ZTM 
 
