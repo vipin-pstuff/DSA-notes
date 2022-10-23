@@ -55,4 +55,7 @@
         - https://cheatography.com/burcuco/cheat-sheets/data-structures-and-algorithms/
         - https://hackr.io/blog/big-o-notation-cheat-sheet
 
+- algorithms : 
+    - https://www.youtube.com/playlist?list=PLDN4rrl48XKpZkf03iYFl-O29szjTrs_O&ab_channel=AbdulBari
+
 - sorting chart

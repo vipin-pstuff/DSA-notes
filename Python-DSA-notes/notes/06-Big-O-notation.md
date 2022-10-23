@@ -1,5 +1,13 @@
 # Big O Notation : Time & Space Complexity
 
+- reference videos : 
+    - abdul bari DSA course
+    - kunal kushwaha YT course
+    - codebasics (hindi) DSA YT
+    - letMeCode YT DSA
+    - love babbar YT DSA course
+    - neso academy YT DSA course
+
 ## lecture - abdul bari sir
 
 - time complexity : in daily life when we do any work/task , we want to know how much time it takes for that performing that particular task
@@ -631,7 +639,9 @@
 
 ## lecture - LetMeCode YT
 
-
+- time complexity : https://www.youtube.com/watch?v=nwMjeVq1vuA&list=PLFkGT3yG6ujnhZ7Pkkq_6YYqqrZTZMDgp&index=3&ab_channel=LetMeCode
+- Big O notation : https://www.youtube.com/watch?v=mkV7D7IoEG8&list=PLFkGT3yG6ujnhZ7Pkkq_6YYqqrZTZMDgp&index=4&ab_channel=LetMeCode
+- space complexity : https://www.youtube.com/watch?v=tYs4kNweRrU&list=PLFkGT3yG6ujnhZ7Pkkq_6YYqqrZTZMDgp&index=5&ab_channel=LetMeCode
 
 ## lecture - love babbar
 
