@@ -523,7 +523,115 @@
 
 ## lecture - codebasics YT
 
+- `define BigO notation` : 
+    - BigO notation is used to measure how running time or space requirements <br>
+        for your program grow as input size grows 💡💡💡
+        - & most of the time in BigO notation , people consider running time <br>
+            & space requirement is not that important , so running time is the main focus ✔️✔️✔️
+
+- examples - finding time complexity
+    - example : python program
+        ![example](../notes-pics/06-lecture/codebasics/lecture-6-0.png) 
+        - here we have `foo` function & takes an array & when size of the array increase by 100 then program run 0.22 ms <br>
+            but when size of the array is 1000 then 2.30 ms 
+        - & this time depends on machine to machine that's why nobody consider the absolute value of the time of the program runs <br>
+            that's why we use graph & math & you should know linear algebra
+            ![graph](../notes-pics/06-lecture/codebasics/lecture-6-1.png) 
+        - now if we want to measure BigO notation via mathematical equation that's why we use Big O <br>
+            & while doing mathematically then we should know these rules i.e 💡💡💡
+            ![mathematical representation](../notes-pics/06-lecture/codebasics/lecture-6-2.png) 
+            - `1 rule` : keep fastest growing term
+                - here `b` is constant , so fastest growing term is `a*n` 
+                - because let's say `a = 2` & `n = 100 (which is a input that we gave) 💡💡💡` <br>
+                    then 100 * 2 = 200 , so b = 5 , so value is 205
+                - but let's say n = 1 million then 1million * 2 = 2 million then in-front of 2 million , <br>
+                    value of `b` is very small that's why we drop the constant i.e `b` variable
+            - `2` : drop constants
+                - here `a * n` , a is constant , so we skipped it 
+                - so we'll get O(n)
+            - so time complexity of our algorithm will be O(n)
+    - Example - python program of doing square
+        ![square program](../notes-pics/06-lecture/codebasics/lecture-6-3.png) 
+        - so now time complexity is `O(n)` because when numbers/inputs grows then simultaneously time also grows linearly 💡💡💡
+    - Example - what if the time is same , when input size of the array is different   
+        ![time is same but input size of the array is different](../notes-pics/06-lecture/codebasics/lecture-6-4.png) 
+        - so here we can see that time is almost same but value of input size of the array are different <br> 
+            so we can represent that in the graph like that
+        - so here if we want to represent in linear equation then we do this -> `time = a` means time is constant <br>
+        - so rule is drop the constant , so consider here `time = a * 1` , so here time complexity is `time = O(1)` 💡💡💡
+    - example - calculating price to earning ratio 
+        ![calculating price to earning ratio](../notes-pics/06-lecture/codebasics/lecture-6-5.png) 
+        - here this program is not calculating the pe of all elements of an array , we're calculating PE of any one index <br> 
+            so time of `pe` will be constant because we're going to the specific index & taking out the value from both array 
+    - example - here we're finding duplicate numbers
+        ![finding duplicate numbers](../notes-pics/06-lecture/codebasics/lecture-6-6.png) 
+        - here we're using 2 for loop , so duplicate number is 3 , 6 but we need to find first duplicate which is 3 <br>
+        - so mathematically , we can represent `time = a * n^2 + b` & here we took `n^2` because we're using nested loop <br>
+            & total elements we have 8 in our array , so outer loop will run 8 times & inner loop also run 8 times
+            ![finding duplicate numbers](../notes-pics/06-lecture/codebasics/lecture-6-7.png) 
+        - remember the rules , so according to fastest growing term then `b` will be drop , we'll get a * n^2
+        - now second rule is to drop the constant , so drop the `a` , so time complexity is O(n^2)
+    - example - finding the very first only one duplicate & printing it's index
+        ![finding the very first only one duplicate & printing it's index](../notes-pics/06-lecture/codebasics/lecture-6-8.png) 
+        - so in first loop , we're finding a first duplicate number <br>
+            & in second for loop , we're printing the index of that duplicate number
+        - in 1st for loop , two for loop is running i.e `n^2` & in 2nd for loop , we just have only only for loop , so `n` 💡💡💡 
+        - so mathematically , we'll get this `time = a*n^2 + b*n + c` & here `a` & `b` are inputs 💡💡💡  
+            - `1 rule` : now keep only highest value & drop less dominating term/number , <br>
+                so fastest growing term/input is `a*n^2` because let's say n = 1 (which is input) <br>
+                then everybody will be kinda same but if n = 1million then 1million * 1million will be 2 million , <br>
+                so `b*n + c` will be very small in front of that 2 million , that's why we keep <br>
+                the high dominating term & drop less dominating 💡💡💡
+            - `2 rule` : now constant is `a` , so drop it 
+            - then time complexity of our entire program will be `O(n^2)` 💡💡💡 
+
+- `reason why we keep fastest growing term & drop constants ✅` : 
+    ![reason why we do follow those 2 rules](../notes-pics/06-lecture/codebasics/lecture-6-9.png) 
+    - `measuring running time growth = time complexity` & `measuring space growth = space complexity` 💡💡💡 <br>
+        growth of space also grows when we variables , allocating memory dynamically <br>
+        so we also calculate space complexity
+    - `Note 🔥:` : but most of the time 99% , we talk about time complexity 💡💡💡
+
+- example - binary search 
+    ![binary search](../notes-pics/06-lecture/codebasics/lecture-6-10.png) 
+    - we have the sorted array & now we need to find `68` , & we don't know where is 68 <br> 
+        you'll say 68 is over there but program can't see , machine need to find manually 💡💡🤣
+    - `1st approach` : you can search by starting from 0th index step by step like this
+        ![first way to find the 68 number](../notes-pics/06-lecture/codebasics/lecture-6-11.png) 
+        - so time complexity will be O(n) because let's say if we have 100 numbers then you need to iterate 100 times 
+        - so when we have only one loop then time complexity is O(1) but `1` is constant <br> 
+            so we took dynamically , that we don't know how much time our for loop will run <br>
+            because it's depends on input what we're giving , so O(n) will be the time complexity 💡💡💡
+    - `2nd approach` : we have the technique i.e binary search 
+        - so while using binary search algo , so firstly , we see the middle element which is 21 or 34  
+            ![2nd way](../notes-pics/06-lecture/codebasics/lecture-6-12.png) 
+        - now check is `21` number is bigger than 68 or not , well , that's less <br> 
+            so if 21 is less than 68 then you'll able to understand that on left-side array of 21 <br>
+            68 will not be there , so 68 should exist on right-side because we have the sorted array <br>
+            so skip that left-side array like this
+            ![2nd way](../notes-pics/06-lecture/codebasics/lecture-6-13.png) 
+        - so again we'll take mid-element i.e 57 or 68 , so we're taking 57 as mid-element <br>
+            now again 57 is less than 68 , so we'll skip the elements till 57 like this
+            ![2nd way](../notes-pics/06-lecture/codebasics/lecture-6-14.png) 
+        - now checking again & then 68 we'll get on this location 
+        - so for each iteration , we half the search space 
+            ![2nd way](../notes-pics/06-lecture/codebasics/lecture-6-15.png) 
+        - now let's see algorithmic complexity , do mathematical calculation to get the time complexity
+            ![2nd way](../notes-pics/06-lecture/codebasics/lecture-6-16.png) 
+        - so we have total 8 elements , equation will be like this 
+            ![2nd way](../notes-pics/06-lecture/codebasics/lecture-6-17.png) 
+            - here 8 means 2^3 , so we'll understand the in 3 iterations , we'll get the answer
+    - so having the knowledge of Big O , you'll get the idea of the program & how much program is efficient <br> 
+        & as input size grows then how much time complexity grows of the program/code
+    - so that's why when you write the program , then people say instead of O(n^2) , do search in less <br>
+        so that's why firstly , we start in linear search which is O(n) but O(log n) is less than O(n) <br>
+        eg : let's say we have array of 8 elements then O(n) will be 8 iterations <br>
+        but log n of array of 8 elements , will be 3 iteration 💡💡💡
+    - so in time complexity , O(log n) is less than O(n) , so O(log n) is much better than O(n) 💡💡💡 
+
 ## lecture - LetMeCode YT
+
+
 
 ## lecture - love babbar
 
@@ -532,7 +640,6 @@
 ## lecture - ZTM 
 
 ![cheatsheet of BigO](../notes-pics/06-lecture/ZTM/cheatsheet.png)
-
 
 
 
