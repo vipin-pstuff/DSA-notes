@@ -38,6 +38,7 @@
     - blog
         - https://www.freecodecamp.org/news/big-o-cheat-sheet-time-complexity-chart/
         - https://www.freecodecamp.org/news/big-o-notation-why-it-matters-and-why-it-doesnt-1674cfa8a23c/
+        - https://www.mygreatlearning.com/blog/why-is-time-complexity-essential/
     - pictures + blogs 
         - https://www.geeksforgeeks.org/analysis-algorithms-big-o-analysis/
         - https://www.freecodecamp.org/news/all-you-need-to-know-about-big-o-notation-to-crack-your-next-coding-interview-9d575e7eec4/

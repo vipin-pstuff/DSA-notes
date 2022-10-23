@@ -637,12 +637,121 @@
         but log n of array of 8 elements , will be 3 iteration 💡💡💡
     - so in time complexity , O(log n) is less than O(n) , so O(log n) is much better than O(n) 💡💡💡 
 
+- My thoughts with example 
+    - Example - using for loop with fixed range
+        ```js
+        for (let i = 0; i <= 5000; i++) {
+            console.log(i)
+        }
+        ```
+        - here we're printing numbers till `5000` , 
+        - Ques : what'll be the time complexity of it
+        - Ans : we can't say that time complexity will be O(n) because though we're using loop <br>
+            but we're printing with till that range , so we know the range , so here n = 5000 , <br>
+            right now `n` is not dependent to any random value , so we know the value of `n` 
+        - `n` means input size , so we can say time complexity will be `O(1)`
+    - Example : 
+        ![calculating price to earning ratio](../notes-pics/06-lecture/codebasics/lecture-6-5.png) 
+        - here assume that this is taking 3 second , so we can say O(3) but generally we don't say <br>
+            because O(3) or O(100) , at the we'll say O(1) only 💡💡💡
+    - O(1) means let's say 
+        ![calculating price to earning ratio](../notes-pics/06-lecture/codebasics/lecture-6-5.png) 
+        - in this code , we're not using any for loop & especially , we're accessing an element of an array via index
+        - so accessing an element from an array via specific index , doesn't take time 
+        - so that's O(1)
+    - what is O(n) ? 
+        - means let's say we're running a loop but value of `n` depends on user input 
+        - & we don't know how much that loop will run , so that's O(n)
+    - what is O(n^2)  
+        - it's used when we're using nested loop , one is outer loop & another is inner loop
+        - so here outer loop will only first time which we denote as n , but that inner loop also n time <br>
+            & here power of n `2` means input , so execution of inner loop depends on outer loop 💡💡💡
+        - so that's why O(n^2) 
+
 ## lecture - LetMeCode YT
 
 - time complexity : https://www.youtube.com/watch?v=nwMjeVq1vuA&list=PLFkGT3yG6ujnhZ7Pkkq_6YYqqrZTZMDgp&index=3&ab_channel=LetMeCode
 - Big O notation : https://www.youtube.com/watch?v=mkV7D7IoEG8&list=PLFkGT3yG6ujnhZ7Pkkq_6YYqqrZTZMDgp&index=4&ab_channel=LetMeCode
 - space complexity : https://www.youtube.com/watch?v=tYs4kNweRrU&list=PLFkGT3yG6ujnhZ7Pkkq_6YYqqrZTZMDgp&index=5&ab_channel=LetMeCode
 
+- Time complexity : 
+    - Agenda we'll do : 
+        - what is time complexity 
+        - how to find time complexity
+        - different types of notations
+        - types of analysis
+        - practice question - of finding time complexity of some algorithms
+    - `what is time complexity` :
+        - in computer science , the time complexity is the computational complexity that describes <br>
+            the total amount of time computer takes to run an algorithm
+        - via time complexity , we'll able to know which algorithm is good & which are not 
+    - `notations` : 
+        - there're many ways to find the time complexity which is called notations
+        - Eg : you want to buy potatoes in local area , so you'll say give me 2Kg or 5kg potatoes <br>
+            so you're notating in Kg or kilos unit , same way , we notate/measure time complexity in BigO <br>
+            in order to understand how much an algorithm takes time 💡💡💡
+    - `types of analysis` : 
+        - `1` : Experimental analysis
+            - it's like you're experimenting an algorithm in different machine <br>
+                & experimenting an algorithm on different machine will waster your time & cost
+            - because time complexity of an algo depends on machine to machine <br>
+                if you run an inefficient algo on old machine (which is running different apps) , <br>
+                then that inefficient will take time but if we run that inefficient algo on fast machine then it'll run fast 
+            - that's why experimental analysis is not good way to analyze the time complexity of an algo 
+            - so we use theoractial analysis which contain different notations to measure the time complexity of an algo
+        - `2` : theoratical analysis 
+            - it contains different notations to measure the time complexity of an algo
+            - `Note 🔥` : mostly we use Big O notation 💡💡💡
+    - Practice Ques : 
+        - how BigO notation works & finding the time complexity of an algo for searching first duplicate number ✅
+            ![finding the time complexity of an algo by using BigO notation](../notes-pics/06-lecture/letMeCode-YT/lecture-6-0.png) 
+            - `STEP 1` : first need to see how many task/work are executing
+            - `STEP 2` : this `n = [1,5,6,64,50]` , we'll take as `k` which is denoted as constant <br>
+                because here assignment operator is running 💡💡💡 
+            - `STEP 3` : `duplicate = None` , we're running assignment operator , so it'll take let's say `k1`
+            - `STEP 4` : `for i in range(len(n))` , this is outer loop 
+                - means this for loop , will run till `n` range , so let's say , it's taking `n` time
+            - `STEP 5` : `for j in range(i+1, len(n))` , this is inner loop
+                - & this loop also run `n` time , so this will start from `i+1` & end at `n` 
+            - `STEP 6` : `if n[i]==n[j]:` - this condition is getting check every time
+                - but for i & j comparison , so comparison will be checked for some constant time 
+                - so let's say we gave `k3`
+            - `STEP 7` : `duplicate = n[i]` - it's also running in constant time 
+                - so we gave time as `k4`
+            - now just leave the print() & other further stuff , so ultimately , these lines of code will take time 
+                ![finding time complexity of these lines of code](../notes-pics/06-lecture/letMeCode-YT/lecture-6-1.png) 
+        - total time while adding will be this -> k+k1+2+k3+k4+n+n , here we can write `n+n` but that's wrong <br> 
+            because we can do add because inside the code , we have nested loops
+            - `Note 🔥` : if outer & inner loop , two loops are running together for `n` times <br>
+                then always write `n^2` complexity 💡💡💡
+            - because here outer loop run `n` times & due to this inner loop also run `n` times that's why n^2 <br>
+                but it depends on the code that's why analyze properly 💡💡💡
+            - so we'll get this total time when we add like this <br>
+                ![finding time complexity of these lines of code](../notes-pics/06-lecture/letMeCode-YT/lecture-6-2.png) 
+            - now here these two rules comes for finding time complexity <br>
+                ![two rules comes for finding time complexity](../notes-pics/06-lecture/letMeCode-YT/lecture-6-3.png) 
+            - so here constants are `k+k1+2+k3+k4` , so drop them then we'll get n^2
+            - `reason 🔥 : why we skip the non-dominating term/value? - ` : 
+                - not let's suppose here we have `n` also like this <br>
+                    ![extra "n" time we have](../notes-pics/06-lecture/letMeCode-YT/lecture-6-4.png) 
+                    - assume that `n` time is for a operation which is taking `n` time 
+                    - so here `n^2 & n` , which is dominating term <br> 
+                        `dominating term` means value of `n` will increase based on input value <br>
+                        eg : we have input `i = 10` , so for `10` input , value of `n` will also `10` <br>
+                        but if we have `n^2` then value will be 100 like this <br>
+                        ![drop the less dominating term/value](../notes-pics/06-lecture/letMeCode-YT/lecture-6-5.png) 
+                    - now let's say input grows as `1000` , so i = 1000 , so `n` will be 1000 but n^2 will be 1000000 like this <br>
+                        ![drop the less dominating term/value](../notes-pics/06-lecture/letMeCode-YT/lecture-6-6.png) 
+                    - so according to input value/size , value of `n^2` also increase very fast 
+                - that's why we'll drop all the constant & less dominating term <br>
+                    because these will be very small in front of `n^2` 💡💡💡  
+                    ![drop the less dominating term/value & all constants](../notes-pics/06-lecture/letMeCode-YT/lecture-6-7.png) 
+            - so time complexity will be `O(n^2)` 💡💡💡
+
+- BigO notation : 
+    - Agenda we'll do : 
+        - what is BigO notation
+        - practice questions for how to find the time complexity of different algorithms 
 
 
 
