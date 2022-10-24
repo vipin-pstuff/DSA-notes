@@ -12,6 +12,9 @@
     - https://www.youtube.com/watch?v=mkV7D7IoEG8&ab_channel=LetMeCode (python) 👍
     - https://www.youtube.com/watch?v=itn09C2ZB9Y&ab_channel=WebDevSimplified 👍
     - ZTM course 👍
+    - https://www.youtube.com/watch?v=v1SYihb4rcw&ab_channel=JomaClass 👍
+    - https://www.youtube.com/watch?v=BgLTDT03QtU&ab_channel=NeetCode 👍👍👍
+    - https://www.youtube.com/watch?v=6aDHWSNKlVw&ab_channel=TechWithTim 
     - https://www.youtube.com/watch?v=ZOffhW8qs6s&ab_channel=StartPracticing
     - https://www.youtube.com/watch?v=2bdAkGZbFWE&ab_channel=SMARTBUTCLEVER
     - https://www.youtube.com/watch?v=csXn4Av7Qks&ab_channel=5MinutesEngineering
@@ -32,13 +35,16 @@
         - https://www.youtube.com/watch?v=gBz44smaa9A&ab_channel=GateSmashers
         - https://www.youtube.com/watch?v=EH8wQaRI6YE&ab_channel=GateSmashers
     - code with harry
-        - https://www.youtube.com/watch?v=vgSKOMsjLbc&ab_channel=CodeWithHarry
+        - https://www.youtube.com/watch?v=vgSKOMsjLbc&ab_channel=CodeWithHarry 👍👍
         - https://www.youtube.com/watch?v=5g7K86jYto8&ab_channel=CodeWithHarry
         - https://www.youtube.com/watch?v=STL8ESuETmM&ab_channel=CodeWithHarry
-    - blog
+    - blog ✅
         - https://www.freecodecamp.org/news/big-o-cheat-sheet-time-complexity-chart/
         - https://www.freecodecamp.org/news/big-o-notation-why-it-matters-and-why-it-doesnt-1674cfa8a23c/
+        - https://jarednielsen.com/big-o-factorial-time-complexity/
         - https://www.mygreatlearning.com/blog/why-is-time-complexity-essential/
+        - https://flexiple.com/algorithms/big-o-notation-cheat-sheet/
+        - https://hackr.io/blog/big-o-notation-cheat-sheet
     - pictures + blogs 
         - https://www.geeksforgeeks.org/analysis-algorithms-big-o-analysis/
         - https://www.freecodecamp.org/news/all-you-need-to-know-about-big-o-notation-to-crack-your-next-coding-interview-9d575e7eec4/
@@ -53,9 +59,10 @@
         - https://pajamaw.github.io/2016/09/21/filling-in-the-blanks-big-o-notation/
             - https://rubydoobiedoo.files.wordpress.com/2016/09/region-capture-2.png
         - https://i.pinimg.com/originals/fa/f7/6c/faf76c7df3d111d071c313b20b022ecc.jpg
-    - cheatsheet 
+    - cheatsheet ✅
         - https://cheatography.com/burcuco/cheat-sheets/data-structures-and-algorithms/
-        - https://hackr.io/blog/big-o-notation-cheat-sheet
+        - https://cooervo.github.io/Algorithms-DataStructures-BigONotation/
+        - https://souravsengupta.com/cds2016/lectures/Complexity_Cheatsheet.pdf
 
 - algorithms : 
     - https://www.youtube.com/playlist?list=PLDN4rrl48XKpZkf03iYFl-O29szjTrs_O&ab_channel=AbdulBari

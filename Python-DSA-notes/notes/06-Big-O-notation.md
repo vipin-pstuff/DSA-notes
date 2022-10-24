@@ -630,7 +630,7 @@
             ![2nd way](../notes-pics/06-lecture/codebasics/lecture-6-17.png) 
             - here 8 means 2^3 , so we'll understand the in 3 iterations , we'll get the answer
     - so having the knowledge of Big O , you'll get the idea of the program & how much program is efficient <br> 
-        & as input size grows then how much time complexity grows of the program/code
+        & as input size grows then how much time complexity grows of the algo/program/code 💡💡💡
     - so that's why when you write the program , then people say instead of O(n^2) , do search in less <br>
         so that's why firstly , we start in linear search which is O(n) but O(log n) is less than O(n) <br>
         eg : let's say we have array of 8 elements then O(n) will be 8 iterations <br>
@@ -751,9 +751,90 @@
 - BigO notation : 
     - Agenda we'll do : 
         - what is BigO notation
+        - how to find/represent time complexity via BigO notation
         - practice questions for how to find the time complexity of different algorithms 
-        
+    - `what is BigO notation & why does it matter` : 
+        - Big O notation is a mathematical notation that describes the behavior of a function <br>
+            when the argument tends towards a particular value of infinity
+        - means it's way to define behavior of an algo when the value/input tends towards a particular value of infinity 💡💡💡
+        - means when your input size increase then how an algo's behavior <br>   
+            here behavior means whether an algo become slow or become efficient 💡💡💡
+        - `this behavior of an algo are divided into different parts` : ✅
+            ![different time complexities of an algo as input size grows](../notes-pics/06-lecture/letMeCode-YT/lecture-6-8.png) 
+            - `constant time O(1)` means : only 1 time it'll take to complete the task
+                - eg : let's say we have an array & we're access an element based on the index <br>
+                    or we're accessing like first element of an array based on index , so it will happen in 1millisecond time
+            - `linear time O(n)` : means let's say we're traversing each element of an array via any loop
+                - here `n` is a input , so it depends on input & based on input size , that much time it'll take
+                - so `n` is a size/length of an array 💡💡💡
+            - `logarithmic time O(log n)` : means you can understand like it's a half of n but there's no half
+                - & `O(log n)` is much faster + efficient than O(n) 💡💡💡
+            - `quadratic time O(n^2)` & `cubic time O(n^3)` are worst & not efficient  
+            ![time complexity chart](../notes-pics/06-lecture/letMeCode-YT/lecture-6-9.png) 
+            - & in this time complexity chart , O(2^n) is exponential time complexity which is very horrible 💡💡💡
+            ![different BigO complexity line chart](../notes-pics/06-lecture/letMeCode-YT/lecture-6-10.png) 
+            - here in `O(n^2)` line chart , at starting , there's no bad impact <br<
+                but it's slowly goes up & at the end time gets too much which is bad 💡💡💡 
+            - so we'll see how to find the time complexity of an algo while doing leetcode or CP later on ✔️
+    - `theoretical analysis` : 🔥
+        - `1` : iterative factorial
+            ![question](../notes-pics/06-lecture/letMeCode-YT/lecture-6-11.png) 
+            - so here `ans = 1` , `return ans` are taking some constant time
+            - & `ans = ans * i` will take `n` time because it'll execute till the `n` range & that `i++` will increment in some constant time also
+            - here `2n + 2` , how we got `2n` because of increment of both `i` & `ans = ans * i` happening `n` times 💡💡💡 <br>
+                here `2` came due to these `ans = 1` , `return ans`
+            - now we're representing `2n+2` as `K1 + K2n` , so here we took `2` as k1 & `2n` as `K2n` <br>
+                now `K1 + K2n` it's represented as mathematical equation 💡💡💡
+            - now how to convert `K1 + K2n` in BigO notation 
+        - `2` : how to convert `K1 + K2n` in BigO notation 
+            ![converting it into BigO notation](../notes-pics/06-lecture/letMeCode-YT/lecture-6-12.png) 
+            - so in this diagram , how we find the BigO notation
+                - `STEP 1` : first find the dominating term
+                - `STEP 2` : drop non-dominating term
+                - `STEP 3` : then after that in that dominating term , drop the constant 
+            - so time complexity is O(n^3)
+            - now here `A` is an algo (think any algorithm) & it's complexity is O(n^2) <br>
+                so `T(A,n)` , here `T` means time taken by algo , so time complexity of that algo either equal or less than Kn^2
+            - & whenever we talk about algorithm time complexity , so we always talk about worst case 💡💡💡
+    - example - of factorial
+        ![example of factorial](../notes-pics/06-lecture/letMeCode-YT/lecture-6-13.png) 
+        - while finding time complexity , we can't say that time is exact , so we always just take approx or assume
+        - you don't understand this factorial , then directly drop all the constants & take only dominating term
+    - example - of finding largest number in the array
+        ![example of finding largest number in the array](../notes-pics/06-lecture/letMeCode-YT/lecture-6-14.png) 
+        - let's say we took `l = a[0]` as largest number <br>
+            & value on `a[0]` is remain same through out the program while checking , so it'll be constant <br>
+            & checking for largest number in the array will happen `n` times
+        - that's why , we wrote `n * k2` & `k2` also happen `n` times because we're comparing
+        - so time complexity will be O(n)
+    - example - finding time complexity of this code
+        ![finding time complexity of this code](../notes-pics/06-lecture/letMeCode-YT/lecture-6-15.png) 
+        - `STEP 1` : check each line & define there time 
+        - `STEP 2` : add all those time together
+        - `STEP 3` : remember those two rules while finding the time complexity
+        - `STEP 4` : then we'll get the time complexity 
+    
+    - interviewBit question - time complexity : https://www.interviewbit.com/courses/programming/time-complexity 🔥🔥🔥
 
+- `space complexity` : 
+    - means in your algo/program/code , whatever extra space/memory used to process the input/values 💡💡💡
+    - `auxiliary space` : is the extra space or temporary space used by an algorithm 💡💡💡
+    - example - to understand space complexity : 
+        ```js
+        let n = [] // consider this array contains elements & you got this array as an input
+            // so we'll not count this to find space complexity 💡💡💡
+        
+        // now let's say we made two arrays & both size are n/2 (means n by 2)
+        let n1 = []
+        let n2 = []
+        ```
+        - so here we'll consider/count these n1 & n2 but not `n` <br>
+            so we used n1 & n2 as extra or we can count `i` which we use in for loop
+        - so while finding space complexity , we never count the input , we always count the extra space/memory by an algo 💡💡💡
+    - example 1 : 
+        ![ques 1](../notes-pics/06-lecture/letMeCode-YT/lecture-6-16.png) 
+
+        starts from 1:45
 
 ## lecture - love babbar
 
