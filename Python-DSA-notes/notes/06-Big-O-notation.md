@@ -830,11 +830,58 @@
         ```
         - so here we'll consider/count these n1 & n2 but not `n` <br>
             so we used n1 & n2 as extra or we can count `i` which we use in for loop
-        - so while finding space complexity , we never count the input , we always count the extra space/memory by an algo 💡💡💡
+        - so while finding space complexity , we never count the input , <br>
+            we always count the extra space/memory by an algo 💡💡💡
     - example 1 : 
         ![ques 1](../notes-pics/06-lecture/letMeCode-YT/lecture-6-16.png) 
-
-        starts from 1:45
+        - let's say assume that n = 50 , so here `i = 1` is a part of our memory <br>
+            & `i` will run 50 times & here we're just incrementing the `i` 
+        - so there's no extra space used but we made a variable i.e `i = 1` <br> 
+            so from starting to ending of your code , only `i` is taking extra space so space complexity will be O(1)
+    - Example 2 : 
+        ![ques 2](../notes-pics/06-lecture/letMeCode-YT/lecture-6-17.png) 
+        - here `i = 1` will be initialize only 1 time but `j = 0` is inside the loop , so `j = 0` will run `n` times
+        - but space complexity of this complete program will not be O(n) because we're not using any extra memory <br>
+            means when program control goes to i += 1 & then condition will be checked <br>
+            so during this process , previous value of `j` variable will be removed <br>
+            & new value will be initialized inside `j` variable in that same memory <br>
+            because garbage collector will release the `j` variable & then value of `j` gets re-initialized 💡💡💡
+        - so that same memory (which contain `j`) will be utilized again & again 💡💡💡
+        - so `i = 1` will take `k1` space & `j = 0` will take `k2` space 💡💡💡 
+        - example , let's say your program runs from start to end inside the array like this 
+            ![ques 2](../notes-pics/06-lecture/letMeCode-YT/lecture-6-18.png) 
+    - `points to remember - while finding the space complexity ✅` : 
+        - `1` : at any point in time , always take/consider the highest memory , that will be the space complexity 
+        - `2` : auxiliary space
+        - `3` : don't count/consider "input space" required
+        - `4` : recursion takes space  
+            - because we need store previous value 
+    - example 3 : space complexity of bubble sort
+        ![ques 3](../notes-pics/06-lecture/letMeCode-YT/lecture-6-19.png) 
+        - in bubble sort , we create multiple variables & then we'll swap all those variables <br>
+            & we don't need any extra memory space & here we're not making any array to store those variables' values <br> 
+            let's say we're making i & j variables & then we're comparing them & swapping inside the given array
+        - `Note 🔥` : whenever you make variables , like whether those variables are 3 , 4 , 5 , 100 variables , etc.. <br>
+            so at the end , always space complexity will be `O(1)` 💡💡💡
+        - so in bubble sort algo , space complexity is O(1) & if you see the merge sort algo , <br>
+            then it's time complexity is much better than bubble sort but it's space complexity is more than bubble sort <br>
+            because we solve the merge sort via recursion 💡💡💡
+    - example 4 : 
+        ![ques 4](../notes-pics/06-lecture/letMeCode-YT/lecture-6-20.png) 
+        - here we made two variables i.e `ans = 1` & `i = 1` , so space complexity will be O(1)
+    - example 5 : factorial using recursion
+        ![ques 5](../notes-pics/06-lecture/letMeCode-YT/lecture-6-21.png) 
+        - here we didn't use any extra space , event we didn't created another variable
+        - so `time complexity will be O(n)` 🔥<br>
+            because first we need to find value of `n` (which is dependent on user input) <br>
+            & to find value of `n` , we need to find n - 1 then n - 2 & step by step , we need to find 1 & then 0 <br>
+            so finally , when we find factorial of `0` then it'll store inside the memory 💡💡💡
+            - then now things go recursive , 0 to 1 then `1` will also store in memory <br>
+                & then n - 2 , n - 1 & n , so all these will be stored in memory 💡💡💡 , so all these 
+                ![ques 5](../notes-pics/06-lecture/letMeCode-YT/lecture-6-22.png) 
+                - so all these values , we need to calculate & in recursion , stack memory will be used 
+                - so we'll accumulate all those values & then we'll get factorial of `n`
+            - so that's why , space complexity will be `O(n)` 💡💡
 
 ## lecture - love babbar
 
