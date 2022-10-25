@@ -113,5 +113,5 @@
 
 - static vs dynamic DS : https://www.geeksforgeeks.org/static-data-structure-vs-dynamic-data-structure/
 - Physical vs Logical Data Structure : https://dotnettutorials.net/lesson/physical-vs-logical-data-structure/
-- cheatsheet : https://excalidraw.com/#json=6Bkdq0m-bOzV7o6ecx8FU,IylSWiVY2sAUa3FDK73Yow
+- cheatsheet of types of Data structures : https://excalidraw.com/#json=6rZ3ooKOh11oR9S6R4s5t,X17rsCdFmnMIcWm_O2-XRQ
     ![types of DS](../notes-pics/04-lecture/mine-notes/lecture-4-0.png)
