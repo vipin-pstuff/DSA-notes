@@ -8,7 +8,7 @@
 
 - Physical Data Structures
     - Eg : array & linked list are two physical DS
-        ![physical DS](../notes-pics/04-lecture/abdul-bari/lecture-4-1.png)
+        ![physical DS](../../notes-pics/04-lecture/abdul-bari/lecture-4-1.png)
         - & we can have more data structures of combination/variations of those two
         - Why we're calling them as Physical ? 💡
             - because those data structures decides/defines how the memories organize
@@ -20,7 +20,7 @@
         - & that array have fixed size , once it's created of some size <br>
             then that size can't be increase or decrease . So size of an array is static 💡💡💡
         - that array can be created inside the stack or inside the heap memory (with the pointer variable inside stack) like this <br> 
-            ![physical DS](../notes-pics/04-lecture/abdul-bari/lecture-4-2.png)
+            ![physical DS](../../notes-pics/04-lecture/abdul-bari/lecture-4-2.png)
         - When to use Array data structure ? ✅
             - use it when you're sure about what's the maximum number of elements that you're going to store
             - means if you know the length/size of the list then you can use array 
@@ -32,7 +32,7 @@
             & add more elements or you can reduce the size
         - the linked list data structure is always created inside the heap memory 💡💡💡 <br>
             & head -> will be the pointer variable (inside the stack memory) which will point that linked list
-            ![physical DS](../notes-pics/04-lecture/abdul-bari/lecture-4-3.png)
+            ![physical DS](../../notes-pics/04-lecture/abdul-bari/lecture-4-3.png)
         - when to use Linkedin list data structure ? ✅
             - use it when we don't know the size of the list 
     - & these two comes in physical because they tell how the memory should be organized for storing the elements/data  <br>
@@ -40,7 +40,7 @@
 
 - Logical Data structures 
     - logical data structures are : <br>
-        ![logical data structures](../notes-pics/04-lecture/abdul-bari/lecture-4-4.png)
+        ![logical data structures](../../notes-pics/04-lecture/abdul-bari/lecture-4-4.png)
         - different b/w physical & logical data structures ✅
             - Physical Data structures : are actually meant for storing the data in the memory , means they'll hold the data 
             - Eg : when you have the list/array then you'll perform operations like inserting more values , <br>
@@ -51,7 +51,7 @@
         
     - types of data structures in logical DS : `Linear DS` , `Non-Linear DS` , `linear or Tabular DS`
         - Examples are : <br>
-            ![types of DS in logical DS](../notes-pics/04-lecture/abdul-bari/lecture-4-5.png)
+            ![types of DS in logical DS](../../notes-pics/04-lecture/abdul-bari/lecture-4-5.png)
         - `stack` works on LIFO (last in first out) <br>
             `queues` works on FIFO (first in first out) <br>
             `trees` is non-leaner DS , so it'll be organized like a hierarchy <br>
@@ -72,7 +72,7 @@
     - means if all the elements are arranged in a linear/sequential order i.e called linear DS
     - Eg : array , queue , linked list , stack
     - or we can say that each element having one predecessor & one successor then we can say that data structure is linear DS 💡💡💡
-        ![different linear Data structure](../notes-pics/04-lecture/neso-academy/lecture-4-1.png)
+        ![different linear Data structure](../../notes-pics/04-lecture/neso-academy/lecture-4-1.png)
         - inside this array data structure example , `4` element have one predecessor i.e `3` & one successor i.e `5` 
         - although , there's one exception inside different data structure of linear DS <br>
             i.e first element has no predecessor & last element has no successor 💡💡💡
@@ -81,12 +81,12 @@
     - means when all the elements aren't arranged in a linear/sequential order . <br>
         means there's no linear arrangement of the elements 
     - Eg : tree data structure like this <br>
-        ![different Non-linear DS example](../notes-pics/04-lecture/neso-academy/lecture-4-2.png)
+        ![different Non-linear DS example](../../notes-pics/04-lecture/neso-academy/lecture-4-2.png)
         - this data structure i.e tree is non-linear <br>
             because we can see that each node doesn't have one predecessor & one successor 
         - we can see that top most node has one predecessor & one successor <br> 
             but next left node doesn't have one predecessor & one successor , it has two successors i.e 
-            ![different Non-linear DS example](../notes-pics/04-lecture/neso-academy/lecture-4-3.png)
+            ![different Non-linear DS example](../../notes-pics/04-lecture/neso-academy/lecture-4-3.png)
     - Eg : graph
 
 - for further information , we have `static data structure & dynamic data structure`
@@ -114,4 +114,4 @@
 - static vs dynamic DS : https://www.geeksforgeeks.org/static-data-structure-vs-dynamic-data-structure/
 - Physical vs Logical Data Structure : https://dotnettutorials.net/lesson/physical-vs-logical-data-structure/
 - cheatsheet of types of Data structures : https://excalidraw.com/#json=6rZ3ooKOh11oR9S6R4s5t,X17rsCdFmnMIcWm_O2-XRQ
-    ![types of DS](../notes-pics/04-lecture/mine-notes/lecture-4-0.png)
+    ![types of DS](../../notes-pics/04-lecture/mine-notes/lecture-4-0.png)

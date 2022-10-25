@@ -12,5 +12,5 @@
     - [x] Flowcharts
     - [x] PseudoCode
 
-- Basics
-    - [ ] Array
+- programming stuff (like datatype , etc)
+    - [ ] basic stuff of programming 

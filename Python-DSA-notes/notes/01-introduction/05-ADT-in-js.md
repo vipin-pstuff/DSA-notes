@@ -25,11 +25,11 @@
             int x ; 
             ```
             - then in c/c++ , we'll get a memory of 2 bytes i.e 16 bits like this <br> 
-                ![2 bytes memory block for a variable integer datatype](../notes-pics/05-lecture/abdul-bari/lecture-5-1.png)
+                ![2 bytes memory block for a variable integer datatype](../../notes-pics/05-lecture/abdul-bari/lecture-5-1.png)
                 - so integer type data is stored in 2 bytes together as a single value/data 
                 - & here 1 bite is reserved for sign bit to allow both positive as well as negative numbers <br>
                     & rest of the 15 bits are allowed for storing data for any number 💡💡💡 like this
-                    ![how data is stored inside that 2 bytes integer datatype](../notes-pics/05-lecture/abdul-bari/lecture-5-2.png)
+                    ![how data is stored inside that 2 bytes integer datatype](../../notes-pics/05-lecture/abdul-bari/lecture-5-2.png)
             - this is how integer datatype is represented inside the memory in two bytes <br>
                 & this is the representation of integer datatype
     - `operation on data` : 
@@ -89,7 +89,7 @@
                 - Operations can be for performed on that integer value <br>
                     like addition , subtraction , multiplication bitwise operations , etc
             - in `float` datatype , we can do this <br>
-                ![float datatype](../notes-pics/05-lecture/neso-academy/lecture-5-1.png)
+                ![float datatype](../../notes-pics/05-lecture/neso-academy/lecture-5-1.png)
     - there're 2 things in data types i.e predefined/inbuilt datatypes & user defined datatype
     - `what is user defined data types` : ✅
         - before understanding what is abstract datatype , we must know user defined data types
@@ -114,7 +114,7 @@
         - A stack consists of elements of same type arranged in a sequential order <br>
         - Ques : so here elements are allowed of what type i.e same type 💡💡💡
         - so operations which are allowed on stack ADT i.e  
-            ![operations can be performed by Stack ADT](../notes-pics/05-lecture/neso-academy/lecture-5-2.png)
+            ![operations can be performed by Stack ADT](../../notes-pics/05-lecture/neso-academy/lecture-5-2.png)
         - so here we're using these methods/function , so we know what those methods can accept & what they return <br>
             but without knowing about internal/inside details 💡💡💡
     - think ADT as a `black box` which hides the inner structure & design of the datatype from the user
