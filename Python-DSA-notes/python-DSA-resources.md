@@ -68,3 +68,7 @@
     - https://www.youtube.com/playlist?list=PLDN4rrl48XKpZkf03iYFl-O29szjTrs_O&ab_channel=AbdulBari
 
 - sorting chart
+
+- sorting algo 
+    - blog 
+        - https://itnext.io/sorting-algorithms-in-javascript-4c3b7b80e88d

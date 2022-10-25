@@ -35,6 +35,22 @@
 
 - `how negative(-ve) numbers are stored in memory` ? : (not important becuz not asked in interview ✌)
     - let's say we have `int x = -5` , so we'll see algo/flow/steps to know how negatives number stored in memory
-    - `STEP 1` : 
+    - `STEP 1` : skip the minus or negative sign from that negative number , so here we'll get `5`
+    - `STEP 2` : convert that number into binary representation , so for 5 is 101
+    - `STEP 3` : take 2's compliment
+        - how to take 2's compliment : 
+            - for taking 2's compliment , find 1's compliment then add `1`
+                - example : `STEP 1` : finding 1's compliment means flip all the bits 
+                    - `STEP 1.1` & then do addition with that 1's compliment by `1` <br>
+                        let's say we hav 1010 , so when we flip means keep opposite number 
+                        ![how an integer value will be stored](../../notes-pics/09-lecture/lecture-9-2.png)
+            - so in STEP 1 & 2 , we just took the example to understand
+            - `STEP 1` : now that 101 which is stored in memory , convert it in 1's compliment in order to do 2's compliment 
+                - so all those 0(zeroes) will become 1 like this & that 101 , it's bit will get flipped like this
+                    ![how an integer value will be stored](../../notes-pics/09-lecture/lecture-9-3.png)
+                - then add with 1 then we'll get this output 
+                    ![how an integer value will be stored](../../notes-pics/09-lecture/lecture-9-4.png)
+                    - & this is will be store in `-5`
 
-    lecture 2 - timeline  45:29
+
+    timeline : 50:09
