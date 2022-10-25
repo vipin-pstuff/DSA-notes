@@ -861,7 +861,7 @@
         - in bubble sort , we create multiple variables & then we'll swap all those variables <br>
             & we don't need any extra memory space & here we're not making any array to store those variables' values <br> 
             let's say we're making i & j variables & then we're comparing them & swapping inside the given array
-        - `Note 🔥` : whenever you make variables , like whether those variables are 3 , 4 , 5 , 100 variables , etc.. <br>
+        - `Imp Note 🔥` : whenever you make variables , like whether those variables are 3 , 4 , 5 , 100 variables , etc.. <br>
             so at the end , always space complexity will be `O(1)` 💡💡💡
         - so in bubble sort algo , space complexity is O(1) & if you see the merge sort algo , <br>
             then it's time complexity is much better than bubble sort but it's space complexity is more than bubble sort <br>
@@ -884,6 +884,140 @@
             - so that's why , space complexity will be `O(n)` 💡💡
 
 ## lecture - love babbar
+
+- `time complexity` : it's as a function of length of the input
+    - `why we need it` : 
+        - `1` : for making better programs/algo
+        - `2` : for comparing an algo based on time & efficiency
+        - we can't tell that algo is fast by just running that algo on fast machine & on slow machine 
+            because checking an algo for whether it's fast or slow on different machines is not feasible <br>
+            because it's depends on machine to machine that's why we need a way i.e time complexity 💡💡💡
+        - so time complexity is a kind-of matrix to tell whether that algo is fast or slow
+
+- `what is notation ✅`
+    - to measure/show distance , we can show in `m` , `cm` , `km` , so we have different units <br> 
+        in order to tell , that thing is like this & this thing is like this , etc...
+    - so same way , to measure/show time complexity , we have different notations 💡💡💡 like this
+        ![different notations to measure/show time complexity](../notes-pics/06-lecture/lovebabbar/lecture-6-0.png) 
+        - & we talk about BigO notation most of the time , because it shows upper bound <br>
+        - here `upper bound` means limit , which means max to max approx that algorithm will spend that amount of time only <br> 
+            means worst case time complexity of that algo will be this only 💡💡💡
+        - for lower bound , we have Omega & for average case complexity , we use theta notation <br>
+            but most of the time 99% , we talk about BigO notation only ✔️✔️✔️
+        ![different notations to measure/show time complexity](../notes-pics/06-lecture/lovebabbar/lecture-6-1.png) 
+    - level of time complexity <br>
+        ![different notations to measure/show time complexity](../notes-pics/06-lecture/lovebabbar/lecture-6-2.png) 
+
+- Ques : 
+    - 1st ques : `f(n) => 12001`
+        - here number is fixed , so time complexity is `O(1)`
+    - 2nd ques : `f(n) => n^3/300`
+        - so time complexity is O(n^3)
+    - 3nd ques : `f(n) => n/4`
+        - time complexity is `O(n)` which is linear time
+
+- Example 1 : <br>
+    ![question 1](../notes-pics/06-lecture/lovebabbar/lecture-6-3.png) 
+    - we have for loop which is running from 0 to n times & body of for loop is printing something 
+    - so here total `n iterations` are happening & `n` is a input given by the user 💡💡💡
+    - so we got `O(n)` time complexity 
+
+- Example 2 : <br>
+    ![question 2](../notes-pics/06-lecture/lovebabbar/lecture-6-4.png) 
+    - here we're doing reverse , so we're just swapping the i & j & this is first operation 💡💡💡 like this
+        ![question 2](../notes-pics/06-lecture/lovebabbar/lecture-6-5.png) 
+        - then we swap another block elements & till each blocks like this
+        ![question 2](../notes-pics/06-lecture/lovebabbar/lecture-6-6.png) 
+    - so let's say we have `n` length of an array , so we swap `n/2` & here `2` we put as denominator <br>
+        because we're just swapping i & j variables 2 times 💡💡💡
+    - so complexity is O(n/2) , now use those two rules for finding time complexity , so `O(n)`
+
+- `question of interviewBit 🔥` : 
+    - `interviewBit ques 1` : 
+        ![interviewBit ques 1](../notes-pics/06-lecture/lovebabbar/lecture-6-7.png) 
+        - `Note✅` : when to do multiply & when to do addition while finding time complexity 
+            - when we have two loop individually then we do addition `+` 💡💡💡
+            - & when there's a nested loop then we do multiplication `*` 💡💡💡
+        - so time complexity of first loop is `O(n)` & second loop is `O(m)` , now we'll do `O(n+m)`
+        - but if we had a nested loop then we'll get O(n*m) 
+    - `interviewBit ques 2` : 
+        ![interviewBit ques 2](../notes-pics/06-lecture/lovebabbar/lecture-6-8.png) 
+        - so solution is this 
+            ![interviewBit ques 2](../notes-pics/06-lecture/lovebabbar/lecture-6-9.png) 
+        - so we'll get O(n^2) + O(n) , now use those 2 rules then we'll get `O(n^2)` 💡💡💡
+    - `interviewBit ques 3` : 
+        ![interviewBit ques 3](../notes-pics/06-lecture/lovebabbar/lecture-6-10.png) 
+        - so then solution will be like this <br>
+            ![interviewBit ques 3](../notes-pics/06-lecture/lovebabbar/lecture-6-11.png) 
+        - now when we find the time complexity in BigO notation , then things get pretty easy , <br>
+            because we just need to take the worst case 💡💡💡
+        - so in worst case , that inner loop how much run , so i will be 0 & n is n like this
+            ![interviewBit ques 3](../notes-pics/06-lecture/lovebabbar/lecture-6-12.png) 
+            - so inner loop also run `n` time
+        - & inner loop is nested loop , so it'll get multiplied by outer loop like this
+            ![interviewBit ques 3](../notes-pics/06-lecture/lovebabbar/lecture-6-13.png) 
+        - so simply take the worst case & that will be the solution
+    - `ques` : 
+        ![ques](../notes-pics/06-lecture/lovebabbar/lecture-6-14.png) 
+        - we can't always say that 
+            ![ques](../notes-pics/06-lecture/lovebabbar/lecture-6-15.png) <br>
+            outer loop will always be O(n) , that's completely wrong because you have to see/analyze the inner code also 
+        - we're saying that loop is O(n) which means inside that loop , all those things happening in constant time like <br>
+            in picture , we're printing the `i` which is happening in constant time inside that loop <br>
+            that's why we said O(n) 💡💡💡
+
+- `how to avoid TLE while doing Leetcode or CP 🔥🔥` : 
+    - TLE is time limit exceeder means your logic is take too much time & we want to complete in less time <br>
+        then how do we know that in that case which algo we need to use , which time complexity of algo we need to use 💡💡💡
+    - `1O^8 operation rule` : 
+        ![1O^8 operation rule](../notes-pics/06-lecture/lovebabbar/lecture-6-16.png)
+        - so modern machine can do 10^8 operation in per second
+        - so based on this , we can decide which time complexity algo we need to use <br>
+            just by seeing the constraints of a question 💡💡💡
+    - `chart of time complexity based on constraints ✅` : 
+        ![time complexity based on constraints](../notes-pics/06-lecture/lovebabbar/lecture-6-17.png)
+        - constraints of leetcode questions : 
+            ![constraints of ques](../notes-pics/06-lecture/lovebabbar/lecture-6-18.png)
+            ![constraints of ques](../notes-pics/06-lecture/lovebabbar/lecture-6-19.png)
+            ![constraints of ques](../notes-pics/06-lecture/lovebabbar/lecture-6-20.png)
+    - so based on these constraints of a question , we can decide which time complexity algo we need to use 💡💡💡
+        ![time complexity based on constraints](../notes-pics/06-lecture/lovebabbar/lecture-6-17.png)
+        - here `<= [10 to 11]` , here 10 to 11 means input that user give 
+        - let's say your input comes b/w `< 10^6` , so then at max , we can use use algorithm of O(n log n) <br> 
+            & less than O(n log n) which is fine but we can't use above of O(n log n) in `< 10^6` condition like this
+            ![time complexity based on constraints](../notes-pics/06-lecture/lovebabbar/lecture-6-21.png)
+        - if we use above of `O(n log n)` then we'll get TLE 💡💡💡
+        - so based on this , we'll know which one will clear/pass your test cases 
+    - so based on this chart , we can avoid TLE 
+
+- `space complexity` : 
+    - so `time complexity` means whatever the input we're getting , based on that input , we're creating function <br> 
+        & based on that function , we're showing how much time your algo will take
+        - same thing , in `space complexity` , how much memory will be taken by your algorithm as a function length 💡💡💡
+        - here we just replace the time as memory
+    - interviewBit ques 1 : <br>
+        ![interviewBit ques 1](../notes-pics/06-lecture/lovebabbar/lecture-6-7.png)
+        - here we made a , b , i , j variables
+        - so even if you're making 10000 variables in your program , then space complexity will be O(1) (constant time)
+    - `Ques - now let's see this ques` :   
+        ![ques](../notes-pics/06-lecture/lovebabbar/lecture-6-22.png)
+        - here we made an array of 5 size , so still space complexity is `O(1)` 💡💡💡
+        - because we fixed the size of an array 
+        - but if made the program & taking `n` as a input like this
+            ![ques](../notes-pics/06-lecture/lovebabbar/lecture-6-23.png)
+            - so based on the `n` variable , we created the vector
+            - here length is `n` , so we created `n` length of vector , so space complexity is O(n) 💡💡💡
+        - now let's see this program code  
+            ![ques](../notes-pics/06-lecture/lovebabbar/lecture-6-24.png)
+            - here when first time outer loop run then our vector will be created then inner loop run <br>
+                & when it finishes with execution 
+            - then outer loop will run again & then again vector will be created from scratch in the memory <br>
+                & same thing goes again & again till `n` length & due to this , vector also created again & again from scratch
+            - so space complexity will be `O(n)` 
+            - `Imp Note 🔥` : don't tell that here we a nested loop , so we said `O(n^2)` , it's time complexity , not space
+                - so we need to tell space complexity based on who's taking memory , so here vector is taking memory 
+                - for loop doesn't take memory , for loop takes time & `vector` will take space/memory 💡💡🔥
+                - so those who takes space/memory , we'll take them in space complexity 
 
 ## lecture - neso academy
 
