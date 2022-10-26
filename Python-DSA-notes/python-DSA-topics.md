@@ -13,4 +13,5 @@
     - [x] PseudoCode
 
 - programming stuff (like datatype , etc)
-    - [ ] basic stuff of programming 
+    - [ ] programming basics 1 , operators like bitwise operator
+    - [ ] programming basics 2
