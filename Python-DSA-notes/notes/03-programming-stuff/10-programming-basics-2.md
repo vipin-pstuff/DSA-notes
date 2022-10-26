@@ -12,12 +12,25 @@
         if we don't put `break` keyword for that `case` then further `case` statement will also be executed <br>
         with that `case` statement
     - `break` keyword used to terminate/stop the further execution
+    - `calculator` is the best example to understand switch statement 💡💡💡 
+    - `Note 🔥` : inside parenthesis of switch statement , what we can put 
+        ```js
+        switch() {} 
+            // inside parenthesis , we can put an expression also like this switch(a+2*b) 
+            // or we can put a number directly inside of it also or a variable as usually we do 💡💡💡
+        ```
+        - but we can't put a string inside of it like this `switch("hello")` <br>
+            & if we don't put anything inside of it like this `switch() {}` then we'll get error i.e <br>
+            needs terminating expression 💡💡💡
 
 - `for loop` : 
     - for loop syntax is like this <br>
         `first` : is initialization <br>
         `second` : condition <br>
         `third` : updation
+    - infinite loop : 💡💡💡
+        - https://www.javatpoint.com/infinite-loop-in-c
+        - https://www.educba.com/infinite-loop-in-c/ 
 
 - we can write this `i = i + 1` like this `i++` or `++i` (most imp concept 🔥)
     - `i++` means post increment & `++i` means pre-increment
