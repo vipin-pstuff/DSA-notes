@@ -98,5 +98,80 @@
         ![converting from binary to decimal](../../notes-pics/11-lecture/lecture-11-20.png) 
     - another example : 
         ![converting from binary to decimal](../../notes-pics/11-lecture/lecture-11-21.png) 
-    
+
+- `doubts` : 
+    - we use loop to repeat something again & again 
+    - `goto` statement in C++ is a bad practice
+    - Data Structure through C++ in depth (by deepali srivastav) , you can even under pointers very clearly <br>
+        you can see codehelp YT channel which is also covered in depth also
+    - prime number flow chart : <br>
+        ![prime number flowchart](../../notes-pics/11-lecture/lecture-11-22.png) 
+        ![prime number flowchart](../../notes-pics/11-lecture/lecture-11-23.png) 
+        - here inside flow chart , we wrote `2 - (n-1)` for this `i < n` , so that we'll stop at `n-1` <br>
+            & `n%i===0` we used in flow chart , so that when it gets divide by 0 then we'll got to know , so `2 - (n-1) !== 0`
+        - so program code is 
+            ```cpp 
+            int n ;
+            cout << "Enter number is check prime" << endl;
+            cin >> n;
+
+            // create a flag
+            bool isPrime = true; // this is called flag of checkpoint
+
+            for(int i=2; i<n; i++) {
+              // divide ho gya kisi number se, it means not prime
+              if (n%i == 0) {
+                isPrime = false;
+                break;
+              }
+            }
+            // or with while loop
+            /*
+            int i = 2;
+            while () 
+              if (n%i == 0) {
+                isPrime = false;
+                break;
+              }
+            */
+            // but more clarity will be with -> for loop
+
+            if (isPrime == true) 
+              cout << "Number is a prime no." << endl;
+            else 
+              cout << "Number is not a prime no." << endl;
+            ```
+        - write the program code again without using `isPrime` boolean variable
+            ```cpp
+            #include <iostream>
+            using namespace std;
+
+            int main() {
+                int n ;
+                cout << "Enter number is check prime" << endl;
+                cin >> n;
+
+                // create a flag
+                // bool isPrime = true; 
+ 
+                for(int i=2; i<n; i++) {
+                    if (n%i == 0) {
+                        cout << "Number is not a prime no." << endl;
+                        break;
+                    } else {
+                        cout << "Number is a prime no." << endl;
+                        break;
+                    }
+                }
+            }
+            ```
+
+- `Imp Note 🔥` : similarity b/w `&` (AND Bitwise operator) & `%`
+    ![prime number flowchart](../../notes-pics/11-lecture/lecture-11-24.png) 
+    - `%` is a heavy time consuming operator & `&1` is less time consuming because it's fast in bit level 💡💡💡
+    - so if you get question to check even or odd or find even or odd numbers then always use `&1` 💡💡💡 like this
+        ![prime number flowchart](../../notes-pics/11-lecture/lecture-11-25.png) 
+
+- `Homework` : 
+    - convert Binary to Decimal & decimal to binary with negative number
 

@@ -141,7 +141,7 @@
             - it will convert `0` into `1` & `1` is converted into `0` 💡💡💡  
         - `XOR` : `(most imp 🔥)`
             - means `Exclusive OR` operator
-            - we'll get `0` when both are `1` & if anyone is `1` then we'll get `1` , so in truth table 💡💡💡
+            - we'll get `0` when both are `1` or both are `0` & if anyone is `1` then we'll get `1` , so in truth table 💡💡💡
                 ![XOR (XOR bitwise operator)](../../notes-pics/09-lecture/lecture-9-13.png)
             - this operator is most most important to crack some questions in interview 🔥🔥🔥
             - XOR symbol is `a^b`
