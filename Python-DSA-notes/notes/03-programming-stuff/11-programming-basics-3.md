@@ -52,6 +52,48 @@
     - we already seen that 5 is 101 , 2 is 10 , 6 is 110 & 4 is 100 , but how do we know 
     - & here those 2 concept will be used <br>
         i.e how to get a digit from an integer number & how combine all those digit to make a number
-    
+    - Eg : at the end `5` will be stored in binary inside the memory & we don't know 101 <br>
+        now we need to find out the binary of 5 what's stored in memory 
+        - so if we do `1 & 1` then we'll get 1 & if we do `1 & 0` then we'll get 0 like this
+        - so if we use `&` (AND bitwise operator) with `1` then we'll able to know whether that bit is 1 or 0 <br>
+            if we do `1 & 1` & if we get 1 then answer is `1` & if we do `1 & 0` get `0` then means `0` is answer like this
+            ![getting a bit](../../notes-pics/11-lecture/lecture-11-8.png) <br>
+            ![getting a bit](../../notes-pics/11-lecture/lecture-11-9.png) 
+            - so we'll able to know the bit via using `&(AND bitwise operator) with 1`
+                ![getting a bit](../../notes-pics/11-lecture/lecture-11-10.png) 
+        - now let's say we find the right last bit & now we don't need that bit which we already found <br>
+            so we can remove that bit by using `right shift bitwise operator` i.e `>>` <br>
+            using this right shift , that bit get lost & same with other bit & when the movement we got `0` <br>
+            then at the end , we don't need to check further , so we'll get the answer <br>
+            & we need to check until we don't get the 0(zero) like this
+            ![getting a bit](../../notes-pics/11-lecture/lecture-11-11.png) 
+        - program code : 
+            ![getting the binary of a number](../../notes-pics/11-lecture/lecture-11-12.png) <br>
+            ![getting the binary of a number](../../notes-pics/11-lecture/lecture-11-13.png) 
+        - but we're getting the bits of `4` number in reverse order , we want like this `100` , <br>
+            so we can use an expression like this 
+            ![getting the binary of a number](../../notes-pics/11-lecture/lecture-11-14.png) 
+            - so same thing which we did to combine all digits to get a number , <br>
+                so in that we're multiplying by 10^0 & then 10^1 & then 10^2 like this
+            ![getting the binary of a number](../../notes-pics/11-lecture/lecture-11-15.png) 
+            ![getting the binary of a number](../../notes-pics/11-lecture/lecture-11-16.png) 
+            ![getting the binary of a number](../../notes-pics/11-lecture/lecture-11-17.png) 
+            - so we're getting binary of 4 is `100` which is in sequence , not in reverse order 
+            - `Note ✅` : we're doing `&` with `1` only because if we do with & `0` then our loop will not run 💡💡💡
+        - `Imp Note 🔥` : difference b/w `%` & `&` 
+            - `n % 10` : gives last digit of a number like 1236 then we'll get `6` 💡💡💡
+                - so it'll give right most digit
+            - `n & 1` : gives last right most bit 💡💡💡
+        - `how to find binary number of a number ✅` : ans is this  
+            ![getting the binary of a number](../../notes-pics/11-lecture/lecture-11-18.png) 
+            - here we're dividing by `2` again & again because we're finding binary number , so binary means 0 or 1 <br>
+                so base of binary will be 2 because combination will be `2` 💡💡💡
+            - Ques : find binary of 9 ✅ 
+                - reference : https://www.youtube.com/watch?v=EQeq0FUOMWw&ab_channel=CodeWithHarry
+                ![getting the binary of a number](../../notes-pics/11-lecture/lecture-11-19.png) 
+                - now go from bottom to top & we'll get `1001` 💡💡💡
 
+- `binary to decimal` : 
+     
+     starts - 40:45
 
