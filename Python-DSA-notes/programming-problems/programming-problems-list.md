@@ -67,7 +67,7 @@
     - WAP to check whether two given numbers are co-Prime or not 
     - WAP to print first **N** prime numbers
     - WAP to calculate LCM of two numbers
-    - WAP to calculate HCF of two numbers
+    - WAP to calculate GCD/HCF of two numbers
     - WAP to print all factors of a given number
     - WAP to print all prime factors of a given number 
 
