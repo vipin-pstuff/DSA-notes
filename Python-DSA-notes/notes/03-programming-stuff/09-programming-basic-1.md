@@ -161,6 +161,8 @@
             - so when we're shifting with `5 >> 2` then means we're dividing by 5/2 <br>
                 ![left shift operator](../../notes-pics/09-lecture/lecture-9-19.png)
                 - but do Dry run & find only the exceptions where we can't multiply by 2 💡💡💡 
+        - so left & right shift operator example like this <br>
+            ![left & right shift operator](../../notes-pics/09-lecture/lecture-9-20.png)
         - `Note` : when we're doing right or left shift bitwise operator then on that empty bit/bits will be padded by 0
             - Ques : tell me that always `0` will be padded in every case
             - Ans : in positive number , padding will happen with `0(zero)` in both left & right shift bitwise operators <br>

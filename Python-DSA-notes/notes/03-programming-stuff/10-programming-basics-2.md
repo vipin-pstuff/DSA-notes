@@ -72,6 +72,8 @@
                 //  7
                 //  9
         ```
+        - behind the scene , it'll work like this <br>
+            ![continue keyword with for loop flow](../../notes-pics/10-lecture/lecture-10.png)
 
 - `variable scope 🔥` , eg : <br>
     ![variable scope](../../notes-pics/10-lecture/lecture-10-0.png)

@@ -94,6 +94,9 @@
                 - now go from bottom to top & we'll get `1001` 💡💡💡
 
 - `binary to decimal` : 
-     
-     starts - 40:45
+    - so when we convert binary to decimal then we'll get again base `2` like this      
+        ![converting from binary to decimal](../../notes-pics/11-lecture/lecture-11-20.png) 
+    - another example : 
+        ![converting from binary to decimal](../../notes-pics/11-lecture/lecture-11-21.png) 
+    
 
