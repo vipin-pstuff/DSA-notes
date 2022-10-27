@@ -8,7 +8,6 @@
     - operator precedence : 
         - let's say we have `int ans = 2 * 3/4 + 5` , now how computer will know that which operation it should do first <br>
             so how to evaluate an operation , we'll know via precedence of that operator 💡💡💡
-        - operator precedence chart ✅ : https://discuss.codechef.com/t/operator-precedence-table/14545 💡💡💡
         - so to remove the ambiguity (means when we solve the expression then we'll get different answers) 💡💡💡 <br> 
             so we can use parenthesis like this `int ans = (2 * (3/4)) + 5` then we'll get correct answer 5
     - associativity : 
@@ -89,7 +88,7 @@
             - here we're dividing by `2` again & again because we're finding binary number , so binary means 0 or 1 <br>
                 so base of binary will be 2 because combination will be `2` 💡💡💡
             - Ques : find binary of 9 ✅ 
-                - reference : https://www.youtube.com/watch?v=EQeq0FUOMWw&ab_channel=CodeWithHarry
+                - reference : 
                 ![getting the binary of a number](../../notes-pics/11-lecture/lecture-11-19.png) 
                 - now go from bottom to top & we'll get `1001` 💡💡💡
 

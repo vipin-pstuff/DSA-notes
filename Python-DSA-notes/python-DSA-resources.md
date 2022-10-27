@@ -3,7 +3,7 @@
 - cheatsheet
     - https://doc.clickup.com/43233653/d/197cbn-144/typesof-data-structuresin-python
 
-- BigO notation 
+- note 6 : BigO notation 
     - codebasics (hindi) 👍
     - abdul bari 👍
     - neso academy 👍
@@ -63,6 +63,17 @@
         - https://cheatography.com/burcuco/cheat-sheets/data-structures-and-algorithms/
         - https://cooervo.github.io/Algorithms-DataStructures-BigONotation/
         - https://souravsengupta.com/cds2016/lectures/Complexity_Cheatsheet.pdf
+
+- note 11 : programming basics 3
+    - operator precedence chart ✅ : https://discuss.codechef.com/t/operator-precedence-table/14545 💡💡💡
+    - decimal to binary & binary to decimal conversion 
+        - https://www.youtube.com/watch?v=EQeq0FUOMWw&ab_channel=CodeWithHarry 
+    - ques : is a number prime or not : 
+        - https://www.youtube.com/watch?v=8zILkPnpD6E&ab_channel=CodeWithHarry
+        - https://www.youtube.com/watch?v=K7A7ns45C-s&ab_channel=codeitup
+        - https://www.youtube.com/watch?v=yZgqbha-2lo&ab_channel=Edutainment1.0
+
+
 
 - algorithms : 
     - https://www.youtube.com/playlist?list=PLDN4rrl48XKpZkf03iYFl-O29szjTrs_O&ab_channel=AbdulBari

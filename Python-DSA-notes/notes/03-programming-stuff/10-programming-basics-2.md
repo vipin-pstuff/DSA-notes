@@ -106,9 +106,9 @@
 - now you can start leecode for solving basic small problems
 
 - `Homework` : 
-    - when to use `if` statement & when to use `switch` statement 💡💡💡
+    - when to use `if` statement & when to use `switch` statement ✅
         - you can watch Eddy video 
-    - when to use for loop & when while loop : https://stackoverflow.com/questions/6710601/when-to-use-while-loop-rather-than-for-loop
+    - when to use for loop & when while loop : https://stackoverflow.com/questions/6710601/when-to-use-while-loop-rather-than-for-loop ✅
     - when to use do while loop 
 
 - lecture 3.1 - timeline : 1:08:58 - 1:10:19
