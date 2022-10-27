@@ -73,7 +73,9 @@
         - https://www.youtube.com/watch?v=K7A7ns45C-s&ab_channel=codeitup
         - https://www.youtube.com/watch?v=yZgqbha-2lo&ab_channel=Edutainment1.0
 
-
+- note 13 : pattern solving question 
+    - https://www.youtube.com/watch?v=lsOOs5J8ycw&ab_channel=KunalKushwaha
+    - smart programming YT channel
 
 - algorithms : 
     - https://www.youtube.com/playlist?list=PLDN4rrl48XKpZkf03iYFl-O29szjTrs_O&ab_channel=AbdulBari

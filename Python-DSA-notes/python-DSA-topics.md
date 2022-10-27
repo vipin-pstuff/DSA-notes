@@ -13,5 +13,7 @@
     - [x] PseudoCode
 
 - programming stuff (like datatype , etc)
-    - [ ] programming basics 1 , operators like bitwise operator
-    - [ ] programming basics 2
+    - [ ] programming basics 1 (operators like bitwise operator)
+    - [ ] programming basics 2 (if statement , etc .. , switch statement , for loop , break & continue keywords with loop , variable scope)
+    - [ ] programming basics 3 (operator precedence & associativity , binary to decimal & decimal to binary conversion , Ques : check a number is prime or not)
+    - [ ] practice Questions  
