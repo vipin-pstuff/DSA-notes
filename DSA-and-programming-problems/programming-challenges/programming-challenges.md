@@ -158,11 +158,13 @@
     ```
 
 - WAP to decimal to binary 
+    - answer : https://www.geeksforgeeks.org/python-program-to-covert-decimal-to-binary-number/
     ```py
 
     ```
 
 - WAP to binary to decimal
+    - answer : https://www.scaler.com/topics/binary-to-decimal-in-python/
     ```py
 
     ```
