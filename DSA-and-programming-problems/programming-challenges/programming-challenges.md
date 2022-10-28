@@ -54,37 +54,107 @@
 
 - WAP to swap values of two int variables
     ```py
-    
+    num1 = 5 
+    num2 = 2 
+
+    # swapping values of 2 variables each other with 3rd variable
+    num3 = num1
+    num1 = num2
+    num2 = num3
+
+    print("Value of num1 is : ", num1)
+    print("Value of num2 is : ", num2)
     ```
 
 - WAP to swap values of two int variables without using third variable
     ```py
-    
+    num1 = 5 
+    num2 = 2 
+
+    # swaping values of 2 variables together without 3rd variable  
+    num1 = num1 + num2 
+    num2 = num1 - num2
+    num1 = num1 - num2
+
+    print("num1 =", num1)
+    print("num2 =", num2)
     ```
 
-- WAP to get the individual digits from a integer number & print them (eg : 137 =? 1,3,4)
+- WAP to get the individual digits from a integer number & print them (eg : 137 => 1,3,7)
     ```py
-    
+    num = 137
+
+    newNum = str(num) # typecasting from integer to string
+
+    for digit_num in newNum :
+         print("Digit :" , digit_num)
     ```
+    ```cpp
+    #include <iostream>    
+    using namespace std;
+
+    int main() {
+        int n = 137;
+        // int n = -137; 
+            // if we have negative number then we'll get each digit in negative also
+
+        while(n != 0) {
+
+            int digit = n%10; // this variable will be created/initialized in the memory from scratch as new variable 
+                        // because we're created it inside the loop 💡💡💡
+                // taking out the digit
+                
+            cout << "digit: " << digit << endl;
+            n = n/10; // making the number small
+        }
+
+        cout << "DONE" << endl;
+    }
+    ```
+    - Note : we can't solve this problem by using `%` modulus operator inside JS , python
 
 - WAP to combine a number based on individual given digits & print it (eg : 1,3,4 => 134) 
     ```py
-    
+    digit_num1 = 1
+    digit_num2 = 3
+    digit_num3 = 7
+
+    # this code is not effectice what if we have 10000 numbers
+        # so individually , we can't put them manually 
+        # so in that situation , we need to put each number inside an array
+    new_num = f'{digit_num1}{digit_num2}{digit_num3}'
+
+    print(new_num)
     ```
 
 - WAP to print last digit of a given number
     ```py
-    
+    num = 137
+
+    last_digit_num = num%10
+    print(last_digit_num)
     ```
 
 - WAP to print a given number but without last digit
     ```py
-    
+    import math
+
+    num = 137
+
+    # First way : 
+    skip_last_digit_num = math.trunc(num/10)
+
+    # second way :
+    second_way = int(str(num)[:-1])
+
+    print("Skipping last digit from a number :" , skip_last_digit_num)
     ```
 
 - WAP a program to input a character from keyboard and print it's ASCII code
     ```py
-    
+    letter = input("Enter a character :")
+
+    print(f'ASCII Code of {letter} is :', ord(letter))
     ```
 
 ## Output Question 
@@ -96,6 +166,8 @@
 
 ## decision control
 
+## iterative control 
 
+- Program to print digit pattern
 
 

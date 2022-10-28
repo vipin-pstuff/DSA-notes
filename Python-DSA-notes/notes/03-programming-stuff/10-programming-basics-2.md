@@ -103,7 +103,7 @@
 - & when we do patterns then we'll become master of loops , when you make calculator
     then you'll become master of if else , if else if , switch statement 💡💡💡
 
-- now you can start leecode for solving basic small problems
+- now you can start leetcode for solving basic small problems
 
 - `Homework` : 
     - when to use `if` statement & when to use `switch` statement ✅
