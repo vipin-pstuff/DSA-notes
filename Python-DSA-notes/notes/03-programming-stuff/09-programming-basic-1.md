@@ -91,10 +91,10 @@
             ```cpp
             // Ques 1
             int ans = 5.0/3;
-            cout <<< ans 
+            cout <<  ans 
 
             // Ques 2
-            cout <<< (5.0/3) 
+            cout << (5.0/3) 
             ```
             - now what'll be the output , so first ques will be `1` <br> 
                 because we'll get the answer in decimal but then we're storing the number inside the `int` datatype

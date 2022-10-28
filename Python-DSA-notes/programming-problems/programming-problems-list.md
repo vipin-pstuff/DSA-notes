@@ -8,11 +8,12 @@
     - WAP to print "Hello World" on the screen
     - WAP to print %d on the screen
     - WAP to print \n on the screen
-    - WAP to calculate area of a circle. Take radius as an input from user
-    - WAP to calculate area of a rectangle. Take length & breadth from user
-    - WAP to calculate volume of a cuboid. Take user input
-    - WAP to calculate simple interest. Take user input
-    - WAP to calculate average of three numbers 
+    - mathematical
+        - WAP to calculate area of a circle. Take radius as an input from user
+        - WAP to calculate area of a rectangle. Take length & breadth from user
+        - WAP to calculate volume of a cuboid. Take user input
+        - WAP to calculate simple interest. Take user input
+        - WAP to calculate average of three numbers 
 
 - Operators : 
     - WAP to swap values of two int variables
@@ -72,6 +73,7 @@
     - WAP to print all prime factors of a given number 
 
 - Star Patterns : <br>
+    - Program to Print Floyd’s Triangle
     ![Star Pattern 1](./programming-problems-pics/Star-Patterns-problems/Star-Pattern-0.jpg)
     ![Star Pattern 2](./programming-problems-pics/Star-Patterns-problems/Star-Pattern-1.jpg)
     ![Star Pattern 2](./programming-problems-pics/Star-Patterns-problems/Star-Pattern-2.jpg)
