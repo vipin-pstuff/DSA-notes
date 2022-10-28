@@ -150,11 +150,21 @@
     print("Skipping last digit from a number :" , skip_last_digit_num)
     ```
 
-- WAP a program to input a character from keyboard and print it's ASCII code
+- WAP to input a character from keyboard and print it's ASCII code
     ```py
     letter = input("Enter a character :")
 
     print(f'ASCII Code of {letter} is :', ord(letter))
+    ```
+
+- WAP to decimal to binary 
+    ```py
+
+    ```
+
+- WAP to binary to decimal
+    ```py
+
     ```
 
 ## Output Question 
@@ -166,8 +176,91 @@
 
 ## decision control
 
+- WAP to check whether a given number is positive or non-positive
+- WAP to check whether a given number is divisible by 5 or not 
+- WAP to check whether a given number is even or odd
+- WAP to check whether a given number is even or odd without using % operator
+- WAP a program to check whether an year is a leap year or not 
+- WAP to check whether a given number is positive , negative or zero
+- WAP to find greater between two numbers
+- WAP to find greater among three numbers
+- WAP which takes marks of 5 subjects (assume maximum marks for each subject is 100)
+    - Display result as pass or fail. Also print division obtained if candidate has passed the exam
+
+## switch statement 
+
+- Write a program which takes month number as an input & display number of days in that month
+- write a menu driven program with following options :
+    - a. addition
+    - b. subtraction 
+    - c. multiplication
+    - d. division
+    - e. exit
+- write a program which takes day number of a week & display unique greeting message for the day
+- write a menu driven program with following options : 
+    - a. check whether a given set of three numbers are lengths of an isosceles triangle or not 
+    - b. check whether a given set of three numbers are lengths of sides of a right angled triangle or not 
+    - c. check whether a given set of three numbers are equilateral triangle or not 
+    - d. Exit
+
 ## iterative control 
 
 - Program to print digit pattern
+- WAP to print first 10 natural numbers
+- WAP to print first 10 natural numbers in reverse order
+- WAP to print first **N** natural numbers
+- WAP to print first **N** natural numbers in reverse order
+- WAP to print first 10 even natural numbers
+- WAP to print first 10 even natural numbers in reverse order
+- WAP to print first 10 odd natural numbers
+- WAP to print first 10 odd natural numbers in reverse order
+- WAP to print first **N** odd natural numbers 
+- WAP to print first **N** odd natural numbers in reverse order
+- WAP to print squares of first N natural numbers
+- WAP to calculate sum of first N natural numbers 
 
+## loop
 
+- WAP to calculate factorial of a number
+- WAP to calculate sum of digits of a given number
+- WAP to count digits in a given number
+- WAP to reverse a number  
+- WAP to print table of user's choice 
+- WAP to check whether a given number is a term in fibonacci series or not  
+- WAP to check whether a given number is prime or not 
+- WAP to print all prime numbers under 100
+- WAP to find Nth term of a fibonacci series
+- WAP to calculate LCM of two numbers
+- WAP to calculate GCD/HCF of two numbers
+- WAP to print all factors of a given number
+- WAP to print all prime factors of a given number 
+- WAP to print all prime numbers between two given numbers
+- WAP to calculate sum of squares of first **N** natural numbers
+- WAP to calculate sum of cubes of first **N** natural numbers
+- WAP to calculate sum of first **N** odd natural numbers
+- WAP to print first **N** terms of a fibonacci series
+- WAP to print next prime number of a given number
+- WAP to check whether two given numbers are co-Prime or not 
+- WAP to print first **N** prime numbers
+
+## start pattern 
+
+- Program to Print Floyd’s Triangle
+
+## functions 
+
+- write a function to calculate area of a circle (TSRS)
+- write a function to print first **n** natural numbers (TSRS)
+- write a function to print first **n** even natural numbers (TSRS)
+- write a function to calculate sum of first **n** natural numbers (TSRS)
+- write a function to calculate sum of squares of first **n** natural numbers (TSRS)
+- write a function to check whether a given number is even or odd (TSRS) (Return 1 if even otherwise return 0)
+- write a function to calculate factorial of a number (TSRS)
+- write a function to calculate number of permutations which can be made from **n** items , selected **r** at a time (TSRS)
+- write a function to calculate number of combinations which can be made from **n** items , selected **r** at a time (TSRS)
+- write a function to check whether a given number is prime or not (TSRS) (Return 1 if prime , otherwise return 0)
+- write a function to find next prime number of a give number (TSRS)
+- write a function to print all prime numbers between two given numbers (TSRS)
+- write a function to check whether a given number is an armstrong number or not 
+- write a function to print all Armstrong numbers in the given range
+- write a function to remove all occurrence of a given digit from a given number
