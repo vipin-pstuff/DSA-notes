@@ -63,6 +63,7 @@
         - https://cheatography.com/burcuco/cheat-sheets/data-structures-and-algorithms/
         - https://cooervo.github.io/Algorithms-DataStructures-BigONotation/
         - https://souravsengupta.com/cds2016/lectures/Complexity_Cheatsheet.pdf
+        - https://github.com/DeepakKumar-1/DSA-CheatSheet
 
 - note 11 : programming basics 3
     - operator precedence chart ✅ : https://discuss.codechef.com/t/operator-precedence-table/14545 💡💡💡
