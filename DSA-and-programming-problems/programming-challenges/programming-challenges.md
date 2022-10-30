@@ -248,6 +248,10 @@
 ## start pattern 
 
 - Program to Print Floyd’s Triangle
+- solid square pattern , hollow square
+- https://www.faceprep.in/c/pattern-programs-in-c/
+- https://www.geeksforgeeks.org/how-to-learn-pattern-printing-easily/
+- 
 
 ## functions 
 
