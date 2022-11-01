@@ -359,14 +359,14 @@
     ![numbers pattern](../../notes-pics/12-lecture/lecture-12-32.png)
     - divide this diamond pyramid in two parts <br>
         ![diamond pattern](../../notes-pics/12-lecture/lecture-12-33.png)
-    - numbers pattern
+    - numbers pattern <br>
         ![numbers pattern](../../notes-pics/12-lecture/lecture-12-34.png)
         ![numbers pattern](../../notes-pics/12-lecture/lecture-12-35.png)
     - pascal triangle <br>
         ![numbers pattern](../../notes-pics/12-lecture/lecture-12-36.png)
-    - divide this pattern in four parts to solve or you can divide it into major 2 parts 
+    - divide this pattern in four parts to solve or you can divide it into major 2 parts <br>
         ![numbers pattern](../../notes-pics/12-lecture/lecture-12-37.png)
-    - butterfly pattern , you can divide this into 4 parts or into 2 parts<br>
+    - butterfly pattern , you can divide this into 4 parts or into 2 parts <br>
         ![butterfly pattern](../../notes-pics/12-lecture/lecture-12-38.png)
 
 ## lecture - Love babbar YT video
