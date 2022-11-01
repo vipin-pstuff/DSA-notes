@@ -371,4 +371,28 @@
 
 ## lecture - Love babbar YT video
 
+- number pattern <br>
+    ![number pattern](../../notes-pics/12-lecture/lecture-12-39.png)
+    ![reverse number pattern](../../notes-pics/12-lecture/lecture-12-40.png)
+    ![reverse number pattern](../../notes-pics/12-lecture/lecture-12-41.png)
+    ![reverse number pattern](../../notes-pics/12-lecture/lecture-12-42.png)
+    ![reverse number pattern](../../notes-pics/12-lecture/lecture-12-43.png)
+- characters pattern <br>
+    ![character pattern](../../notes-pics/12-lecture/lecture-12-44.png)
+    ![character pattern](../../notes-pics/12-lecture/lecture-12-45.png)
+    ![character pattern](../../notes-pics/12-lecture/lecture-12-46.png)
+    ![character pattern](../../notes-pics/12-lecture/lecture-12-47.png)
+    ![character pattern](../../notes-pics/12-lecture/lecture-12-48.png)
+    ![character pattern](../../notes-pics/12-lecture/lecture-12-49.png)
+    ![character pattern](../../notes-pics/12-lecture/lecture-12-50.png)
+    ![character pattern](../../notes-pics/12-lecture/lecture-12-51.png)
+- number pattern <br>
+    ![number pattern](../../notes-pics/12-lecture/lecture-12-52.png)
+    ![number pattern](../../notes-pics/12-lecture/lecture-12-53.png)
+- star + number pattern <br>
+    ![number + star pattern](../../notes-pics/12-lecture/lecture-12-54.png)
+
 ## lecture - kunal khushwaha
+
+
+
