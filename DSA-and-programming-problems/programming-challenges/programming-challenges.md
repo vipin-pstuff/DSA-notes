@@ -270,3 +270,352 @@
 - write a function to check whether a given number is an armstrong number or not 
 - write a function to print all Armstrong numbers in the given range
 - write a function to remove all occurrence of a given digit from a given number
+
+## Clever programmer 
+
+- doubling the each numbers of an array - 
+    - inpout : [1,2,3,4,5]
+    - output : [2,4,6,8,10]
+- finding square of each number of an array (hint - use ** -> exponential symbol)
+    - input : [1,2,3,4,5]
+    - output : [1,4,9,16,25]
+- counting total letters in a string 
+    ```js
+    const letterCounter = () => {
+        const phrase = 'hey, can you go to grocery store with me?'
+
+        let result = 0
+
+        for (let indexNum in phrase) {
+            console.log(Number(indexNum)+1)
+            result = Number(indexNum) + 1 
+                // here we added by 1 because we want 41 , 40 because in string also , index starts from 0 💡💡💡
+        }
+
+        return {result} // here no need to defined anything else because when we have same name of key & value 
+            // then we just need to define it as key only , no need to give value 
+            // in string , everything will be counted like space , symbol , etc
+    }
+
+    console.log(howManyLetters()) // output : { result : '40' }
+    ```
+    - but for this solution , we can use `length` property like this
+        ```js
+        const howManyLetters = (phrase) => {
+            return {result : phase.length} // this is the easiest way 
+        }
+
+        const phrase = prompt("write your phrase") // making dynamic
+
+        console.log(howManyLetters())
+        ``` 
+- create a function that adds all the numbers in the array
+    ```js
+    const sumArray = (numbers) => {
+        let result = 0 // this is common practice in programming , where we define initial number
+
+        for (const number of numbers) {
+            console.log(number) 
+        }
+
+        return { result }
+    }
+
+    const nums = [1, 2, 3, 4]
+    console.log(sumArray(nums))
+    /* 
+    output : 1
+            2
+            3
+            4
+
+        { result: 0 }
+   */
+    ```
+    - here we're just checking whether we're able to access numbers or not , so we're able to access numbers <br>
+        now we need to find result
+        ```js
+        const sumArray = (numbers) => {
+            let result = 0 // this is common practice in programming , where we define initial number
+
+            for (const number of numbers) {
+                console.log(number) 
+                result = result + number 
+            }
+
+            return { result }
+        }
+
+        const nums = [1, 2, 3, 4]
+        console.log(sumArray(nums)) // output : { result: 10 }
+        ```
+- find a max number from an array 
+    - we can use filter() method
+    ```js
+    const max = (numbers) => {
+        let result = numbers[0] // by-default , we're initializing result value
+            // Note : here we can't put result -> variable as const 
+                // below , we're updating the value
+
+        for (const number of numbers) {
+            if (number > result) {
+                result = number
+            }
+        }
+
+        return result
+    }
+
+    console.log(max([1, 2, 3, 4, 5, 6])) // output : { result: 6} 
+    ```
+- letter frequency , this algo will tell how much that particular letter is repeating inside the sentence
+    - Eg : input phrase is - how are you doing
+    - output : O : 3  , h : 1 , w : 1
+    ```js
+    const letterFrequency = (phrase) => {
+        // output : letterFrequency('haha') -> {'h': 2, 'a': 2}
+        console.log(phrase)
+
+        for (const letter of phrase) {
+            console.log(letter)
+        }
+    }
+    ```
+    - checking , inside terminal , if we check , `freg = {'h' : 1}` <br>
+        & if we do `h` in freq then we'll get true , if we do 'a' in freq , we'll get false 💡💡💡 
+    - `STEP 1` : phrase is 'haha'
+        - so first time , h will be initialize as 1
+    - `STEP 2` : second time , we'll check whether 'a' exists in the object or not 
+        - if not , then we'll give 'a' : 1
+    - `STEP 3` : now when 3rd time loop run 
+        - then we'll check i.e 'h' already exist inside that object , so we'll increment that existing `h` by 1 <br>
+            we'll not do like this {'h': 1, 'a': 1, 'h': 1}
+    - writing pseudo code 
+        ```js
+        const letterFrequency = (phrase) => {
+            // output : letterFrequency('haha') -> {'h': 2, 'a': 2}
+            console.log(phrase)
+            // make a `frequency` object {}
+
+            for (const letter of phrase) {
+                // check if letter exists in frequency
+                    // increment the value by + 1
+                // otherwise , set the value to 1
+            }
+
+            return frequency
+        }
+        ```
+        - `best practice` : write the logic of a problem as pseudo code & the movement you're able to understand logic
+            - then convert it into code i.e called pseudo code 🔥🔥🔥 
+    - writing code 
+        ```js
+        const letterFrequency = (phrase) => {
+          // output : letterFrequency('haha') -> {'h': 2, 'a': 2}
+          console.log(phrase);
+          // make a `frequency` object {}
+
+          let frequency = {};
+
+          for (const letter of phrase) {
+            // check if letter exists in frequency
+            if (letter in frequency) {
+              // increment the value by + 1
+
+                // OR frequency[letter] += 1
+                // OR frequency[letter]++ --> this one only increment by 1 only 
+                frequency[letter] = frequency[letter] + 1; // but here let's say we want to increment by 10 or any number
+                    // then we can use this way 💡💡💡
+                    // so always use this way -> frequency[letter] += 1 --> because this way is very common
+
+                // Note : where we're not putting frequency.letter because it'll create letter as property
+                    // so we're using computer properties of object ES6 feature 💡💡💡
+
+              // otherwise , set the value to 1
+            } else {
+              frequency[letter] = 1;
+            }
+          }
+
+          return frequency;
+        };
+
+        console.log(letterFrequency('haha')); // output : {h: 2, a: 2}
+        console.log(letterFrequency('lol, what are you doing later tonight lol, haha!')); 
+            // output : we'll get proper output
+        ```
+    - now for further things we can check whether this algo is working or not 
+- calculate total word frequency 
+    - Eg : `wordFrequency('lol what lol') -> input should be -> {lol: 2, 'what': 1}` 
+    - `split()` is a method which takes a string & convert it into an array , 
+        - so we'll use `space` to split into words 💡💡💡
+    ```js
+    const wordFrequency = (phrase) => {
+        let frequency = {};
+
+        words = phrase.split(' ')
+        console.log(words)
+
+        for (const word of words) {
+            console.log(word)
+            if (word in frequency) {
+                frequency[word] += 1
+            } else {
+                frequency[word] = 1
+            }
+        }
+
+        console.log(words)
+        return frequency;
+    };
+
+    console.log(wordFrequency('lol what lol')); // output : {lol: 2, what: 1}
+    ```
+    - so now we can simplify this code by using that previous function i.e letterFrequency() like this
+        ```js
+        const wordFrequency = (phrase) => {
+            words = phrase.split(' ')       
+            return letterFrequency(words)
+        };
+        console.log(wordFrequency('lol what lol')); // output : {lol: 2, what: 1}
+        ```
+        - so here we used DRY principle , so here we reuse the logic
+    - importance of this algo Eg : when we write words on google like kanye west 
+        & you'll see "Kanye west runaway"  will come at first , so why is it coming first <br>
+        because it's clicked mostly around the world 
+        - like google using like this 
+            ![word frequency](../pictures-DSA-and-programming-problems/programming-problems-pics/words-frequency-problem-1.png)
+        - so "kanye west runaway" is clicked mostly that's why it's coming at top <br>
+            & "kanye west all day" is coming below after sorting 💡💡💡
+        - so this the technique used on google also & google is checking phrase frequency <br>
+            means which phrase is mostly typed in
+        - & sort of algorithms , also used in cryptocurrency
+- ques 1 : sorting array 
+    ```
+    // Test you code by forking this repl: 
+    // 👉 COMMING SOON!
+
+
+    // Write a function that takes in an array and sort the numbers inside from least to greatest
+
+    function sortArray (array) {
+      
+    }
+
+    // BONUS sort the array without using .sort()
+    ```
+- Ques 2 : convert hours to second
+    - notes to solve this problem : 
+        ```
+        // Pseudo Code
+        /*
+        Convert Hours to Seconds
+
+        1 hour = 60 minutes
+        1 minute = 60 seconds
+        2 minutes = 120 seconds ✅
+        3 minutes = 180 seconds ✅
+
+        minute * 60 = seconds
+        hours  * 60  = minutes
+
+        */
+
+        function howManySeconds(hours) {
+          //Your function should return an integer
+          //of how many seconds are in the hour
+        let minutes = hours * 60  
+        let seconds = minutes * 60
+
+        return seconds
+        }
+
+
+        console.log(howManySeconds(24))
+
+
+        module.exports = {
+          howManySeconds
+        }
+        ```
+    ```
+    // Test you code by forking this repl: 
+    // 👉 https://replit.com/@CleverLance/ConvertHoursToSeconds#solution.js
+
+    // Solution 👉 https://www.loom.com/share/3de1aa5d007047ef82652530f04600b1
+
+    // Write a function that takes a parameter (hours) and converts
+    // it to seconds
+
+    function howManySeconds(hours) {
+      // Your function should return an integer
+      // of how many seconds are in the hour
+    }
+
+    //Topics: Variables,functions, Math
+    ```
+- Ques 3 : days in a month
+    ```
+    // Test you code by forking this repl: 
+    // 👉 COMMING SOON!
+
+    // Create a function that takes the month and year (as integers)
+    // and returns the number of DAYS in that month
+
+    // Hints:
+    // Don't forget about leap year!
+    // Keep in mind which month has 30 days, 31 days, and 28 days
+    // Use everything you learned to get to the answer
+
+    const daysInMonth = (month,year) => {
+      
+    }
+
+    // Example:
+    // daysInMonth(2,2018) -> 28
+    // days(4,654) -> 30
+    // days(2,2020) -> 29
+    ```
+- Ques 4 : palindrome checker
+    ```
+    // Test you code by forking this repl: 
+    // 👉 https://replit.com/@CleverLance/PalindromChecker-Solution#index.js
+
+    // Solution 👉 https://www.loom.com/share/2dd2d840dc5f4576a369524bdc3e8336
+
+
+    // Write a function that takes in string and checks if it is a Palindrome
+    // A palindrome is a word that is the same forwards and backwards!
+    // Ex: racecar -> racecar
+
+    function isPalindrome (string) {
+      // Should return true IF it's a palindrome
+    }
+
+
+    //Topics: Strings, loops
+    ```
+- Ques 5 : savings strategy
+    ```
+    // Test you code by forking this repl: 
+    // 👉 COMMING SOON!
+
+
+    // The 50-30-20 strategy is a simple way to budget
+    // which involves spending 50% of after-tax income on needs,
+    // 30% after tax income on wants,
+    // 20% after-tax income on savings or paying off debt.
+
+    // Create a function that takes an income amount and return an OBJECT with what they have for needs, wants, and savings
+
+    function savingsStrategy (income) {
+      
+    }
+
+    // Ex:
+    // Input: fiftyThirtyTwenty(10000)
+    // Output: { "Needs": 5000, "Wants": 3000, "Savings": 2000 }
+
+
+    //Topics: Objects
+    ```
