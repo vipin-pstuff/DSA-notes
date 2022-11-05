@@ -262,6 +262,13 @@
     ```
 
 - homework : full inverted star pyramid 
+    ```
+      * * * * *
+       * * * *
+        * * *
+         * *
+          *
+    ```
     ![making formula for space](../../notes-pics/12-lecture/lecture-12-23.png)
     ![making formula for star](../../notes-pics/12-lecture/lecture-12-24.png)
     ```cpp
@@ -368,6 +375,14 @@
         ![numbers pattern](../../notes-pics/12-lecture/lecture-12-37.png)
     - butterfly pattern , you can divide this into 4 parts or into 2 parts <br>
         ![butterfly pattern](../../notes-pics/12-lecture/lecture-12-38.png)
+    - star pattern
+        ```
+          *********
+           *******
+            *****
+             ***
+              *
+        ```
 
 ## lecture - Love babbar YT video
 
@@ -393,6 +408,133 @@
     ![number + star pattern](../../notes-pics/12-lecture/lecture-12-54.png)
 
 ## lecture - kunal khushwaha
+
+- patterns which is not inside love babbar course
+    ```
+     * * * * *
+      * * * *
+       * * *
+        * *
+         *
+         *
+        * *
+       * * *
+      * * * *
+     * * * * *
+    ```
+    ```
+           *
+          * *
+         *   *
+        *     *
+       *********
+    ```
+    ```
+        *********
+         *     *
+          *   *
+           * *
+            *
+    ```
+    ```
+              1
+            1   1
+          1   2   1
+        1   3   3   1
+      1   4   6   4   1
+    ```
+    ```
+           1
+          212
+         32123
+        4321234
+         32123
+          212
+           1
+    ```
+    ```
+       ****
+       *  *
+       *  *
+       *  *
+       ****
+    ```
+    ```
+           *      *
+         *   *  *   *
+       *      *      *
+    ```
+    ```
+       *        *
+       **      **
+       * *    * *
+       *  *  *  *
+       *   **   *
+       *   **   *
+       *  *  *  *
+       * *    * *
+       **      **
+       *        *
+    ```
+    ```
+          *****
+         *   *
+        *   *
+       *   *
+      *****
+    ```
+    ```
+      1 1 1 1 1 1
+      2 2 2 2 2
+      3 3 3 3
+      4 4 4
+      5 5
+      6
+    ```
+    ```
+        1 2 3 4  17 18 19 20
+          5 6 7  14 15 16
+            8 9  12 13
+              10 11
+    ```
+    ```
+            1
+          2 1 2
+        3 2 1 2 3
+      4 3 2 1 2 3 4
+    5 4 3 2 1 2 3 4 5
+    ```
+    ```
+         4 4 4 4 4 4 4  
+         4 3 3 3 3 3 4   
+         4 3 2 2 2 3 4   
+         4 3 2 1 2 3 4   
+         4 3 2 2 2 3 4   
+         4 3 3 3 3 3 4   
+         4 4 4 4 4 4 4 
+    ```
+    ```
+       a
+       B c
+       D e F
+       g H i J
+       k L m N o
+    ```
+    ```
+       E D C B A
+       D C B A
+       C B A
+       B A
+       A
+    ```
+    ```
+       1      1
+       12    21
+       123  321
+       12344321
+    ```
+
+- 
 
 
 
