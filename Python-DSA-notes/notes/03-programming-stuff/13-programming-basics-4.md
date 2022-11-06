@@ -36,6 +36,11 @@
                             // first : we need to shift 1bit via left shift bitwise operator
                             // second : then add 1 via OR bitwise operator
                         mask = (mask << 1) | 1;
+                            // mask << 1 --> this means leftmost bit will be removed 
+                                // & then on rightmost bit , 0 -> will be added
+                            // mask | 1 -> means OR bitwise operator 
+                                // so bit is 0 , then it'll become 1
+                                // if bit is 1 , then it'll become 0 💡💡💡
                     }
 
                     // now to get the answer , we used tilde sign -> ~ means flip all the bits 
@@ -47,11 +52,62 @@
         } 
         // input : 10
         // output : 5
+
+        /* Another Solution
+        class Solution {
+            public : 
+                int findComplement(int num) {
+                    int mask = 0;
+
+                    // creation of a mask
+                    while(mask < num) {
+                        // left shift 
+                        mask = (mask << 1) ;
+                        // OR bitwise operator with 1
+                        mask = mask | 1;
+                    }
+
+                    int ans = (~num) & mask;
+                    return ans;
+                }
+        } 
+        */
         ```
         - `Advice to build logics` : 
             - then after writing logic , try to run this logic on different test case like on 3 , 5 & 10 , so on <br>
                 in order to know whether our logic is working or not 
-    - thought process of code 
+        - Note - `mask = (mask << 1) | 1;` ✅
+            - `mask << 1` - this means leftmost bit will be removed & then on rightmost bit , 0 -> will be added
+            - then `mask | 1` - means OR bitwise operator 
+                - so bit is 0 , then it'll become 1
+                - if bit is 1 , then it'll become 0 💡💡💡
+            - `(~num) & mask` 
+                - here `~num` means we converted that first 32 bits which are 0 into 1
+                - then `& mask` means we converted `0 into 1` & `1 into 0` <br>
+                    in order to convert that `111` by using `&` bitwise operator
+    - explanation : thought process of code 
+        ![dry run of above code](../../notes-pics/13-lecture/love-babbar/lecture-13-6.png)
+        - let's see of `ans = (~5) & 7`
+            ![dry run of above code](../../notes-pics/13-lecture/love-babbar/lecture-13-7.png)
+        - why we didn't did this `while(mask <= num)` 
+            - here why we didn't use `<=` because loop will run again & we'll get wrong output
+            - so it's condition based on setbit of mask that we created <br>
+            ![dry run of above code](../../notes-pics/13-lecture/love-babbar/lecture-13-8.png)
+            - that's why we didn't put `<=` on condition & you can check via dry run
+        - how do we able to know the logic ? 
+            - at first time , we just know `~5` tilde will give the binary of 5 but first 32bits will be `1` <br>
+            - so in right most bit , we want to get binary number ast it is from last set-bit which has 1 <br>
+                & convert that first 32bits into 1 like this 
+                ![how we think about the logic of this code](../../notes-pics/13-lecture/love-babbar/lecture-13-9.png)
+            ![how we think about the logic of this code](../../notes-pics/13-lecture/love-babbar/lecture-13-10.png)
+    - another solution we can do 
+        - we can use counter like this 
+            ```
+            while (counter--) {
+                mask <<
+                something...
+            }
+            ```
+        - to find the counter , next question we'll do based on counter
 
-        timeline : 16:04
-
+- leetcode Question : https://leetcode.com/problems/power-of-two/
