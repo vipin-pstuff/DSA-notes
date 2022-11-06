@@ -46,6 +46,7 @@
             - if we divide `10%137` then we'll get 10 only like if we divide `1 % 10` then we'll get `1` itself <br> 
                 because `x % y` , answer comes b/w `0 to (n - 1)`
             ![taking out individual number from an integer number](../../notes-pics/11-lecture/lecture-11-7.png)
+    - cheatsheet : https://www.onlinemath4all.com/binary-to-decimal-conversion.html
 
 - `decimal to binary` : 
     - we already seen that 5 is 101 , 2 is 10 , 6 is 110 & 4 is 100 , but how do we know 
