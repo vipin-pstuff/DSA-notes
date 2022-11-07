@@ -274,4 +274,22 @@
             ```
             - here we're not converting any thing , we're just checking the last bit from right most side
     - dry run explanation
-        
+        ![dry run explanation](../../notes-pics/13-lecture/love-babbar/lecture-13-22.png)
+        - while loop code section explanation
+            ![dry run explanation](../../notes-pics/13-lecture/love-babbar/lecture-13-23.png)
+        - Why does Left Shift multiply by 2? 💡💡💡
+            ```
+            Description. Shifts bits to the left. The number to the left of the operator is shifted the number of places specified 
+            by the number to the right. Each shift to the left doubles the number, therefore each left shift multiplies the original number by 2.
+            ```
+            ![dry run explanation](../../notes-pics/13-lecture/love-babbar/lecture-13-24.png)
+        - Why does right shift divide by 2? 
+            ```
+            When shifting right with a logical right shift, the least-significant bit is lost and a 0 is inserted on the other end. 
+            For positive numbers, a single logical right shift divides a number by 2, throwing out any remainders.
+            ```
+            - for more : https://www.folkstalk.com/2022/09/left-shift-vs-multiple-by-2-with-code-examples.html
+
+
+
+
