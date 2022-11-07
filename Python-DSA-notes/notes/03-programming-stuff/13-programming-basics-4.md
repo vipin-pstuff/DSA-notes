@@ -1,5 +1,10 @@
 # Programming Basics 4 
 
+- leetcode questions that we're going to do : 
+    - https://leetcode.com/problems/number-complement/
+    - https://leetcode.com/problems/power-of-two/
+    - https://leetcode.com/problems/reverse-integer/
+
 ## lecture 5 - love babbar (paid course)
 
 - leetcode question : https://leetcode.com/problems/number-complement/
@@ -290,6 +295,73 @@
             ```
             - for more : https://www.folkstalk.com/2022/09/left-shift-vs-multiple-by-2-with-code-examples.html
 
+- leetcode Question : https://leetcode.com/problems/reverse-integer/
+    - overview of the question 
+        - for positive number 
+            - input : x = 123 
+            - output : 321
+        - for negative number 
+            - input : x = -123 
+            - output : -321
+        - another example  
+            - input : x = 120 
+            - output : 21
+        - constraints : if we're revering a number & after reversing that number goes outside of this range `[-231, 231 - 1]` then return 0
+        ![overview of the question](../../notes-pics/13-lecture/love-babbar/lecture-13-25.png)
+    - mindset advice 
+        - you just did only 2 question , so don't rush & don't fight that competitor which is way more experience than you
+        - take a pause understand the concept , maybe you'll stuck on logic , only half of the concept you understand
+        - like you did 100 questions , you're still not able to build the logic then we can say it's a problem <br> 
+            but right now we're starting 
+        - like people did 5000 question , but they don't have confidence in interview , <br>
+            but some people did 180 , 250 , 200 , 220 questions , & if put them in interview , they have the confidence
+        - confidence = consistency + discipline & confidence will take time don't worry about it right now 
+    - understanding question 
+        - only two things question wants from us to do
+        - `1` : reverse the integer number & return that reversed integer 
+        - `2` : if you go out of the range then return 0
+    - approach 
+        - earlier , we work with this formula i.e `ans = (10 * ans) + digit` <br>
+            & we used this formula to create number by taking digits step by step <br>
+            Eg : let's say we have the digits i.e 3 , 2 , 1 & we use that formula & we'll get the output 321
+        - `STEP 1` : Let's say we have `157` , so we can take out last digit i.e `7` digit by using `%` modulus operator 💡💡💡 <br>
+            like this `157 % 10` , so whenever you want to take out last digit from the number then use `% 10` 💡💡💡 
+        - `STEP 2` : now we need to remove that last digit i.e `7` from the number 
+            - so we'll use `/` divide operator like this `157/10` then we'll get 15 💡💡💡 
+        - `STEP 3` : & same process goes with till left last digit of the number like this <br>
+            ![process of the approach to solve the question](../../notes-pics/13-lecture/love-babbar/lecture-13-26.png)
+            - & we'll stop when we get `0` after dividing `1/10`
+        - how we'll get `0` when we divide `1/10` 💡 <br>
+            ![how we got 0 when we divide 1/10](../../notes-pics/13-lecture/love-babbar/lecture-13-27.png)
+            ```
+            If a is less than b then a%b is always ‘a’ else a%b is the remainder of a/b.
+            Here, 1%10 will be 1 and 1/10 will be 0. 💡💡💡
+            ```
+            - for more : https://www.quora.com/What-is-1-10-and-1-10-in-C-programming
+        - so to get the last digit number , we do modulus `% 10` & to remove that last digit number we divide `/ 10` 💡💡💡
+    - testing approach via test cases 
+        ![testing the approach via test cases](../../notes-pics/13-lecture/love-babbar/lecture-13-28.png)
+        - & we need to stop when we number becomes equal-to 0 <br>
+            & after getting the digits & creating a number by those digits , we'll use that formula
+        - thinking about the range
+            - right now this code will not check that range , but it's the basic structure 
+            - so what is the part of your code which will break or which will go outside the range i.e `ans * 10`
+            - so if 10 * ans goes greater than INT_MIN or 10 * ans goes less than INT_MAX 💡💡💡
+            - doing simple if else check like this for the range
+            ![checking the range](../../notes-pics/13-lecture/love-babbar/lecture-13-29.png)
+        - why we divide 10 by min & max integer <brDE>
+            ![why we divide 10 by min & max integer](../../notes-pics/13-lecture/love-babbar/lecture-13-30.png)
+        - why range will get overflow & underflow 💡
+            ![why we divide 10 by min & max integer](../../notes-pics/13-lecture/love-babbar/lecture-13-31.png)
+        - understand `ans = (ans * 10) + digit` formula
+            ![why we divide 10 by min & max integer](../../notes-pics/13-lecture/love-babbar/lecture-13-32.png)
+    - Questions asked from ourself while thinking about approach
+        - `1` : why we used `%` & `/` operator
+        - `2` : we created range condition to stop overflow & underflow of the integer
+        - `3` : why we created that range condition
+        - `4` : how that formula derived
 
-
-
+- advice (you're noob & solving leetcode questions first time)
+    - if you get `TLE` means time limit exceeded which means the approach that you wrote is very slow
+    - so in this case what you'll do , you can optimize it but right now you're noob <br>
+        so you the discussion forum of that leetcode question , in order to see other people's code/solution 💡💡💡
