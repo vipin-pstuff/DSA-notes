@@ -176,5 +176,102 @@
         - `2nd approach` 
             - we can solve without binary also , so we need to use loop like this
                 ![solving via loop approach](../../notes-pics/13-lecture/love-babbar/lecture-13-20.png)
-    - writing code 
+    - writing code via two different approach 
+        - Binary approach
+            ```cpp
+            class Solution {
+                public: 
+                    bool isPowerOfTwo(int n) {
+                        if (n <= 0) 
+                            return false;
 
+                        int ans = (n & (n-1));
+
+                        if (ans == 0)
+                            return true;
+                        else 
+                            return false;
+                    }
+            }
+            // OR another solution 
+                /* 
+                class Solution {
+                    public: 
+                        bool isPowerOfTwo(int n) {
+                            if (n <= 0) 
+                                return false;
+
+                            int ans = (n & (n-1));
+
+                            return (ans == 0);
+                        }
+                }
+                */
+            // OR another solution 
+                /* 
+                class Solution {
+                    public: 
+                        bool isPowerOfTwo(int n) {
+                            if (n <= 0) 
+                                return false;
+
+                            return ((n & (n-1)) == 0);
+                        }
+                }
+                */
+            ```
+        - counter approach
+            ![solving via loop approach](../../notes-pics/13-lecture/love-babbar/lecture-13-21.png)
+            ```cpp
+            class Solution {
+                public: 
+                    bool isPowerOfTwo(int n) {
+                        if (n <= 0)
+                            return false;
+
+                        int count = 0;
+
+                        // to count number of set bits
+                        while(n != 0) {
+                            // now we need to check how many bits are equal-to 1 
+                                // so we need to check the last from right side 💡💡💡
+                            // from rightmost , checking the last bit step by step 
+                                // whether last bit is 1 or not
+                            if (n & 1) {
+                                count++ ;
+                            }
+
+                            // after checking bit, just remove it from n -> here n means number 
+                            n = n >> 1; // so remove it , we used right shift bitwise operator 💡💡💡
+                        }
+
+                        if (count == 1) 
+                            return true;
+                        else 
+                            return false;
+                    }
+            }
+            // OR another way
+            /* class Solution {
+                public: 
+                    bool isPowerOfTwo(int n) {
+                        if (n <= 0)
+                            return false;
+
+                        int count = 0;
+
+                        while(n != 0) {
+                            if (n & 1) {
+                                count++ ;
+                            }
+
+                            n = n >> 1; 
+                        }
+
+                        return (count == 1) ;
+                    }
+            } */
+            ```
+            - here we're not converting any thing , we're just checking the last bit from right most side
+    - dry run explanation
+        
