@@ -50,22 +50,24 @@
             console.log(ar1) // output : [23, 6, 9]
             ```
             - here when we did `arr1 = arr` then a new array is not created in the memory 
-                - inside `arr1` , only base address is stored , assume that `arr` array is starting from 100 <br> 
-                    so that base address also starts from 100
+                - inside `arr1` , only `base/starting/initial address is stored` , assume that `arr` array is starting from 100 <br> 
+                    so that base address will be 100
                 - so when we said `arr1[0]` then means that formula will be applied i.e `100 + 0 * 4 = 100` <br> 
                     & inside memory , on 100th address , `3` is stored , so when we update `arr1[0] = 23` <br>
                     then that `3` will be overwritten by `23`
                 - here array is not copied , only `base pointer address` is copied i.e 100 💡💡💡
-                - when we say `arr1[0]` then here two things happening first base address will be stored inside `arr1` <br>
-                    then we access the 0th index element 💡💡💡
+                - when we say `arr1[0]` then here two things happening 
+                    - `first` : base address will be stored inside `arr1`
+                    - `second` : then we access the 0th index element & that formula will be applied behind the scene 💡💡💡
             - means when we did `arr1 = arr` then `arr1` is pointing to the memory address where that array is stored 
                 - & here no new value is created because when we did `arr1[0] = 23` then means <br>
                     we're updating the value based on index inside that array (which is stored inside a memory address) 💡💡💡
-                - here we're not completely updating the array as a whole value like this 💡💡💡
+                - here we're not completely updating the array as a whole value like this 
                     ```js
                     let arr = [3,6,9]
                     arr = 2 // here we changed the complete array value to a value
                     ```
+                    - we're updating inside that array 💡💡💡
             - in pass by value , we actually copy the exact same value inside the another variable 💡💡💡 <br> 
                 & when we update the value of that another variable , then only value of that another variable will gets updated <br>
                 not of that previous variable , because both variable are pointing different memory address 
