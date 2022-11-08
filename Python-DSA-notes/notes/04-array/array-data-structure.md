@@ -56,7 +56,7 @@
                     & inside memory , on 100th address , `3` is stored , so when we update `arr1[0] = 23` <br>
                     then that `3` will be overwritten by `23`
                 - here array is not copied , only `base pointer address` is copied i.e 100 💡💡💡
-                - when we say `arr1[0]` then here two things happening 
+                - when we say `arr1[0]` then here 2 things happening 
                     - `first` : base address will be stored inside `arr1`
                     - `second` : then we access the 0th index element & that formula will be applied behind the scene 💡💡💡
             - means when we did `arr1 = arr` then `arr1` is pointing to the memory address where that array is stored 
