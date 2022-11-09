@@ -96,7 +96,71 @@
             - https://www.geeksforgeeks.org/how-arrays-are-passed-to-functions-in-cc/
 
 - Questions 
+    ![Questions](../../notes-pics/14-lecture/love-babbar/lecture-14-11.png)
+    - `1` : linear search in an array
+        - `linear` : means step by step 
+        - understanding the question 
+            - let's say we have the array like this `[3, 6, 7, 12, 2, 4, 6]` <br>
+                now find the whether we have 4 inside this array or not 
+            - so right now whatever knowledge you have how you'll check i.e by using loop <br>
+                & the movement you'll find `4` you'll return true otherwise you'll loop over each element & return false
+            - & time complexity in worst case will be if array size is n then O(n) <br>
+                so we're checking/comparing with each element inside of an array
+        - Note : let's say we're creating size of array in runtime like this
+            ```cpp
+            cout << "Enter the size of array" << endl;
+            int n ;
+            cin >> n ; // runtime input
+
+            int arr[n];
+            ```
+            - we're creating array based on runtime input size of the array <br>
+                is that will create the array or not , so it's depends on compiler 
+            - so is this good practice or bad ? -> Ans : Bad practice <br>
+                because let's say the size of the array that you gave , that size of space is not available in the program <br>
+                then our program will not work , it's like Bank & you don't have that amount of money <br>
+                & you're requesting for it then request will be rejected 💡💡💡
+        - writing the code
+            ```cpp
+            bool search(int arr[], int size, int target) {
+                for (int i=0; i<size; i++) {
+                    if (arr[i] == target) {
+                        return true ;
+                    }
+                }
+
+                return false;
+            }
+
+            int main() {
+                int arr[100]; // here the size of the array that we defined is the max size
+
+                cout << "Enter the number of elements" << endl;
+                int n;
+                cin >> n;
+
+                // taking input in array
+                for (int i=0; i<n; i++) {
+                    cin >> arr[i];
+                }
+
+                if (search(arr, 5, 7)) {
+                    cout << "Element found" << endl;
+                } else {
+                    cout << "Element not found" << endl;
+                }
+
+                cout << "Printing the elements in array" << endl;
+                printArray(arr, n);
+            }
+            ```
+
+- what should you know in array
+    - `1` : creation
+    - `2` : taking input at runtime
+    - `3` : printing those elements through traversing
 
 - homework 
     - check this `int [30] = {1};` , now think what'll be stored in each block <br>
         `[1,0,0,0,0,0,so on...]` or each block only contain 1
+    - complete those questions & you can do those questions on leetcode or codestudio or gfg or interviewBit
