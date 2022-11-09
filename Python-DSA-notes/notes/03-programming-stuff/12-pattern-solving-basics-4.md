@@ -384,6 +384,26 @@
               *
         ```
 
+- doubts
+    - pascal triangle <br>
+        ![numbers pattern](../../notes-pics/12-lecture/love-babbar/lecture-12-36.png)
+        - we can solve this via formula of combination like this
+            ![numbers pattern](../../notes-pics/12-lecture/love-babbar/lecture-12-55.png)
+            - here `n` is row & `r` is column 💡💡💡
+        - approach 
+            - create a function which return the value of `nCr` <br>
+                so that function takes 2 parameter i.e row & col & inside of it create outer & inner loop <br>
+                outer loop wil run from 0 to `<n` & inner loop will run 0 to row <br>
+                & we can create another function which return factorial 
+                - Note : we can't find factorial of big number because of max size of integer
+            - code approach
+                ![code approach](../../notes-pics/12-lecture/love-babbar/lecture-12-56.png)
+                - we can use `long` datatype in order to avoid integer overflow error
+            - another approach
+                - we can do with array , so we need 2D array
+    - butterfly pattern
+
+
 ## lecture - Love babbar YT video
 
 - number pattern <br>
