@@ -402,7 +402,25 @@
             - another approach
                 - we can do with array , so we need 2D array
     - butterfly pattern
-
+        ![code approach](../../notes-pics/12-lecture/love-babbar/lecture-12-57.png)
+        - so this pattern will be divided into 4 parts
+        - code structure will be this 
+            ![code approach](../../notes-pics/12-lecture/love-babbar/lecture-12-58.png)
+    - hollow diamond pattern 
+        - approach
+            - pattern will look this 
+                ![code approach ](../../notes-pics/12-lecture/love-babbar/lecture-12-59.png)
+            - so code of that small part
+                ![code approach ](../../notes-pics/12-lecture/love-babbar/lecture-12-60.png)
+            - code of another small part
+                ![code approach ](../../notes-pics/12-lecture/love-babbar/lecture-12-61.png)
+            - & same thing with bottom half one will be solved , so this pattern will be solved into 4 parts
+            - so put those both half part inside a loop which print the half top pattern 💡💡💡 & same with bottom one
+        - Advice : 
+            - so before we're not able to solve this problem so we break it down into half then again not able to solve <br> 
+                so we again break that half into another half 
+            - & we solved it , so if a problem is big & you're not able to solve it then break it down <br>
+                in order to get the approach 
 
 ## lecture - Love babbar YT video
 
