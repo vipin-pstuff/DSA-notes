@@ -443,6 +443,7 @@
             - understanding via code sample 💡💡💡
                 ![code approach](../../notes-pics/12-lecture/love-babbar/lecture-12-64.png)
             - now can my code run , so let's write the code 
+                
 
 ## lecture - Love babbar YT video
 
