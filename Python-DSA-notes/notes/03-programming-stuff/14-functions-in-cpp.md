@@ -95,6 +95,8 @@
                 ```
                 - another example 
                     ![pass by value](../../notes-pics/14-lecture/love-babbar/lecture-14-6.png)
+        - pass by reference
+            - check array data structure
 
     - questions in function 
         - `1` : print all even number till n
@@ -158,7 +160,6 @@
                 but we'll get wrong output if we find 13 to any above number than 12 <br>
                 because integer is getting overflow integer datatype has the range i.e `[-2^31, 2^31 - 1]` 💡💡💡 
 
-
     - Advice : 
         - to improve maths or programming , it's just about practice , so practice multiple questions as much as you can <br>
             then you'll be able to make it 
@@ -188,6 +189,100 @@
             - can we put parameters inside `int main()` function & if we can then why we can  
     
     - so we understand what , why & how about function 👍
+
+- Doubts in functions 
+    - Question : fibonacci series/numbers ✅
+        - understanding what is it
+            ![fibonacci number](../../notes-pics/14-lecture/love-babbar/lecture-14-12.png)
+        - approach
+            - `STEP 1` : we'll initialize 2 variables which store 0 & 1
+            - `STEP 2` : then create loop from `1` to `<=n`
+            - `STEP 3` : inside that loop , do addition of that first & second value like this 
+                ```cpp
+                void printFibonacci(int n) {
+                    int first = 0;
+                    int second = 1;
+
+                    for (int i = 1; i <=n; i++) {
+                        int sum = first + second
+                        cout << sum
+                    }
+                }
+                ```
+            - `STEP 4` : now we want that first element to second element & second element to third element 
+                - so code will be like this 
+                    ```cpp
+                    void printFibonacci(int n) {
+                        int first = 0;
+                        int second = 1;
+
+                        for (int i = 1; i <=n; i++) {
+                            int sum = first + second
+                            cout << sum
+
+                            // shifting the previous two values
+                            first = second
+                            second = sum
+                        }
+                    }
+                    ```
+                - so after getting the sum of 2 previous values then we shifted the value
+            - `STEP 5` : running `n - 2` loop
+                - 1st approach
+                    ```cpp
+                    void printFibonacci(int n) {
+                        int a = 0;
+                        int b = 1;
+                        cout << a << " " << b << " " ;
+
+                        for (int i=0; i<n-2; i++) {
+                            int sum = a + b;
+                            cout << sum << " ";
+                            a = b;
+                            b = sum;
+                        }
+                    }
+
+                    int main() {
+                        int n;
+                        cout << "Enter the value of n" << endl;
+                        cin >> n;
+
+                        printFibonacci(n);
+
+                        return 0;
+                    }
+                    ```
+                - 2nd approach
+                    ```cpp
+                    void printFibonacci(int n) {
+                        int a = -1;
+                        int b = 1;
+                        //cout << a << " " << b << " " ;
+
+                        // here we didn't did n-2 because our first number is starting from -1
+                        for (int i=0; i<n; i++) {
+                            int sum = a + b;
+                            cout << sum << " ";
+                            a = b;
+                            b = sum;
+                        }
+                    }
+
+                    int main() {
+                        int n;
+                        cout << "Enter the value of n" << endl;
+                        cin >> n;
+
+                        printFibonacci(n);
+
+                        return 0;
+                    }
+                    ```
+                - this 2nd approach is better because easy to understand <br>
+                    when we do `-1 + 1` , we'll get `0` & when we do `1 + 0` we'll get 1 💡💡💡
+        - understanding code flow behind the scene 
+            ![understanding the code flow](../../notes-pics/14-lecture/love-babbar/lecture-14-13.png)
 
 ## lecture 11 - kunal kushwaha YT
 

@@ -421,6 +421,28 @@
                 so we again break that half into another half 
             - & we solved it , so if a problem is big & you're not able to solve it then break it down <br>
                 in order to get the approach 
+    - different types of solid half diamonds
+        ```
+        *
+        * 1 *
+        * 1 2 1 *
+        * 1 2 3 2 1 * 
+        * 1 2 1 *
+        * 1 *
+        * 
+        ```
+        - understanding 
+            - we're seeing that starting & ending is star , except first & last row 
+            - & in the middle , number is staring from 1 & after a point , number get reverse
+            - so in code form , it'll look something like this
+                ![code approach](../../notes-pics/12-lecture/love-babbar/lecture-12-62.png)
+            - in 2nd row case , counting goes till 1 <br>
+                in 3rd row case , counting goes till 2 & then reverse
+                in 4th row case , counting goes till 3 & then reverse like this
+                ![code approach](../../notes-pics/12-lecture/love-babbar/lecture-12-63.png)
+            - understanding via code sample 💡💡💡
+                ![code approach](../../notes-pics/12-lecture/love-babbar/lecture-12-64.png)
+            - now can my code run , so let's write the code 
 
 ## lecture - Love babbar YT video
 
@@ -612,3 +634,23 @@
             we solved by using two inner loop
 
 - Note : whenever you're dealing with pattern numbers , then start loop from `1` , not 0
+
+## patterns took from google 
+
+```
+6 6 6 6 6 6 
+6 6 6 6 6 
+6 6 6 6 
+6 6 6 
+6 6 
+6
+```
+```
+6 6 6 6 6 6 
+5 5 5 5 5 
+4 4 4 4 
+3 3 3 
+2 2 
+1
+```
+

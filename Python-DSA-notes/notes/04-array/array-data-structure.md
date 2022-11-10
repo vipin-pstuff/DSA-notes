@@ -59,6 +59,7 @@
                 - when we say `arr1[0]` then here 2 things happening 
                     - `first` : base address will be stored inside `arr1`
                     - `second` : then we access the 0th index element & that formula will be applied behind the scene 💡💡💡
+                    - here `arr[3]` , we're assuming that base/starting value is 100 , so `arr` contain that base value 💡💡💡 
             - means when we did `arr1 = arr` then `arr1` is pointing to the memory address where that array is stored 
                 - & here no new value is created because when we did `arr1[0] = 23` then means <br>
                     we're updating the value based on index inside that array (which is stored inside a memory address) 💡💡💡
@@ -164,3 +165,8 @@
     - check this `int [30] = {1};` , now think what'll be stored in each block <br>
         `[1,0,0,0,0,0,so on...]` or each block only contain 1
     - complete those questions & you can do those questions on leetcode or codestudio or gfg or interviewBit
+
+- advice : 
+    - you learned about who to do swimming , but if you don't do practice of it by yourself then doesn't making any difference
+    - after completing the course , do specific prep based on company where you want to go (Amz|MS|Google|xyz) for 1 to 1.5 week <br>
+        & see the recent interview experience
