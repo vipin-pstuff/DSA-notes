@@ -155,6 +155,9 @@
                 printArray(arr, n);
             }
             ```
+    - Kadane's Algo : 
+        - is made by goggle
+        - mostly asked in interview + online test
 
 - what should you know in array
     - `1` : creation
@@ -165,8 +168,12 @@
     - check this `int [30] = {1};` , now think what'll be stored in each block <br>
         `[1,0,0,0,0,0,so on...]` or each block only contain 1
     - complete those questions & you can do those questions on leetcode or codestudio or gfg or interviewBit
-
+    - advice : 
+        - try those 15 question again if you're not able to do it
+        - if you're not able to understand take hints , read discussion forum 
+        - still not able to understand use your brain & time
 - advice : 
     - you learned about who to do swimming , but if you don't do practice of it by yourself then doesn't making any difference
     - after completing the course , do specific prep based on company where you want to go (Amz|MS|Google|xyz) for 1 to 1.5 week <br>
         & see the recent interview experience
+    - make DSA strong + make 1 strong project which has many real life features with recent & in-demand stack

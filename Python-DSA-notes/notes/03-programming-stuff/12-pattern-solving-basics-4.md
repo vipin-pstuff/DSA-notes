@@ -443,7 +443,74 @@
             - understanding via code sample 💡💡💡
                 ![code approach](../../notes-pics/12-lecture/love-babbar/lecture-12-64.png)
             - now can my code run , so let's write the code 
-                
+                ```cpp
+                void printPattern(int n) {
+                    for (int row=1; row <=n; row++) {
+                        
+                        if (row == 1 || row == n) 
+                            cout << "*" << endl;
+                        else {
+                            cout << "* ";
+                            // logic
+                            int counter = 1;
+
+                            // increasing order
+                            while(counter != row - 1) {
+                                cout << counter << " ";
+                                counter++;
+                            }
+
+                            while(counter > 0) {
+                                cout << counter << " ";
+                                counter--;
+                            }
+
+                            cout << " *" << endl;
+                        }
+                    }
+                }
+
+                int main() {
+                    int n = 7 ;
+
+                    printPattern(n) ;
+
+                    return 0;
+                }
+                ```
+                - output : we'll get half part
+                    ![code approach](../../notes-pics/12-lecture/love-babbar/lecture-12-65.png)
+                - now we need to think about logic for 5th row to 7th row
+        - brainstorming
+            ![code approach](../../notes-pics/12-lecture/love-babbar/lecture-12-66.png)
+            - actually , we're making mistake on value of `n` which we're taking <br>
+                so if we take `n=4` then we'll able to print that half part
+            - assume that value of n is `4` and 
+                ![code approach](../../notes-pics/12-lecture/love-babbar/lecture-12-67.png)
+                - so that logic part is print numbers from `1` to `n-row-1` then come back to decreasing order till 1
+        - advice + code approach
+            - so basically , first time we're solving the problem & we don't know anything but we want to solve it 
+            - first code part approach is like this 💡💡💡
+                ![code approach](../../notes-pics/12-lecture/love-babbar/lecture-12-68.png)
+                - so when we put define `n = 4` , then we'll get this output instead of getting half pattern properly
+                    ![code approach](../../notes-pics/12-lecture/love-babbar/lecture-12-69.png)
+                - so problem is on this condition `if (row == 1 || row == n)` , so remove this `row == n` from the code <br>
+                    then we'll get that half pattern output properly like this
+                    ![code approach](../../notes-pics/12-lecture/love-babbar/lecture-12-70.png)
+                - now we need to write code for lower half 
+            - another code approach 
+                - there's also code available which can be done in one nested loop
+            - but if you don't know then solve the problem by breaking it into smaller problem 
+    - square repeating number pattern
+        ```
+        3 3 3 3 3   
+        3 2 2 2 3   
+        3 2 1 2 3   
+        3 2 2 2 3   
+        3 3 3 3 3     
+        ```
+        - understanding approach
+            ![code approach](../../notes-pics/12-lecture/love-babbar/lecture-12-71.png)
 
 ## lecture - Love babbar YT video
 
@@ -654,4 +721,3 @@
 2 2 
 1
 ```
-

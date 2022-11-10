@@ -283,6 +283,24 @@
                     when we do `-1 + 1` , we'll get `0` & when we do `1 + 0` we'll get 1 💡💡💡
         - understanding code flow behind the scene 
             ![understanding the code flow](../../notes-pics/14-lecture/love-babbar/lecture-14-13.png)
+    - doubt :
+        - compiler design
+            - why we always define a function before calling it ✅
+            - Ans : 
+                - there's `compiler design` which has 7 phases 💡💡💡 , so step by step that 7 phases will run <br> 
+                    phases are like lexical analysis , semantic analysis, syntax analysis 
+                - conclusion : compiler will read & execute the code from top to bottom <br>
+                    & top to bottom execution also comes in compiler design 💡💡💡
+                - let's say you didn't made the function definition or function & you're calling that function <br>
+                    so compiler will say -> what is it , so that's why when compiler comes from top to bottom <br>
+                    then we get un-declare error in c++
+                - & in c++ , first function call will go i.e of main() function <br>
+                    so doesn't matter how much function you're calling , first will be called i.e main() function
+            - notes for compiler design 
+                - https://www.vssut.ac.in/lecture_notes/lecture1422914957.pdf
+                - https://www.geeksforgeeks.org/last-minute-notes-compiler-design-gq/
+                - https://mrcet.com/downloads/digital_notes/CSE/III%20Year/COMPILER%20DESIGN%20NOTES.pdf
+    - Advice : to improve problem solving , we need to give 3-4hr per day 💡💡💡
 
 ## lecture 11 - kunal kushwaha YT
 
