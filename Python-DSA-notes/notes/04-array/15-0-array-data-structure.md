@@ -177,8 +177,3 @@
     - after completing the course , do specific prep based on company where you want to go (Amz|MS|Google|xyz) for 1 to 1.5 week <br>
         & see the recent interview experience
     - make DSA strong + make 1 strong project which has many real life features with recent & in-demand stack
-
-## lecture 8 - love babbar - (paid course) Array problems
-
-
-
