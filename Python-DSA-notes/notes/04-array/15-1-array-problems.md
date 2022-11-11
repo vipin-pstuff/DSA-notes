@@ -137,6 +137,7 @@
                 - let's say we have an array `[2, 7, 5, 6, 9, 8]`
                     ![swapping alternate or adjacent elements of an array](../../notes-pics/15-lecture/love-babbar/lecture-15-7.png)
             - approach
+                ![approach](../../notes-pics/15-lecture/love-babbar/lecture-15-8.png)
                 
 
 
