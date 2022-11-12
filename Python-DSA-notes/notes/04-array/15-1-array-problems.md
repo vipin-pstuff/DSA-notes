@@ -1,4 +1,4 @@
-## Array problems - questions
+# Array problems - questions
 
 ## lecture 8 - love babbar (paid course) - Array problems 
 
@@ -420,12 +420,63 @@
         - fault on this code approach
             - if `sum > range` then we'll get error , so range of integer we already know 
 
-- `Ques` : Kadane's Algo 
+- `Ques` : Kadane's Algo `google | very most imp` 🔥
     - what is Kadane ? 
         - Kadane means largest sum contiguous sub-array
         - & we already know what is sub-array
     - understanding
+        - so we need to find max sum from a sub array
+        ![understanding](../../notes-pics/15-lecture/love-babbar/lecture-15-23.png)
+    - approach
+        - what is brute-force  
+            - means time consuming way
+            - very basic way or adhoc way
+            - not optimize solution based on time & space complexity 
+        - approach without using kadane's algo i.e called brute-force
+            ![brute-force approach](../../notes-pics/15-lecture/love-babbar/lecture-15-24.png)
+        - approach via Kadane's algo
+            - this game over in 3 conditions
+            - how Kadane algo works ✅
+                ![how kadane algo approach will work](../../notes-pics/15-lecture/love-babbar/lecture-15-25.png)
+        - code 
+            ```cpp
+            #include <limits.h>
+            int getMaxSubarraySum(int arr[], int n) {
+                int ans = INT_MIN ; // means maxSF or max_so_far
+                int maxAbtak = 0 ; // means maxEH or max_ending_here
 
+                for (int i=0; i<n; i++) {
+                    // include current element
+                    maxAbtak = maxAbtak + arrp[i] ;
 
+                    // update the ans
+                    ans = max(ans, maxAbtak) ;
 
+                    // if max ending hre is 0, them don't include
+                    if (maxAbtak < 0) {
+                        maxAbtak = 0;
+                    }
+                }
+                return ans;
+            }
+
+            int main() {
+                int arr[] = {-2, -3, 4, -1, -2, 1, 5, -3} ;
+
+                cout << "Max Subarray sum is " << getMaxSubarraySum(arr, 8) << endl;
+
+                return 0;
+            } 
+            // output : Max Subarray sum is 7
+            ```
+            - so here we just used 3 conditions to solve this problem
+        - code DRY RUN explanation
+    - homework : kadane's algo 
+        - read article (GFG) , why we made this algo , how to use kadane's algo
+        - alternative of kadane's algo , different optimization 
             
+
+- `Notes ✅`: what kind-of questions can be formed on array : 
+    - related to maths , searching , sorting , bit manipulation , 2D array , sliding window , etc...
+
+- after doing all those questions , then we're done with 25+ questions on array
