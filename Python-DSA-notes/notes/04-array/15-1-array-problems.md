@@ -403,4 +403,29 @@
 
 - `Ques` : find duplicate in an array of (N+1) integer ? 
     - understanding the question
+        - Eg : let's say you have an array as a input `[1, 2, 3, 3, 4]` 
+            ![example](../../notes-pics/15-lecture/love-babbar/lecture-15-20.png)
+    - approach
+        - another example
+            ![example](../../notes-pics/15-lecture/love-babbar/lecture-15-21.png)
+        - so how they're cutting <br>
+            - for input array : so basically we get the sum of each elements of an input array 
+            - for that another array : eg : we already did in maths , so let's say we have `1, 2, 3, 4 ...... N` <br> 
+                & we need to find the sum of it , so we can do `(n * (n + 1)) / 2` , so we'll get sum individually of both array    
+            - & we'll get answer by doing `ans = sum1 - sum2`
+        - code approach
+            ![code approach](../../notes-pics/15-lecture/love-babbar/lecture-15-22.png)
+            - we can't find duplicate if we have `[2, 2, 2, 2, 2]` because this question is saying <br>
+                values always from 1 to N & only any one number will repeat , so this input array is wrong
+        - fault on this code approach
+            - if `sum > range` then we'll get error , so range of integer we already know 
 
+- `Ques` : Kadane's Algo 
+    - what is Kadane ? 
+        - Kadane means largest sum contiguous sub-array
+        - & we already know what is sub-array
+    - understanding
+
+
+
+            
