@@ -362,3 +362,45 @@
 
 - Homework Question 2 
     ![understanding](../../notes-pics/15-lecture/love-babbar/lecture-15-15.png)
+    - in this every questions are very important 
+    - Advice : tak hint , see editorial , see discussion forum , see other people's code , read article , take help of babbar bhaiya
+    - in opposite side , question is can be done in that platform
+
+- `Ques` : move all negative numbers to one side of array
+    - understanding question
+        - Eg : let's say we have array & that array contain positive as well as negative numbers `[3, -1, 2, -4, -6, -4, 5]` <br>
+            so in input we have this array
+        - we want output : `[-1, -4, -6, -4, 3, 2, 8]`
+    - approach 
+        - we can do sort , but if question say , we need to maintain the order then sort approach will not work <br>
+            but question is just saying that we just need to put all negative numbers to one side then sort will work 
+        - here we need to do swap via comparing negative with positive number
+            ![approach](../../notes-pics/15-lecture/love-babbar/lecture-15-16.png) <br>
+            here we used only two pointer i.e `i` & `j` , so kind-of we can say two pointer approach
+        - & if first element is a negative number then both `arr[i]` & `arr[j]` will be swapped itself <br>
+            because let's say both i & j are -1 then both will be swapped by itself 💡💡💡
+        - doubts
+            - what is sub-array ? 💡💡💡
+                - means inside an array , we're telling from this range to this i.e sub-array
+                - example of sub array
+                ![what is sub-array](../../notes-pics/15-lecture/love-babbar/lecture-15-17.png)
+            - what is sub-sequence in array ? 💡💡💡
+                ![sub-sequence in array](../../notes-pics/15-lecture/love-babbar/lecture-15-18.png)
+            - what is pair in c++ 
+                - Eg : `pair<int, int> p = make_pair(1,2) ;`
+                - means inside one block of memory , we can put 2 values at the same time <br>
+                    & that memory named as `p` , 1st block is called first & 2nd block is called second <br>
+                    first block contain `1` value second block contain `2` value like this 
+                    ![sub-sequence in array](../../notes-pics/15-lecture/love-babbar/lecture-15-19.png)
+                - so we can make pair of two different datatype like this `pair<int, char>`
+                - this we'll see in STL
+            - what is vector ? 
+                - we learned about array , so vector is like array <br>
+                    but vector concept comes in dynamic array
+                - Eg : let's say we have array of 4 size & the moment size of the array gets full <br>
+                    then size of that array gets doubled & let's say again that size of array fulled <br>
+                    then dynamically , size of array again gets doubled 💡💡💡
+
+- `Ques` : find duplicate in an array of (N+1) integer ? 
+    - understanding the question
+
