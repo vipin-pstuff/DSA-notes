@@ -343,3 +343,22 @@
 
 - find union & intersection of 2 sorted arrays
     - what is union & intersection
+        - Union : means unique elements , duplicate will be counted only as one time
+    - understanding 
+        - for finding UNION , in question , already mention that both arrays are sorted , so take 2 array 
+            ![understanding](../../notes-pics/15-lecture/love-babbar/lecture-15-14.png)
+        - the approach we used for finding UNION , there are faults
+            - `1` : now let's say , in one of the array or both array , duplicate values exist <br>
+                then in Union array , that duplicate value also come
+                - so if we have duplicates inside an array & to check the previous element of an array <br> 
+                    then we can do `i` is current index , to check previous , we can do `i - 1` 💡💡💡 <br>
+                    then you can use condition i.e `i - 1 >= 0`
+            - solution : we can use `set` in c++ , which used to gives the only unique values from duplicate values <br>
+                we'll see about `set` when we do tree data structure
+        - & same condition will goes with intersection
+        - here question is not about unsorted array , so no need to worry about it
+    - approach 
+        - another way : we can use hashmap
+
+- Homework Question 2 
+    ![understanding](../../notes-pics/15-lecture/love-babbar/lecture-15-15.png)
