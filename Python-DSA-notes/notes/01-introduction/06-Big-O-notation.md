@@ -7,6 +7,7 @@
     - letMeCode YT DSA
     - love babbar YT DSA course
     - neso academy YT DSA course
+    - https://www.algoexpert.io/data-structures : to understand the `log` or Logarithm 🔥🔥🔥
 
 ## lecture - abdul bari sir
 
