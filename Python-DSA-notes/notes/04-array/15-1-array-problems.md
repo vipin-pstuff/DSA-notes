@@ -434,8 +434,19 @@
             - not optimize solution based on time & space complexity 
         - approach without using kadane's algo i.e called brute-force
             ![brute-force approach](../../notes-pics/15-lecture/love-babbar/lecture-15-24.png)
+            - means find sum of every sub-array like this 
+                ```
+                find every sub-array
+                    - sum1 
+                    - sum2 
+                    - sum3 
+                    - sum4
+
+                - & then find the largest/maximum from these different sum 
+                ```
         - approach via Kadane's algo
             - this game over in 3 conditions
+            - so to optimize , let's say we want to do single traversal , so here comes kadane's Algo ✔️
             - how Kadane algo works ✅
                 ![how kadane algo approach will work](../../notes-pics/15-lecture/love-babbar/lecture-15-25.png)
         - code 
@@ -470,13 +481,22 @@
             // output : Max Subarray sum is 7
             ```
             - so here we just used 3 conditions to solve this problem
-        - code DRY RUN explanation
+        - code DRY RUN explanation via kadane's algo ✅
+            - so we need largest sum of a sub-array from an array
+                ![DRY RUN with kadane algo](../../notes-pics/15-lecture/love-babbar/lecture-15-26.png)
+                - Note : why we're doing 2nd step i.e `ans = max(INT_MIN, sum)` ✅ 
+                    - because in each window , we're getting update value of `sum`
+                    - so we need to track which one is maximum answer <br>
+                        just like we find the max number from an array & we check again & again <br>
+                        so same here we're doing to track 💡💡💡
+            - DRY RUN steps 
+                ![STEPS - DRY RUN with kadane algo](../../notes-pics/15-lecture/love-babbar/lecture-15-27.png)
     - homework : kadane's algo 
         - read article (GFG) , why we made this algo , how to use kadane's algo
         - alternative of kadane's algo , different optimization 
             
 
 - `Notes ✅`: what kind-of questions can be formed on array : 
-    - related to maths , searching , sorting , bit manipulation , 2D array , sliding window , etc...
+    - related to maths , how to find whether that question using kadane's algo or not , searching , sorting , bit manipulation , 2D array , sliding window , etc...
 
 - after doing all those questions , then we're done with 25+ questions on array
