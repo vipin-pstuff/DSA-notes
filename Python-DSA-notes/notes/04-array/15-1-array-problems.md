@@ -454,18 +454,18 @@
             #include <limits.h>
             int getMaxSubarraySum(int arr[], int n) {
                 int ans = INT_MIN ; // means maxSF or max_so_far
-                int maxAbtak = 0 ; // means maxEH or max_ending_here
+                int maxAbtak = 0 ; // means maxEH or max_ending_here or sum
 
                 for (int i=0; i<n; i++) {
                     // include current element
-                    maxAbtak = maxAbtak + arrp[i] ;
+                    maxAbtak = maxAbtak + arr[i] ; // sum = sum + arr[i]
 
                     // update the ans
-                    ans = max(ans, maxAbtak) ;
+                    ans = max(ans, maxAbtak) ; // ans = max(ans, sum) ;
 
                     // if max ending hre is 0, them don't include
-                    if (maxAbtak < 0) {
-                        maxAbtak = 0;
+                    if (maxAbtak < 0) { // if (sum < 0)
+                        maxAbtak = 0;       // sum = 0;
                     }
                 }
                 return ans;
@@ -491,6 +491,15 @@
                         so same here we're doing to track 💡💡💡
             - DRY RUN steps 
                 ![STEPS - DRY RUN with kadane algo](../../notes-pics/15-lecture/love-babbar/lecture-15-27.png)
+                - actually , we're skipping that block of an array which has negative number . so when <br>
+                    we're doing `if (sum < 0) sum = 0` which means we're staring with a new window block of an array 💡💡💡
+                - & we can put this condition `if (sum < 0) sum = 0` as 2nd step to understand more clearly
+                ![STEPS - DRY RUN with kadane algo](../../notes-pics/15-lecture/love-babbar/lecture-15-28.png)
+                - but if all the number is negative , then we'll get `0` as answer <br>
+                    but kadane's algo says that at-least one sub-array will be there
+   
+    - another question : print that exact sub-array from which we're getting max sum of contiguous sub-array
+
     - homework : kadane's algo 
         - read article (GFG) , why we made this algo , how to use kadane's algo
         - alternative of kadane's algo , different optimization 
@@ -498,5 +507,9 @@
 
 - `Notes ✅`: what kind-of questions can be formed on array : 
     - related to maths , how to find whether that question using kadane's algo or not , searching , sorting , bit manipulation , 2D array , sliding window , etc...
+
+- `tip to make notes` : clear 3 things
+    - what , how & why for that topic
+
 
 - after doing all those questions , then we're done with 25+ questions on array
