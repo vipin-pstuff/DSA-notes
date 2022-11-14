@@ -548,8 +548,61 @@
 
 - `ques` : unique number of occurrences - leetcode
     - understanding 
-        - 
-            
+        - eg : let's say input `[3, 2, 2, 1, 3, 3]`
+        - so now count how many times 1 , 2 , 3 are repeating 
+        - so `1` is repeating `1` , `2` is repeating `2` times & `3` is repeating `3` times , <br>
+            so we can say unique , then we can say `true`
+        - but assume `3` also repeating 2 times , then we can see that `2` is repeating 2 times <br>
+            & `3` is repeating 2 times , then we can answer is false ✔️✔️✔️
+        - here we're checking is occurrence of each elements of an array is unique or not <br> 
+            & if occurrence is unique of each number then we'll say true or if occurrence is same then we'll say false ✔️✔️✔️
+    - approach
+        - 1st approach 
+            - `STEP 1` : we'll sort like this `[1, 2, 2, 3, 3, 3]`
+            - `STEP 2` : now do counting , so `1` is coming 1 times , `2` is coming 2 times & `3` is coming 3 times
+            - `STEP 3` : check is occurrence of each number of an element are unique each other or not 
+                - if occurrence is unique each other then return true 
+                - otherwise false 
+        - 2nd approach : solving via hashmap
+            - we can use `map` data structure & it's called hashmap 💡💡💡 <br>
+                & data is stored inside `map` in key value form
+            - Eg : of `map` data structure  
+                ```cpp
+                map <int, int> m;
+                ```
+                - this line of code mens inside the `map` , we can store integer pair `<int , int>` like this
+                - advantage of storing values in key value pair i.e time complexity will be `O(1)` when we get the values 💡💡💡
+            - when we go depth in `map` data structure , then we'll learn about 
+                - unordered map
+                - ordered map
+                - hash tables
+                - Self Balancing Binary Search Trees (self-balancing BST) , etc...
+
+- `ques` : find the pair that sum to a given value `easy question | most imp 🔥`
+    - understanding 
+        - Eg : input : `[3, 1, 4, 5, 9, 13, 11]`
+        - target : 14
+        - output : let's say we want to make `14` , then return those 2 pairs through which we can make 14 ✔️
+    - approach 
+        - `1st` : in brute force
+            - we'll do sum of 2 pairs of all elements of an array & check 
+            - so to find all pairs , run outer loop from i=0 to n & inner loop from j=i+1 to n <br> 
+                & time complexity of it will be O(n^2)
+        - `2nd` : by using sort & two pointer 
+            - time complexity of this program will be `O(n log n)` becuz time complexity of `sort()` is `n log n` 
+            - process of sort & two pointer
+                ![STEPS - process of sort & two pointer](../../notes-pics/15-lecture/love-babbar/lecture-15-29.png)
+            - this same approach we'll apply on triplet sum question
+
+- `ques` : find the triplet that sum to a given value
+    - understanding 
+        - input : `[1, 3, 11, 6, 13, 4]`
+        - target : 23
+        - output : we want 3 triplet `<_, _, _>` pairs & sum that 3 triplet pairs numbers & make the target number
+    - approach
+        - `1st` : in brute force
+            - 
+    
 
 - `Notes ✅`: what kind-of questions can be formed on array : 
     - related to maths , how to find whether that question using kadane's algo or not , searching , sorting , bit manipulation , 2D array , sliding window , etc...
