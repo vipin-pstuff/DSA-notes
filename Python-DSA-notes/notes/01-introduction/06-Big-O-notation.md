@@ -884,7 +884,7 @@
                 - so we'll accumulate all those values & then we'll get factorial of `n`
             - so that's why , space complexity will be `O(n)` 💡💡
 
-## lecture - love babbar
+## lecture - love babbar YT video
 
 - `time complexity` : it's as a function of length of the input
     - `why we need it` : 
@@ -903,7 +903,7 @@
         - & we talk about BigO notation most of the time , because it shows upper bound <br>
         - here `upper bound` means limit , which means max to max approx that algorithm will spend that amount of time only <br> 
             means worst case time complexity of that algo will be this only 💡💡💡
-        - for lower bound , we have Omega & for average case complexity , we use theta notation <br>
+        - for `lower bound` , we have Omega notation & for `average case complexity` , we use theta notation <br>
             but most of the time 99% , we talk about BigO notation only ✔️✔️✔️
         ![different notations to measure/show time complexity](../../notes-pics/06-lecture/lovebabbar/lecture-6-1.png) 
     - level of time complexity <br>
@@ -1019,6 +1019,238 @@
                 - so we need to tell space complexity based on who's taking memory , so here vector is taking memory 
                 - for loop doesn't take memory , for loop takes time & `vector` will take space/memory 💡💡🔥
                 - so those who takes space/memory , we'll take them in space complexity 
+
+## lecture 9 - love babbar (paid course)
+
+- time complexity
+    - `why we need it` : 
+        - to check whether that algo is fast or slow , so to measure that fast or slow algo we use time & space complexity 
+        - means let's say two people wrote the program & we want to compare that which one's algo taking time <br>
+            so for checking + comparison we use time & space complexity
+    - to define/show/measure time complexity of that algo , we can use different notations of time complexity
+    - ```
+        Big O -> O(n) -> Upper bound
+        theta -> 0(n) -> avg case complexity
+        omega -> Ω(n) -> lower bound
+      ```
+    - examples - to find time complexity 
+        - example 1 
+            ```cpp
+            for(int i = 0; i < n; i++) {
+                cout << arr[i];
+            }
+
+            // here see the total no. of operations i.e n 💡💡💡
+            // so time complexity of this program is O(n) 
+            ```
+        - example 2 
+            ```cpp
+            for(int i = 0; i < 100; i++) {
+                cout << arr[i];
+            }
+
+            // here see the total no. of operations i.e 100 💡💡💡
+                // so time complexity of this program is O(1) --> which means constant 
+                // so if we know the exact number that the program will run this much amount of time 
+                    // then time complexity of that program will be constant
+            ```
+            - when we say constant time complexity if we know the exact number <br> 
+                that program will run till this exact no. of times 💡💡💡
+        - example 3 
+            ![ques + answer](../../notes-pics/06-lecture/lovebabbar-paid-course/lecture-6-0.png)
+            - if we have another inner loop inside that 2nd inner loop then O(n^3) time complexity
+        - example 4
+            - let's say we have functions
+                - 1 : `f(n) = n + 3n`
+                - 2 : `f(n) = n^2/4`
+                - 3 : `f(n) = n^3 + 2n`
+                - 4 : `f(n) = 311`
+                - 5 : `f(n) = n^3 + n^3/5`
+                - 6 : `f(n) = n^3 + n^6 + n^(2/5)`
+                - 7 : `f(n) = n^2 + 1`
+                - 8 : `f(n) = 2n`
+            - now show them in Big O notation
+            - Answer
+                - so in 1st function , n + 3n = 4n , now put `4n` in big O , so `O(4n)` , now remove the constant , so `O(n)`  
+                - in 2nd function , put `n^2/4` in big O , so `O(n^2/4)` , now remove all the constant , so `O(n^2)` 
+                - in 3rd function , we have n in cube & another one is n , so we'll take that number which has higher degree 💡💡💡 <br>
+                    so we'll take `n^3` , so `O(n^3)` 
+                - in 4th function , so here we have the exact value , so `O(1)`
+                - in 5th function , take common i.e n^3(1+1/5) & now remove the constant value , so `O(n^3)`
+                - in 6th function , take that which has higher degree , so `O(n^6)`
+                - in 7th function , remove the constant , so we'll get `O(n^2)`
+                - in 8th function , remove the constant , so we'll get `O(n)`
+        - Example 5 ✅
+            ```cpp
+            int main() {
+                for (int 0 -> to n) {
+                    // ----
+                    // ----
+                    // ----
+                }
+
+                for (int 0 -> to m) {
+                    // ----
+                    // ----
+                    // ----
+                }
+            }
+            ```
+            - here time complexity of 1st loop is O(n) & 2nd is O(m) 
+            - so when have 2 different loop then we add , so `O(n + m)`
+            - Note : is `O(n + m)` correct or not ✅
+                - we can say this `O(n + m)` when that 1st loop is running from i to n+m like this
+                    ```cpp
+                    for (int i=0; i < n+m ; i++) {}
+
+                    ```
+                    - so we can say `k = n + m` , so we can say `O(n + m)`
+                - but when we have like this `n+n^2` then we'll take which has higher degree , <br>
+                    so O(n^2) will come & small we'll not be taken 💡💡💡
+                - that's why , we can't say `O(n + m)` , we'll think which one is bigger like this `O(max(n , m))` 💡💡💡
+        - example 6 : in swapAlternates() function question 
+            ```cpp
+            void swapAlternates(int arr[], int n) {
+                int i = 0;
+
+                while(i < n) {
+                    if (i + 1 < n) {
+                        swap(arr[i], arr[i+1]) ;
+                    }
+
+                    i = i+2;
+                }
+            }
+            ```
+            - here O(n/2) , because we're running array by 2 times , so remove the constant , so time complexity is `O(n^2)`
+        - example 7 : in sortZeroOneTwo() function question
+            ```cpp
+            void sortZeroOneTwo(int arr[], int n) {
+                int one = 0, zero = 0 , two = 0;
+
+                for(int i = 0; i<n; i++){
+                    if (arr[i] == 0) 
+                        zero++ ;
+                    else if (arr[i] == 1)
+                        one++ ;
+                    else
+                        two++ ;
+                }
+
+                int i = 0 ;
+
+                // put zero
+                while(zero--) {
+                    arr[i] = 0; 
+                    i++
+                }
+
+                // put one
+                while(one--) {
+                    arr[i] = 1 ;
+                    i++ ; 
+                }
+
+                // put two
+                while(two--) {
+                    arr[i] = 2 ;
+                    i++ ; 
+                }
+            }
+            ```
+            - here we're running 4 loops , so time complexity will be O(n)
+            - `O(n)` is bigger because n is greater than all these 3 numbers i.e 0(zero) , 1 & also 2 💡💡💡
+        - example 8 : checking palindrome question
+            ```cpp
+            bool checkPalindrome(int arr[], int n) {
+                int i = 0;
+                int j = n - 1 ;
+
+                while(i < j) {
+                    if (arr[i] == arr[j]) {
+                        i++ ; 
+                        j-- ; 
+
+                    } else {
+                        return false ;
+                    }
+                }
+
+                return true;
+            }
+            ```
+            - while loop will run 2 times , so n/2 , remove the constant , so time complexity is `O(n)` 💡💡💡
+    - homework 
+        - find the time complexity of those pattern questions
+
+- space complexity
+    - what is it ? : means how much space taken by the program
+    - example 1 ✅
+        ```cpp
+        int i = 0;
+
+        for (;i<n ; i++) {
+            cout << i;
+        }
+        ```
+        - which things are taking space 
+        - so `i` is taking the space , so integer takes 4 bytes
+        - so we know the exact number i.e 4 , so space complexity is `O(1)` means constant space 💡💡💡
+    - example 2 
+        ```cpp
+        int arr [n]
+        ```
+        - so space complexity is `O(n)`
+    - example 3 
+        - let's say we have 2D matrix , then how much blocks we'll have in rows & columns i.e `n` 
+        - total blocks is `n * n` , so space complexity is `O(n^2)`
+    - example 4 ✅
+        ```cpp
+        int arr [n]
+            // so when we say arr[n] 
+                // then in memory , n blocks will be created 💡💡💡
+        int arr [m]
+            // so when we say arr[m] 
+                // then in memory , n blocks will be created 💡💡💡
+        ```
+        - now whenever we talk about space complexity then add everything , don't find maximum
+        - so space complexity is `O(n + m)`
+    - example 5 ✅
+        ```cpp
+        int arr [n+m]
+        int arr [m+m]
+        ```
+        - so O(2(n+m)) , so drop the constant , so space complexity is `O(m+n)`
+    - example 6 
+        ```cpp
+        int function add() {
+            int arr[115]
+        }
+        ```
+        - here we have the exact number , so space complexity is `O(1)` means constant space
+    - example 7 ✅
+        - let's say we have the program which has 10 variables or 100 or 100 variables 
+        - then space complexity is still `O(1)`
+    - `Note : when to think about space complexity` ✅
+        - when you're dealing with variables , don't think about too much because space complexity will remain O(1) <br>
+            if you still say that `O(2(n+m))` then what , but we'll drop the constant that's the rule
+        - but if you're using data structure like array , vector , set , trees , linked list, etc.. <br>
+            then think about space complexity 💡💡💡
+    - example 8 : sorting
+        - when we do sort(arr , arr + n) 
+        - so time complexity is O(n log n)
+    - example 9 : binary search
+        - it's time complexity is O(log n)
+    - we'll do more when we do recursion
+
+- homework for TC & SC
+    - go to GFG , codestudio , interviewbit & inside MOCK test , do 100 MCQ
+    - & whatever code that we wrote , find out the TC & SC
+
+- what optimizing the code means ✅
+    - let's say the code that you wrote , it's time complexity is O(n^2)
+    - so to optimize that code , we need to find the next approach which has time complexity <br>
+        i.e O(n) or O(log n) or o(n log n)
 
 ## lecture - neso academy
 

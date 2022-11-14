@@ -57,6 +57,11 @@
             ```
         - & if we can do `i <= j` also in while condition <br>
             because that middle number will be swapped by itself , but it doesn't make any sense that's why we didn't did 💡💡💡 
+    - time complexity of reversing an array 
+        - so we have an array & starting index is `i` & ending index is `j` <br>
+            & we divided that array into 2 parts , so `n/2` operation is happening 
+        - so `O(n/2)` but we remove the constant , so time complexity is `O(n)` of reversing an array
+
 
 - `3rd question` : 
     - `3.1 ques` : find max number in an array ?
@@ -497,19 +502,65 @@
                 ![STEPS - DRY RUN with kadane algo](../../notes-pics/15-lecture/love-babbar/lecture-15-28.png)
                 - but if all the number is negative , then we'll get `0` as answer <br>
                     but kadane's algo says that at-least one sub-array will be there
+        - time complexity 
+            - time complexity in brute force solution is O(n^2)
+            - of Kadane's algo is `O(n)` becuz only one loop is running till n times & here `n` means size of the array
    
-    - another question : print that exact sub-array from which we're getting max sum of contiguous sub-array
-
+    - `ques` : print that exact sub-array from which we're getting max sum of contiguous sub-array ✅
+        - understanding 
+            - here we need to track of starting & ending index of window/block
+        - approach 
+            - we'll take 2 variables : start & end variables
+            - & we know that when window/block will be created , so when we got the maximum then window/block will be created <br>
+                so we need to work on this line of code , so we'll put `start` & `end` variable on that starting window 
+            - approach conclusion
+                - we're doing 3 steps 
+                    - `first` : we're including the number
+                    - `second` : we're updating the answer
+                    - `third` : checking `sum < 0` & then starting `new window` via `sum = 0` & skip the old window
+                - so in second , 
+                    - if we're updating the answer which means we got the new answer <br>
+                        so getting the new answer which means we got a new window
+                    - so if we got the new window then we'll save in starting or ending <br>  
+                        in short , we're saying `if(sum > ans)` then do 3 things 
+                        - `1st` : ans = sum means put sum inside ans
+                        - `2nd` : update the start
+                        - `3rd` : update the end like this
+                        ```
+                        if (sum > ans) {
+                            ans = sum 
+                            start = // store the starting index 
+                            end = // store the ending index
+                        }
+                        ```
+                - in third , 
+                    - when we're starting the `new window` via doing `sum = 0` then save that starting window like this 
+                        ```
+                        if (sum < 0) {
+                            sum = 0;
+                            start = // store the starting index of the new window
+                        }
+                        ```
+        
     - homework : kadane's algo 
         - read article (GFG) , why we made this algo , how to use kadane's algo
         - alternative of kadane's algo , different optimization 
+
+- `ques` : unique number of occurrences - leetcode
+    - understanding 
+        - 
             
 
 - `Notes ✅`: what kind-of questions can be formed on array : 
     - related to maths , how to find whether that question using kadane's algo or not , searching , sorting , bit manipulation , 2D array , sliding window , etc...
+    - https://www.geeksforgeeks.org/largest-sum-contiguous-subarray
 
 - `tip to make notes` : clear 3 things
     - what , how & why for that topic
 
+- `advice` : for learning 
+    - always go from small to big OR basics to advance
+    - learn the basic stuff which required to learn that advance things <br>
+        don't jump to directly on advance stuff
 
 - after doing all those questions , then we're done with 25+ questions on array
