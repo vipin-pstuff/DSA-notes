@@ -7,11 +7,11 @@
         - input : `[3, 5, 2, 7, 6, 9]`
         - output : `[9, 6, 7, 2, 5, 3]`
         - here we're just changing the position of elements of an array like this
-            ![need to reverse like this](../../notes-pics/15-lecture/love-babbar/lecture-15-0.png)
+            ![need to reverse like this](../../notes-pics/15-1-lecture/love-babbar/lecture-15-0.png)
     - approach 
         - so let's say i putted `i` index at 0 index & `j` on last index i.e `n - 1` 
         - & now we just need to swap & we need to do this till `i < j` , so we need to run loop like this
-            ![approach like this](../../notes-pics/15-lecture/love-babbar/lecture-15-1.png)
+            ![approach like this](../../notes-pics/15-1-lecture/love-babbar/lecture-15-1.png)
     - code 
         ```cpp
         void reverseArray(int arr[], int n) {
@@ -39,10 +39,10 @@
         }
         ```
     - what is swap ? <br>
-        ![swapping](../../notes-pics/15-lecture/love-babbar/lecture-15-2.png)
+        ![swapping](../../notes-pics/15-1-lecture/love-babbar/lecture-15-2.png)
         - we can also do swapping via `XOR` bitwise operator or we can use `+` & `-` arithmetic operator 💡
     - dry run code 💡💡💡
-        ![dry run](../../notes-pics/15-lecture/love-babbar/lecture-15-3.png)
+        ![dry run](../../notes-pics/15-1-lecture/love-babbar/lecture-15-3.png)
         - so here we can see that middle element doesn't get swapped & middle element stays on same place <br>
         - so we're just swapping elements together which are left & right side of that middle element
         - & let's say we don't have swap in-build function <br>
@@ -69,7 +69,7 @@
     - O/p : 18
     - understanding 
         - initially , we'll assignment a min number in order to compare with each elements of an array like this
-            ![understanding the question](../../notes-pics/15-lecture/love-babbar/lecture-15-4.png)
+            ![understanding the question](../../notes-pics/15-1-lecture/love-babbar/lecture-15-4.png)
         - but we can make our own max function like this
             ```cpp
             int getMax(int a, int b) {
@@ -103,12 +103,12 @@
         - if error `not defined` comes for `INT_MIN` then , just use `#include <limits.h>` <br>
             before `using namespace std` statement
     - code dry run
-        ![dry run](../../notes-pics/15-lecture/love-babbar/lecture-15-5.png)
+        ![dry run](../../notes-pics/15-1-lecture/love-babbar/lecture-15-5.png)
         - so here we're doing linear search
     - Note : why we initialize `ans` variable as INT_MIN -> `int ans = INT_MIN` , ✅
         - because let's say if we take `0` then we're not able to check <br>
             what if in array all numbers are in negative , then our answer will be `0` like this 💡💡💡
-            ![why we took INT_MIN](../../notes-pics/15-lecture/love-babbar/lecture-15-6.png)
+            ![why we took INT_MIN](../../notes-pics/15-1-lecture/love-babbar/lecture-15-6.png)
         - so here max number is `-1` inside that array , so let's say if we initialize `ans = 0` 
         - then here in this situation i.e we have negative elements inside of an array <br>
             then our answer gets wrong , that's why we're taking `INT_MIN` , instead of `0` or any number 💡💡💡
@@ -157,16 +157,16 @@
     - O/P : `[7, 2, 6, 5, 8, 9]`
     - understanding 
         - let's say we have an array `[2, 7, 5, 6, 9, 8]`
-            ![swapping alternate or adjacent elements of an array](../../notes-pics/15-lecture/love-babbar/lecture-15-7.png)
+            ![swapping alternate or adjacent elements of an array](../../notes-pics/15-1-lecture/love-babbar/lecture-15-7.png)
     - approach
-        ![approach](../../notes-pics/15-lecture/love-babbar/lecture-15-8.png)
+        ![approach](../../notes-pics/15-1-lecture/love-babbar/lecture-15-8.png)
         - code approach
-            ![approach](../../notes-pics/15-lecture/love-babbar/lecture-15-9.png)
+            ![approach](../../notes-pics/15-1-lecture/love-babbar/lecture-15-9.png)
         - here wee took `i+1` i.e `i+1 < n` condition because let's say `i` is on last index of your array <br>
             & then we did `i + 1` which doesn't exist in the array & we're saying to do swap like this <br>
             then code will not work , so top stop the loop from moving forward that's why we used `i + 1 < n`
-            ![reason : why we took i+1](../../notes-pics/15-lecture/love-babbar/lecture-15-10.png)
-            ![reason : why we took i+1](../../notes-pics/15-lecture/love-babbar/lecture-15-11.png)
+            ![reason : why we took i+1](../../notes-pics/15-1-lecture/love-babbar/lecture-15-10.png)
+            ![reason : why we took i+1](../../notes-pics/15-1-lecture/love-babbar/lecture-15-11.png)
     - code 
         - 1st approach 
             ```cpp
@@ -234,7 +234,7 @@
             so let's say this is input -> `[1, 0, 2, 2, 0 , 1, 1]`
         - & we want output `[0, 0, 1, 1, 1, 2, 2]`
     - approach 
-        ![code approach](../../notes-pics/15-lecture/love-babbar/lecture-15-12.png)
+        ![code approach](../../notes-pics/15-1-lecture/love-babbar/lecture-15-12.png)
         - so actually those 3 variables , we made in order to count those no. of values <br>
             & after finding them , you put those no. of zeroes inside the array & so on with 1 & 2
         - problem with this code approach ✅
@@ -309,7 +309,7 @@
             so this array is palindrome
     - approach 
         - we can divide this array `[1, 2, 3, 3, 2, 1]` into half
-            ![code approach](../../notes-pics/15-lecture/love-babbar/lecture-15-13.png)
+            ![code approach](../../notes-pics/15-1-lecture/love-babbar/lecture-15-13.png)
         - this code can run for characters also & for even + odd number also
     - code 
         ```cpp
@@ -351,7 +351,7 @@
         - Union : means unique elements , duplicate will be counted only as one time
     - understanding 
         - for finding UNION , in question , already mention that both arrays are sorted , so take 2 array 
-            ![understanding](../../notes-pics/15-lecture/love-babbar/lecture-15-14.png)
+            ![understanding](../../notes-pics/15-1-lecture/love-babbar/lecture-15-14.png)
         - the approach we used for finding UNION , there are faults
             - `1` : now let's say , in one of the array or both array , duplicate values exist <br>
                 then in Union array , that duplicate value also come
@@ -366,7 +366,7 @@
         - another way : we can use hashmap
 
 - Homework Question 2 
-    ![understanding](../../notes-pics/15-lecture/love-babbar/lecture-15-15.png)
+    ![understanding](../../notes-pics/15-1-lecture/love-babbar/lecture-15-15.png)
     - in this every questions are very important 
     - Advice : tak hint , see editorial , see discussion forum , see other people's code , read article , take help of babbar bhaiya
     - in opposite side , question is can be done in that platform
@@ -380,7 +380,7 @@
         - we can do sort , but if question say , we need to maintain the order then sort approach will not work <br>
             but question is just saying that we just need to put all negative numbers to one side then sort will work 
         - here we need to do swap via comparing negative with positive number
-            ![approach](../../notes-pics/15-lecture/love-babbar/lecture-15-16.png) <br>
+            ![approach](../../notes-pics/15-1-lecture/love-babbar/lecture-15-16.png) <br>
             here we used only two pointer i.e `i` & `j` , so kind-of we can say two pointer approach
         - & if first element is a negative number then both `arr[i]` & `arr[j]` will be swapped itself <br>
             because let's say both i & j are -1 then both will be swapped by itself 💡💡💡
@@ -388,15 +388,15 @@
             - what is sub-array ? 💡💡💡
                 - means inside an array , we're telling from this range to this i.e sub-array
                 - example of sub array
-                ![what is sub-array](../../notes-pics/15-lecture/love-babbar/lecture-15-17.png)
+                ![what is sub-array](../../notes-pics/15-1-lecture/love-babbar/lecture-15-17.png)
             - what is sub-sequence in array ? 💡💡💡
-                ![sub-sequence in array](../../notes-pics/15-lecture/love-babbar/lecture-15-18.png)
+                ![sub-sequence in array](../../notes-pics/15-1-lecture/love-babbar/lecture-15-18.png)
             - what is pair in c++ 
                 - Eg : `pair<int, int> p = make_pair(1,2) ;`
                 - means inside one block of memory , we can put 2 values at the same time <br>
                     & that memory named as `p` , 1st block is called first & 2nd block is called second <br>
                     first block contain `1` value second block contain `2` value like this 
-                    ![sub-sequence in array](../../notes-pics/15-lecture/love-babbar/lecture-15-19.png)
+                    ![sub-sequence in array](../../notes-pics/15-1-lecture/love-babbar/lecture-15-19.png)
                 - so we can make pair of two different datatype like this `pair<int, char>`
                 - this we'll see in STL
             - what is vector ? 
@@ -409,17 +409,17 @@
 - `Ques` : find duplicate in an array of (N+1) integer ? 
     - understanding the question
         - Eg : let's say you have an array as a input `[1, 2, 3, 3, 4]` 
-            ![example](../../notes-pics/15-lecture/love-babbar/lecture-15-20.png)
+            ![example](../../notes-pics/15-1-lecture/love-babbar/lecture-15-20.png)
     - approach
         - another example
-            ![example](../../notes-pics/15-lecture/love-babbar/lecture-15-21.png)
+            ![example](../../notes-pics/15-1-lecture/love-babbar/lecture-15-21.png)
         - so how they're cutting <br>
             - for input array : so basically we get the sum of each elements of an input array 
             - for that another array : eg : we already did in maths , so let's say we have `1, 2, 3, 4 ...... N` <br> 
                 & we need to find the sum of it , so we can do `(n * (n + 1)) / 2` , so we'll get sum individually of both array    
             - & we'll get answer by doing `ans = sum1 - sum2`
         - code approach
-            ![code approach](../../notes-pics/15-lecture/love-babbar/lecture-15-22.png)
+            ![code approach](../../notes-pics/15-1-lecture/love-babbar/lecture-15-22.png)
             - we can't find duplicate if we have `[2, 2, 2, 2, 2]` because this question is saying <br>
                 values always from 1 to N & only any one number will repeat , so this input array is wrong
         - fault on this code approach
@@ -431,14 +431,14 @@
         - & we already know what is sub-array
     - understanding
         - so we need to find max sum from a sub array
-        ![understanding](../../notes-pics/15-lecture/love-babbar/lecture-15-23.png)
+        ![understanding](../../notes-pics/15-1-lecture/love-babbar/lecture-15-23.png)
     - approach
         - what is brute-force  
             - means time consuming way
             - very basic way or adhoc way
             - not optimize solution based on time & space complexity 
         - approach without using kadane's algo i.e called brute-force
-            ![brute-force approach](../../notes-pics/15-lecture/love-babbar/lecture-15-24.png)
+            ![brute-force approach](../../notes-pics/15-1-lecture/love-babbar/lecture-15-24.png)
             - means find sum of every sub-array like this 
                 ```
                 find every sub-array
@@ -453,7 +453,7 @@
             - this game over in 3 conditions
             - so to optimize , let's say we want to do single traversal , so here comes kadane's Algo ✔️
             - how Kadane algo works ✅
-                ![how kadane algo approach will work](../../notes-pics/15-lecture/love-babbar/lecture-15-25.png)
+                ![how kadane algo approach will work](../../notes-pics/15-1-lecture/love-babbar/lecture-15-25.png)
         - code 
             ```cpp
             #include <limits.h>
@@ -488,18 +488,18 @@
             - so here we just used 3 conditions to solve this problem
         - code DRY RUN explanation via kadane's algo ✅
             - so we need largest sum of a sub-array from an array
-                ![DRY RUN with kadane algo](../../notes-pics/15-lecture/love-babbar/lecture-15-26.png)
+                ![DRY RUN with kadane algo](../../notes-pics/15-1-lecture/love-babbar/lecture-15-26.png)
                 - Note : why we're doing 2nd step i.e `ans = max(INT_MIN, sum)` ✅ 
                     - because in each window , we're getting update value of `sum`
                     - so we need to track which one is maximum answer <br>
                         just like we find the max number from an array & we check again & again <br>
                         so same here we're doing to track 💡💡💡
             - DRY RUN steps 
-                ![STEPS - DRY RUN with kadane algo](../../notes-pics/15-lecture/love-babbar/lecture-15-27.png)
+                ![STEPS - DRY RUN with kadane algo](../../notes-pics/15-1-lecture/love-babbar/lecture-15-27.png)
                 - actually , we're skipping that block of an array which has negative number . so when <br>
                     we're doing `if (sum < 0) sum = 0` which means we're staring with a new window block of an array 💡💡💡
                 - & we can put this condition `if (sum < 0) sum = 0` as 2nd step to understand more clearly
-                ![STEPS - DRY RUN with kadane algo](../../notes-pics/15-lecture/love-babbar/lecture-15-28.png)
+                ![STEPS - DRY RUN with kadane algo](../../notes-pics/15-1-lecture/love-babbar/lecture-15-28.png)
                 - but if all the number is negative , then we'll get `0` as answer <br>
                     but kadane's algo says that at-least one sub-array will be there
         - time complexity 
@@ -591,7 +591,7 @@
         - `2nd` : by using sort & two pointer 
             - time complexity of this program will be `O(n log n)` becuz time complexity of `sort()` is `n log n` 
             - process of sort & two pointer
-                ![STEPS - process of sort & two pointer](../../notes-pics/15-lecture/love-babbar/lecture-15-29.png)
+                ![STEPS - process of sort & two pointer](../../notes-pics/15-1-lecture/love-babbar/lecture-15-29.png)
             - this same approach we'll apply on triplet sum question
 
 - `ques` : find the triplet that sum to a given value
@@ -601,8 +601,23 @@
         - output : we want 3 triplet `<_, _, _>` pairs & sum that 3 triplet pairs numbers & make the target number
     - approach
         - `1st` : in brute force
-            - 
-    
+            - we'll run 3 loops like this
+                ![brute force](../../notes-pics/15-1-lecture/love-babbar/lecture-15-30.png)
+        - `2nd` : optimization approach
+            ![optimize approach](../../notes-pics/15-1-lecture/love-babbar/lecture-15-31.png)
+        - `3rd` : we can do more optimize also
+                
+- `ques` : minimum swaps required bring elements less equal k together `good ques | sliding window ques`
+    - understanding
+        - input : `[2, 1, 5, 6, 3]`
+        - now we have let's `k = 3`
+        - what we need to do : 
+            - bring those elements forward inside the array which are less or equal-to value of k , `<= k` , 
+            - so output will be `[2, 1, 3, 6, 5]` , so here we swap b/w 5 & 3
+        - output : we need to tell how much number of swaps we did , so here we did `1` time
+        - so question will be like - find minimum no. of swaps required to bring elements `<=k` together
+    - approach
+        ![optimize approach](../../notes-pics/15-1-lecture/love-babbar/lecture-15-32.png)
 
 - `Notes ✅`: what kind-of questions can be formed on array : 
     - related to maths , how to find whether that question using kadane's algo or not , searching , sorting , bit manipulation , 2D array , sliding window , etc...
@@ -613,7 +628,6 @@
 
 - `advice` : for learning 
     - always go from small to big OR basics to advance
-    - learn the basic stuff which required to learn that advance things <br>
-        don't jump to directly on advance stuff
+    - learn the basic stuff which required to learn that advance things , don't jump to directly on advance stuff
 
 - after doing all those questions , then we're done with 25+ questions on array
