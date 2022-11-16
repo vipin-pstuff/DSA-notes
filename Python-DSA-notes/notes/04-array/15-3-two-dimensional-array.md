@@ -219,9 +219,16 @@
                     then we'll get proper output ✔️✔️✔️
             - `reason` : what benefit if we do this `int arr[][sizeOfColumn]` & why do we need 
                 - when we're learning about pass by value & pass by reference 
-                - then in pass by reference , when we pass 1D array without size as parameter of a function <br>
-                    like this `function print(int arr[])` , 
-                - then whole array will not be copied , only base address of that array will be copied 💡💡💡
                 - why we didn't define the size of the array here `function print(int arr[])`
-                    - 
-                 
+                    - because in pass by reference , when we pass 1D array without size as parameter of a function <br>
+                        like this `function print(int arr[])` , 
+                    - then whole array will not be copied , only base address of that array will be copied 💡💡💡
+                    - & if we update any values inside the array then , that same array will be updated                 
+
+- `Ques` : print column wise sum by using 2D array
+    - understanding 
+        ![understanding what we need to do](../../notes-pics/15-3-lecture/love-babbar/lecture-15-3-6.png)
+        - so ultimately output will be `[15, 14, 20, 5]`
+        - `Ques` : after finding column wise sum , then print the max column wise sum , eg : 20 is maximum
+    - approach
+        - 
