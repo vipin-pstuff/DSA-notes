@@ -231,13 +231,10 @@
         - 2nd way : `func getData(int arr[][5])` -- defining size of the column is mandatory
 
 - `Ques` : print column wise sum by using 2D array
-    - understanding 
+    - understanding + approach
         ![understanding what we need to do](../../notes-pics/15-3-lecture/love-babbar/lecture-15-3-6.png)
         - so ultimately output will be `[15, 14, 20, 5]`
         - `Ques` : after finding column wise sum , then print the max column wise sum , eg : 20 is maximum
-    - approach 
-        - we want like this
-            ![this output we want](../../notes-pics/15-3-lecture/love-babbar/lecture-15-3-7.png)
     - code 
         ```cpp
         void colSum(int arr[4][5], int row, int col) {
@@ -262,7 +259,7 @@
         // output : 8 12
         ```
         - so we're getting wrong answer , brainstorming & dry run why we're getting wrong answer 
-            ![doing DRY RUN to check whether we're changing row value & column value constant](../../notes-pics/15-3-lecture/love-babbar/lecture-15-3-8.png)
+            ![doing DRY RUN to check whether we're changing row value & column value constant](../../notes-pics/15-3-lecture/love-babbar/lecture-15-3-7.png)
         ```cpp
         void colSum(int arr[4][5], int row, int col) {
             for (int i=0 ; i<col; i++) {
@@ -288,7 +285,7 @@
         ```
     - explanation of code 💡💡💡
         - if we do `[i][j]` then how we're traversing horizontal
-            ![DRY RUN - for horizontal traversing](../../notes-pics/15-3-lecture/love-babbar/lecture-15-3-9.png)
+            ![DRY RUN - for horizontal traversing](../../notes-pics/15-3-lecture/love-babbar/lecture-15-3-8.png)
         - if we do `[j][i]` then means we're doing traversing vertically <br>
             means first , 0th column will run from 0th row till end row & so on.. each column
     - Ques : finding max number also after doing column wise sum
@@ -335,14 +332,23 @@
             cout << endl;
         }
         ```
-
     
 - `ques` : rotate a 2D array by 90 degree `most most imp 🔥`
     - input : we have a 2D array
     - understanding : 
         - in matrix maths chapter , we rotate matrix by doing transpose , `transpose` means we'll make that row into column <br>
             means changing row into column like this 💡💡💡
+            ![doing transpose](../../notes-pics/15-3-lecture/love-babbar/lecture-15-3-9.png)
+    - approach
+        - DRY RUN brainstorming
             ![doing transpose](../../notes-pics/15-3-lecture/love-babbar/lecture-15-3-10.png)
-
-
+            - then there's one thing we need to do i.e we need to reverse each row as per our output like this
+                ![this output we want after reverse row output](../../notes-pics/15-3-lecture/love-babbar/lecture-15-3-11.png)
+        - so ultimately , output will be this
+            ![output](../../notes-pics/15-3-lecture/love-babbar/lecture-15-3-12.png)
+        - so we can solve this question in 2 parts i.e 
+            - `STEP 1` : call the custom transpose() function 
+            - `STEP 2` : then call reverse() function
+            - then we'll get the output
+        - time complexity of this code will be 
 
