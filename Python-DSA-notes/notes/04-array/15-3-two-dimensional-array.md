@@ -335,6 +335,10 @@
     
 - `ques` : rotate a 2D array by 90 degree `most most imp 🔥`
     - input : we have a 2D array
+    - reference video : 
+        - https://www.youtube.com/watch?v=SoxrXQbhCPI&a&ab_channel=pepcoding
+        - https://www.youtube.com/watch?v=ykT63NoQWLI
+        - https://www.javatpoint.com/rotate-matrix-by-90-degrees-in-java
     - understanding : 
         - in matrix maths chapter , we rotate matrix by doing transpose , `transpose` means we'll make that row into column <br>
             means changing row into column like this 💡💡💡
@@ -351,4 +355,71 @@
             - `STEP 2` : then call reverse() function
             - then we'll get the output
         - time complexity of this code will be 
+            - for transpose , will be O(n^2)
+            - for reverse , will be O(n^2)
+            - so ultimately , O(n^2) + O(n^2) = `O(n^2)`
+        - space complexity is O(1)
+    - code 
+        - transpose code
+            ```cpp
+            void transpose(int arr[3][3], int row , int col) {
+                for (int i=0; i<row; i++) {
+                    for (int j=0; j<col; j++) {
+                        swap(arr[i][j], arr[j][i])
+                    }
+                }
+            }
 
+            int main() {
+                int arr[3][3] = {1, 2, 3, 4, 5, 6, 7, 8, 9} ;
+
+                transpose(arr, 3, 3);
+
+                // print entire 2D matrix 
+                for (int i=0; i<3; i++) {
+                    for (int j=0; j<3; j++) {
+                        cout << brr[i][j] << " " ;
+                    }
+                    cout << endl;
+                }
+            }
+            /* output :  
+                        1 2 3
+                        4 5 6
+                        7 8 9
+            */
+            ```
+            - we're getting wrong transpose answer because , let's say we have this matrix 💡💡💡
+                ![why we're getting wrong transpose answer](../../notes-pics/15-3-lecture/love-babbar/lecture-15-3-13.png)
+                - so things again got same as it was before as a input
+            - so we can do is `j<i` instead of `j<col` like this
+                ```cpp
+                void transpose(int arr[3][3], int row , int col) {
+                    for (int i=0; i<row; i++) {
+                        for (int j=0; j<i; j++) {
+                            swap(arr[i][j], arr[j][i])
+                        }
+                    }
+                }
+
+                int main() {
+                    int arr[3][3] = {1, 2, 3, 4, 5, 6, 7, 8, 9} ;
+
+                    transpose(arr, 3, 3);
+
+                    // print entire 2D matrix 
+                    for (int i=0; i<3; i++) {
+                        for (int j=0; j<3; j++) {
+                            cout << brr[i][j] << " " ;
+                        }
+                        cout << endl;
+                    }
+                }
+                /* output :  
+                            1 4 7
+                            2 5 8
+                            3 6 9
+                */
+                ```
+        - DRY RUN of transpose code
+            
