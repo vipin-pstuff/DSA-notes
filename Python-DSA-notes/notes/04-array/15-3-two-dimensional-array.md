@@ -433,7 +433,9 @@
                 - this is bad code because we're coming back to our original input matrix is coming
             - but if we do `j<i` , then inside matrix , <br>
                 we're swapping bottom half triangle elements with upper half triangle 💡💡💡 
-    - do reverse by yourself , you can mold this question like do 180 degree rotate 
+    - `Ques`
+        - do reverse by yourself , you can mold this question like do 180 degree rotate 
+        - rotate a 2D array by 90 degree in anti-clockwise
         
 - `ques` : wave print from 2D matrix
     - understanding
@@ -449,10 +451,11 @@
             after printing starting column , then we increment by 1 <br>
             after printing ending row , then we decrement by 1 , so that we come to previous row <br>
             after printing ending column , then we decrement & we came back to previous column by 1 ✔️✔️✔️
-            
-
-
-
-
-
-
+        - explanation logic ✅
+            ![overview explanation logic](../../notes-pics/15-3-lecture/love-babbar/lecture-15-3-19.png)
+            ![overview](../../notes-pics/15-3-lecture/love-babbar/lecture-15-3-20.png)
+            - we can make condition inside that while loop like this `count < total`
+        - time complexity is O(n^2) because total we have `n x n` <br>
+            here 1st `n` is for all the rows & 2nd `n` is for all the columns & space complexity is O(1)
+        - searching + sorting concept is also used in 2D array which we'll see later
+    - tip : always do DRY RUN with different test cases + edge cases also then you'll never forget things
