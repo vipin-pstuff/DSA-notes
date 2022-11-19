@@ -422,4 +422,25 @@
                 */
                 ```
         - DRY RUN of transpose code
-            
+            - that outer loop will run for each row
+            - & now inner loop , j=0 & `j<i` , so behind the scene , you're traversing like this  
+                ![this way inner loop is traversing](../../notes-pics/15-3-lecture/love-babbar/lecture-15-3-14.png)
+                - so when we're traversing this half-triangle 
+                - so due to this , each element will be swapped only 1 time , not 2 times 💡💡💡
+            - but in inner loop , if we do `j<n` then we're swapping same element 2 times <br>  
+                so we'll get output will be back to input which we got as a question
+                ![DRY of j<n](../../notes-pics/15-3-lecture/love-babbar/lecture-15-3-15.png)
+                - this is bad code because we're coming back to our original input matrix is coming
+            - but if we do `j<i` , then inside matrix , <br>
+                we're swapping bottom half triangle elements with upper half triangle 💡💡💡 
+    - do reverse by yourself , you can mold this question like do 180 degree rotate 
+        
+- `ques` : wave print from 2D matrix
+    - understanding
+        ![input & output](../../notes-pics/15-3-lecture/love-babbar/lecture-15-3-16.png)
+
+- `ques` : spiral matrix `asked by - ADOBE , amazon , OYO , expedie` `very very imp ques 🔥🔥🔥`
+    - understanding 
+        ![input & output](../../notes-pics/15-3-lecture/love-babbar/lecture-15-3-17.png)
+    - approach + logic
+        - 
