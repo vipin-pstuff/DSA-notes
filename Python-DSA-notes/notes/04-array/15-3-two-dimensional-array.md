@@ -1,6 +1,6 @@
 # Two Dimensional Array
 
-## lecture 10,-,,lo,ve babbar (paid course) - 2D array
+## lecture 10 - love babbar (paid course) - 2D array
 
 - what is 2D array & why we need it 
     - what is 2D array 
@@ -443,4 +443,16 @@
     - understanding 
         ![input & output](../../notes-pics/15-3-lecture/love-babbar/lecture-15-3-17.png)
     - approach + logic
-        - 
+        ![approach](../../notes-pics/15-3-lecture/love-babbar/lecture-15-3-18.png)
+        - now how to avoid duplicate elements , so in the picture we already know that <br>        
+            after printing the starting row , then we increment <br>
+            after printing starting column , then we increment by 1 <br>
+            after printing ending row , then we decrement by 1 , so that we come to previous row <br>
+            after printing ending column , then we decrement & we came back to previous column by 1 ✔️✔️✔️
+            
+
+
+
+
+
+
