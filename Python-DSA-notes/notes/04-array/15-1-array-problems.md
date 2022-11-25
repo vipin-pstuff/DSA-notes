@@ -623,6 +623,13 @@
         - STEP 1 : let's say we have this array `[2,1,5,6,3 ]`
         - STEP 2 : getting the size of the array which contain only those elements who are `<=k` like this
             ![STEP 2](../../notes-pics/15-1-lecture/love-babbar/lecture-15-33.png)
+        - STEP 3 : taking a part of array or window & put only those elements which are `<=k`
+            ![STEP 3](../../notes-pics/15-1-lecture/love-babbar/lecture-15-34.png)
+        - STEP 4 : doing same process with another windows or part of an array like STEP 3
+            ![STEP 4](../../notes-pics/15-1-lecture/love-babbar/lecture-15-35.png)
+        - STEP 5 : now questions is saying that we need to find minimum swaps 
+            ![STEP 5](../../notes-pics/15-1-lecture/love-babbar/lecture-15-36.png)
+
 
 - `Notes ✅`: what kind-of questions can be formed on array : 
     - related to maths , how to find whether that question using kadane's algo or not , searching , sorting , bit manipulation , 2D array , sliding window , etc...
