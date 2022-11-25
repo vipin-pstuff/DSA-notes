@@ -607,7 +607,7 @@
             ![optimize approach](../../notes-pics/15-1-lecture/love-babbar/lecture-15-31.png)
         - `3rd` : we can do more optimize also
                 
-- `ques` : minimum swaps required bring elements less equal k together `good ques | sliding window ques`
+- `ques` : minimum swaps required bring elements <= k (less equal k) together `good ques | sliding window ques`
     - understanding
         - input : `[2, 1, 5, 6, 3]`
         - now we have let's `k = 3`
@@ -615,9 +615,14 @@
             - bring those elements forward inside the array which are less or equal-to value of k , `<= k` , 
             - so output will be `[2, 1, 3, 6, 5]` , so here we swap b/w 5 & 3
         - output : we need to tell how much number of swaps we did , so here we did `1` time
-        - so question will be like - find minimum no. of swaps required to bring elements `<=k` together
+        - so question will be like - find minimum no. of swaps required to bring elements `<=k` together <br>
+            so answer will be `1` because we used 
     - approach
         ![optimize approach](../../notes-pics/15-1-lecture/love-babbar/lecture-15-32.png)
+    - another same approach
+        - STEP 1 : let's say we have this array `[2,1,5,6,3 ]`
+        - STEP 2 : getting the size of the array which contain only those elements who are `<=k` like this
+            ![STEP 2](../../notes-pics/15-1-lecture/love-babbar/lecture-15-33.png)
 
 - `Notes ✅`: what kind-of questions can be formed on array : 
     - related to maths , how to find whether that question using kadane's algo or not , searching , sorting , bit manipulation , 2D array , sliding window , etc...
