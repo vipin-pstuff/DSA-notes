@@ -620,7 +620,7 @@
     - approach
         ![optimize approach](../../notes-pics/15-1-lecture/love-babbar/lecture-15-32.png)
     - another same approach
-        - STEP 1 : let's say we have this array `[2,1,5,6,3 ]`
+        - STEP 1 : let's say we have this array `[2,1,5,6,3 ]` & given value of k is 3
         - STEP 2 : getting the size of the array which contain only those elements who are `<=k` like this
             ![STEP 2](../../notes-pics/15-1-lecture/love-babbar/lecture-15-33.png)
         - STEP 3 : taking a part of array or window & put only those elements which are `<=k`
@@ -629,7 +629,42 @@
             ![STEP 4](../../notes-pics/15-1-lecture/love-babbar/lecture-15-35.png)
         - STEP 5 : now questions is saying that we need to find minimum swaps 
             ![STEP 5](../../notes-pics/15-1-lecture/love-babbar/lecture-15-36.png)
+            - this concept is called sliding window because we're making window , again & again 💡💡💡
+    - code 
+        ```cpp
+        int minSwaps(int arr[], int size, int k) {
+            // find window size -> count of number <=k
+            int cnt = 0;
+            for(int i=0; i<size; i++) {
+                if (arr[i] <= k) cnt++ ;
+            }
 
+            // create first window
+            int bad = 0;
+            for(int i=0; i<cnt; i++) {
+                if (arr[i] > k) bad++ ;
+            }
+
+            int ans = bad;
+            // check for remaining windows
+            for(int i=0; j=count; j<n; i++; j++;) {
+                // check old element
+                if(arr[i] > k) bad-- ;
+
+                if(arr[j] > k) bad++ ;
+
+                ans = min(ans, bad) ;
+            }
+
+            return ans;
+        }
+
+        int main() {
+
+        }
+        ```
+    - code explanation 👍
+        - STEP 1 : 
 
 - `Notes ✅`: what kind-of questions can be formed on array : 
     - related to maths , how to find whether that question using kadane's algo or not , searching , sorting , bit manipulation , 2D array , sliding window , etc...
