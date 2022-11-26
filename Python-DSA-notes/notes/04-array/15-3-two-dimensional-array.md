@@ -359,6 +359,7 @@
             - for reverse , will be O(n^2)
             - so ultimately , O(n^2) + O(n^2) = `O(n^2)`
         - space complexity is O(1)
+        - we have second approach to solve this problem , so explore it
     - code 
         - transpose code
             ```cpp
@@ -459,7 +460,5 @@
             here 1st `n` is for all the rows & 2nd `n` is for all the columns & space complexity is O(1)
         - searching + sorting concept is also used in 2D array which we'll see later
     - tip : always do DRY RUN with different test cases + edge cases also then you'll never forget things
-
-
-
-
+    - visualization <br>
+        ![visualization](../../notes-pics/15-3-lecture/love-babbar/lecture-15-3-21.png)

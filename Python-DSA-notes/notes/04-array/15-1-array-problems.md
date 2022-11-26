@@ -661,7 +661,11 @@
         }
 
         int main() {
+            int arr[] = {2, 1, 5, 6, 3} ; 
 
+            int result = minSwaps(arr , 5, 3) ;
+
+            cout << "Result is :" << result ;
         }
         ```
     - code explanation 👍
@@ -686,9 +690,23 @@
         - so all 3 of them , time complexity is `O(n) + O(n) + O(n)` = `O(n)` 
         - so we solved in single traversal 💡💡💡
     - dry run of code
-        - 
-            
-        
+        ![DRY RUN of code](../../notes-pics/15-1-lecture/love-babbar/lecture-15-41.png)
+        - here `bad` means elements which are greater than k `>k`
+        - `Note` : 
+            - we have this starting window i.e `[2,1,5]` , now to add a new element like this `[1, 5, 6]` <br>        
+                then we need to remove `2` & add `6`
+            - so the moment we remove a element i.e `2` then maybe `2` can be a bad element <br>  
+                so value of `bad` variable should be decrease , that's why we wrote this code i.e
+                ```cpp
+                if (arr[i] > k) 
+                    bad-- ;
+                ```
+            - now a new element which is being added , so check that new element can also be a bad element i.e
+                ```cpp
+                if (arr[i] > k) 
+                    bad++ ;
+                ```
+                - so incrementing value of `bad` means in that window , that number of elements are greater than `> k`
 
 - `Notes ✅`: what kind-of questions can be formed on array : 
     - related to maths , how to find whether that question using kadane's algo or not , searching , sorting , bit manipulation , 2D array , sliding window , etc...
