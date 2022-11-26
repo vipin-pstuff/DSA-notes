@@ -674,11 +674,20 @@
             - so here `bad--` means we're removing the bad element & `bad++` means we're adding a new element
             - & then we updated the answer like this `ans = min(ans, bad)` & then return it 
             - here we're don't need to think about `<=k` , we just need to take care of `>` greater than
-    - different approach + logic explanation 👍
+    - different approach + logic explanation ✅
         - we're using different approach where we can solve through only 1 for loop with single traversing
         ![explanation](../../notes-pics/15-1-lecture/love-babbar/lecture-15-39.png)
         - why we did `j = count`
-            ----- explain this in exaceldraw
+            ![explanation of what we're doing "STEP 3"](../../notes-pics/15-1-lecture/love-babbar/lecture-15-40.png)
+            - & same when we go further , then `1` element will be removed & `3` will be added
+    - complexity of the code
+        - 1st loop is running n times , `i<cnt` loop also running n times & <br>
+            `j=count ; j<n;` last loop is also running n times
+        - so all 3 of them , time complexity is `O(n) + O(n) + O(n)` = `O(n)` 
+        - so we solved in single traversal 💡💡💡
+    - dry run of code
+        - 
+            
         
 
 - `Notes ✅`: what kind-of questions can be formed on array : 
