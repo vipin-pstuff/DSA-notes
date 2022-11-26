@@ -651,6 +651,7 @@
                 // check old element
                 if(arr[i] > k) bad-- ;
 
+                // add a new element in a window
                 if(arr[j] > k) bad++ ;
 
                 ans = min(ans, bad) ;
@@ -664,7 +665,21 @@
         }
         ```
     - code explanation 👍
-        - STEP 1 : 
+        - STEP 1 : get the size of the array or window which contains elements who are only `<=k`
+        - STEP 2 : creating window or a part of an array , <br>
+            so we're running "for loop" till count value which is the size of the array who only contains `<=k`
+        - STEP 3 : we need to create 2nd window & so on... till last 3 elements of an array
+            ![STEP 3](../../notes-pics/15-1-lecture/love-babbar/lecture-15-37.png)
+            ![STEP 3](../../notes-pics/15-1-lecture/love-babbar/lecture-15-38.png)
+            - so here `bad--` means we're removing the bad element & `bad++` means we're adding a new element
+            - & then we updated the answer like this `ans = min(ans, bad)` & then return it 
+            - here we're don't need to think about `<=k` , we just need to take care of `>` greater than
+    - different approach + logic explanation 👍
+        - we're using different approach where we can solve through only 1 for loop with single traversing
+        ![explanation](../../notes-pics/15-1-lecture/love-babbar/lecture-15-39.png)
+        - why we did `j = count`
+            ----- explain this in exaceldraw
+        
 
 - `Notes ✅`: what kind-of questions can be formed on array : 
     - related to maths , how to find whether that question using kadane's algo or not , searching , sorting , bit manipulation , 2D array , sliding window , etc...
