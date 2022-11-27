@@ -666,6 +666,8 @@
             int result = minSwaps(arr , 5, 3) ;
 
             cout << "Result is :" << result ;
+
+            return 0;
         }
         ```
     - code explanation 👍
@@ -707,6 +709,19 @@
                     bad++ ;
                 ```
                 - so incrementing value of `bad` means in that window , that number of elements are greater than `> k`
+
+- `ques` : minimum platform problems `GFG`
+    - understanding
+        - two things we have given i.e arrival , departure time of trains like this <br>
+            arrival -> `[a, b, c, d]`
+            departure -> `[e, f, g, h]`
+            - so we have arrival & departure time of trains in random order
+            - `departure` means train goes
+        - output : tell minimum platforms we need to tell handle these different arrival & departure times of trains
+        - for example 💡💡💡
+            ![example](../../notes-pics/15-1-lecture/love-babbar/lecture-15-42.png)
+    - approach
+        - 
 
 - `Notes ✅`: what kind-of questions can be formed on array : 
     - related to maths , how to find whether that question using kadane's algo or not , searching , sorting , bit manipulation , 2D array , sliding window , etc...
