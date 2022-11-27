@@ -619,6 +619,7 @@
             so answer will be `1` because we used 
     - approach
         ![optimize approach](../../notes-pics/15-1-lecture/love-babbar/lecture-15-32.png)
+        - mostly , sliding window questions are based on two pointer approach 💡💡💡
     - another same approach
         - STEP 1 : let's say we have this array `[2,1,5,6,3 ]` & given value of k is 3
         - STEP 2 : getting the size of the array which contain only those elements who are `<=k` like this
@@ -710,7 +711,7 @@
                 ```
                 - so incrementing value of `bad` means in that window , that number of elements are greater than `> k`
 
-- `ques` : minimum platform problems `GFG`
+- `ques` : minimum platform problems `GFG` `sliding window question` `companies - adobe | MS | amazon` `mostly asked questions` 💡💡💡 
     - understanding
         - two things we have given i.e arrival , departure time of trains like this <br>
             arrival -> `[a, b, c, d]`
@@ -721,7 +722,27 @@
         - for example 💡💡💡
             ![example](../../notes-pics/15-1-lecture/love-babbar/lecture-15-42.png)
     - approach
-        - 
+        - let's say arrival & departure arrays are given as inputs
+            ```
+            arrival -> [9:00, 9:40, 9:50, 11:00, 5:00, 18:00]
+            departure -> [9:10, 12:00, 11:20, 11:30, 19:00, 20:00]
+            ```
+        - `STEP 1` : sort both arrival & departure time arrays
+            - so that we can find the relation that's why we're doing sorting <br>
+                otherwise in random order , we can't find the relation
+            - arrival means coming & departure means going ✔️✔️✔️ 
+            - after sorting , we'll get this
+            ```
+            arrival -> [9:00, 9:40, 9:50, 11:00, 5:00, 18:00]
+            departure -> [9:10, 11:20, 11:30, 12:00, 19:00, 20:00]
+            ```
+        - `STEP 2` : before departure , at-least 1 train must be there in platform
+            - means if someone is asking Rupee Rs10 , so before giving it , that must be there in your pocket <br>
+                so at-least 1 train must be there in the platform then that train can departure 💡💡💡
+            - so `platform = 1` i.e `9:00` element/value of the arrival array   
+        - `STEP 3` : now , we'll use 2-pointer approach i.e `i` & `j`
+            ![2-pointer approach](../../notes-pics/15-1-lecture/love-babbar/lecture-15-43.png)
+            ![complete approach steps + DRY RUN code](../../notes-pics/15-1-lecture/love-babbar/lecture-15-44.png)
 
 - `Notes ✅`: what kind-of questions can be formed on array : 
     - related to maths , how to find whether that question using kadane's algo or not , searching , sorting , bit manipulation , 2D array , sliding window , etc...
