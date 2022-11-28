@@ -747,7 +747,21 @@
 - `ques` : minimize the heights 2 - `GFG` 
     - `ques` : https://practice.geeksforgeeks.org/problems/minimize-the-heights3351/1
     - understanding 
-        - given input : `[1, 5, 8, 10]`
+        - given input : `[1, 5, 8, 10]` & `k = 2`
+        - so on each element/tower , either we can add value of `k` or subtract the value of `k` like this 
+            ![we can either add or subtract the value of k on each element/tower of an array](../../notes-pics/15-1-lecture/love-babbar/lecture-15-45.png)
+        - & we need to find out minimum difference b/w longest & shortest tower <br>
+            here longest means `max` height & shortest means `min` height 💡💡💡
+        - we'll do this question without heapmap 
+    - approach
+        - `STEP 1` : sort the elements in ascending order like this `[1, 5, 8, 10]`
+        - `STEP 2` : take min as `min = arr[0]` & max as `max = arr[n-1]` because the array is stored
+        - `STEP 3` : now we have 4 options which we can do in both min & max tower
+            - `1` : +k , +k
+            - `2` : or +k , -k
+            - `3` : or -k , -k
+            - `4` : or -k , +k
+            - example : of using these different 4 options on both min & max
 
 - `Notes ✅`: what kind-of questions can be formed on array : 
     - related to maths , how to find whether that question using kadane's algo or not , searching , sorting , bit manipulation , 2D array , sliding window , etc...
