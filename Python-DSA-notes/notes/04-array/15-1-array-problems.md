@@ -744,9 +744,26 @@
             ![2-pointer approach](../../notes-pics/15-1-lecture/love-babbar/lecture-15-43.png)
             ![complete approach steps + DRY RUN code](../../notes-pics/15-1-lecture/love-babbar/lecture-15-44.png)
 
+- `ques` : minimize the heights 2 - `GFG` 
+    - `ques` : https://practice.geeksforgeeks.org/problems/minimize-the-heights3351/1
+    - understanding 
+        - given input : `[1, 5, 8, 10]`
+
 - `Notes ✅`: what kind-of questions can be formed on array : 
     - related to maths , how to find whether that question using kadane's algo or not , searching , sorting , bit manipulation , 2D array , sliding window , etc...
     - https://www.geeksforgeeks.org/largest-sum-contiguous-subarray
+
+- `tip to improve logic` : ✅🔥 
+    - if in class , teacher gave & you did 25 questions then do another 25 questions by yourself 
+    - so practice & if you won't be able to do a question then check it's hint & then again try to do it 
+        - but if you still not able to do it then see editorial & inside of it , only check starting 2-3 steps <br>
+            & then think about it by yourself
+        - but if you still not able to do it , then see the complete answer & after seeing the answer <br>
+            then dry run the answer & understand it & after understanding do it by yourself
+        - but if you still not able to understand the solution after doing it dry run <br>
+            then go to discussion forum & explore the solutions because maybe someone did it with optimize solution <br>
+            & see the comments & see people intuition how they got the answer
+    - tip : make sure do DRY RUN for 2 or 3 times with different test cases 💡💡💡
 
 - `tip to make notes` : clear 3 things
     - what , how & why for that topic
@@ -754,5 +771,6 @@
 - `advice` : for learning 
     - always go from small to big OR basics to advance
     - learn the basic stuff which required to learn that advance things , don't jump to directly on advance stuff
+    - mindset : in life , there's no late , after knowing the right path & you're working on it then it's great 🧠
 
 - after doing all those questions , then we're done with 25+ questions on array
