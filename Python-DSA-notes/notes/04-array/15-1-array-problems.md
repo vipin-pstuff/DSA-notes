@@ -753,15 +753,51 @@
         - & we need to find out minimum difference b/w longest & shortest tower <br>
             here longest means `max` height & shortest means `min` height 💡💡💡
         - we'll do this question without heapmap 
+        - what question is saying ? 
+            - we have height of different towers inside of an array <br>
+                & in answer , give minimum difference b/w longest & shortest tower
+            - so one tower is smaller & one tower is bigger <br>
+                & we just need to minimize the difference b/w that smaller & that bigger tower
+        - summary of the approach : only 2 things we need to do 💡💡💡
+            - `1st` : on each tower height , either do `+ k` or `- k` <br>
+                & we got the total 4 different combinations
+            - `2nd` : give a minimum difference b/w a longest tower & a shortest tower 
+                - & how we'll get longest tower & shortest tower i.e <br>
+                    by using all those 4 different combinations
+                - & we already applied all those 4 different combinations <br>
+                    & by doing that , we got to know that which one is giving smallest answer i.e <br>
+                    when we're doing `+ k` with shortest & `- k` with longest
     - approach
-        - `STEP 1` : sort the elements in ascending order like this `[1, 5, 8, 10]`
-        - `STEP 2` : take min as `min = arr[0]` & max as `max = arr[n-1]` because the array is stored
-        - `STEP 3` : now we have 4 options which we can do in both min & max tower
-            - `1` : +k , +k
-            - `2` : or +k , -k
-            - `3` : or -k , -k
-            - `4` : or -k , +k
-            - example : of using these different 4 options on both min & max
+        - 1st approach
+            - `STEP 1` : sort the elements in ascending order like this `[1, 5, 8, 10]`
+            - `STEP 2` : take min as `min = arr[0]` & max as `max = arr[n-1]` because the array is stored
+            - `STEP 3` : now we have 4 options which we can use on both min & max tower
+                - `1` : `+ k` , `+ k`
+                - `2` : or `+ k` , `- k`
+                - `3` : or `- k` , `- k`
+                - `4` : or `- k` , `+ k`
+                - example : using these 4 different options on both min & max values 
+                ![explanation](../../notes-pics/15-1-lecture/love-babbar/lecture-15-46.png)
+                - now where we'll getting smallest difference i.e <br>
+                    when we did `+ k` on shortest tower & `- k` on longest tower 💡💡💡
+        - 2nd approach
+            - getting formula to get the minimum number & maximum number 
+                ![how to get minimum & maximum number](../../notes-pics/15-1-lecture/love-babbar/lecture-15-47.png)
+                - for finding minimum number , we do `+ k` with shortest element & `- k` with largest element
+                - to find maximum number , we do `- k` with largest element & `+ k` with smallest element
+            - so this all about getting formula
+        - code approach 💡💡💡
+            ![how to get minimum & maximum number](../../notes-pics/15-1-lecture/love-babbar/lecture-15-48.png)
+            - now to get the longest & shortest tower , it can be any one <br>
+                so on each element of an array , we have 2 choices i.e `+ k` or `-k` like this <br>
+                ![2 choices we have on each element](../../notes-pics/15-1-lecture/love-babbar/lecture-15-49.png)
+                - so anyone can be maximum & anyone can be minimum , so we don't know
+                - that's why we run for loop on each element of an array <br>
+                    by using those formula for finding minimum & maximum
+                - & after getting minimum & maximum , then update the answer & return it 💡💡💡
+        - advice : 
+            - ques is little bit harder that's why do DRY RUN with 5 examples
+            - & do DRY RUN why we did `arr[i - 1] + k` to get max number instead of doing `arr[i]` 💡💡💡 
 
 - `Notes ✅`: what kind-of questions can be formed on array : 
     - related to maths , how to find whether that question using kadane's algo or not , searching , sorting , bit manipulation , 2D array , sliding window , etc...
