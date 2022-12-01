@@ -36,6 +36,20 @@
             - so we'll use binary search because we can take the advantage of given input array <br>
                 which is already in increasing order
             - `STEP 1` : so inside that array , starting value is considered as start & ending value is will be as end
-    
-
+            - `STEP 2` : then find the middle element 
+                - formula to find out the middle element
+                    `mid = (starting element index + ending element index) / 2`
+                - Eg : in that array starting element index is `0` of 3 & ending element is `6` of 18 <br>
+                    `(0 + 6)/2 = 3` , so middle element index is `3` which is 9
+            - `STEP 3` : now , check is `arr[mid] = 9` is equal-to the value of target like this
+                ```cpp
+                if (arr[mid] == target) {
+                    return true;
+                }
+                ```
+                - so in this case , mid element i.e 9 is not equal-to the target value
+            - `STEP 4` : now , where the target in the array , so we have 2 places to find the target value
+                - `1st place` : the target value can be on left side of the mid value
+                - `2nd place`  : the target value can be on right side of the mid value like this
+                    ![where the target value can be exists](../../notes-pics/16-1-lecture/love-babbar/lecture-16-1-2.png)
 
