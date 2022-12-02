@@ -74,6 +74,7 @@
                     ``` 
             - so ultimately , we have 3 places where the target value exists
                 ![3 places where the target value exists](../../notes-pics/16-1-lecture/love-babbar/lecture-16-1-4.png)
-        - code example 
+        - code example ✅
+            ![code example](../../notes-pics/16-1-lecture/love-babbar/lecture-16-1-5.png)
 
-            - write the code example in exacldraw
+            
