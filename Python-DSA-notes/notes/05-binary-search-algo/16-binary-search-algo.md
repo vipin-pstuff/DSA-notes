@@ -80,3 +80,97 @@
                 ![behind the scene , this happens](../../notes-pics/16-1-lecture/love-babbar/lecture-16-1-6.png)
             - doubt <br>
                 ![doubt](../../notes-pics/16-1-lecture/love-babbar/lecture-16-1-7.png)
+    - code 
+        ```cpp
+        int binarySearch(int arr[], int n, int target) {
+            int start = 0;
+            int end = n - 1;
+
+            int mid = (start + end)/2 ;
+
+            while(start <= end) {
+                // here we use equal-to sign instead of this -> start < end
+                    // because there's one point will come when only 1 element left & that element will be start & end also 
+                    // that's why we're using --> <= 💡💡💡
+
+                int midElement = arr[mid] ;
+
+                // element found
+                if (midElement == target) {
+                    return mid;
+                }
+
+                // check in left part and neglect right part
+                if (target < midElement) {
+                    end = mid - 1;
+                } else { // key > arr[mid]
+                    // check in right part and neglect left part
+                    start = mid + 1 ;
+                }
+
+                mid = (start + end) / 2 ;
+            }
+
+            return -1 ; // -1 means we didn't got the target value inside the array
+        }
+
+        int main() {
+            int arr[] = {2, 4, 6, 8, 9, 11, 23} ;
+            int n = 7 ;
+            int target = 232 ;
+
+            cout << binarySearch(arr, n, target) << endl;
+            return 0;
+        }
+        ```
+        - in this code , there's 1 mistake i.e `int mid = (start + end) / 2` . so on this line of code , <br>
+            integer can be overflow. so integer range is `[-2^31, 2^31 - 1]` , so if we have `start value = 2` <br>
+            & `end value = 2^31 - 1` then we'll get this <br>
+            ![integer overflow on that line of code](../../notes-pics/16-1-lecture/love-babbar/lecture-16-1-8.png)
+        - we can write this line of code i.e `int mid = (start + end) / 2` in different way , so that we don't get integer overflow error
+            - `1st way` <br>
+                ![1st way](../../notes-pics/16-1-lecture/love-babbar/lecture-16-1-9.png)
+                - do this way i.e `s/2 + e/2` , we'll not go out of range which means we're in safe side
+                - here `s` means starting index value of the element & `e` means ending index value of the element 
+            - `2nd way` <br>
+                ![2nd way](../../notes-pics/16-1-lecture/love-babbar/lecture-16-1-10.png)
+                - instead of using 2nd way , just use the 1st way 
+        - making code , bug free & avoiding the integer overflow error
+            ```cpp
+            int binarySearch(int arr[], int n, int target) {
+                int start = 0;
+                int end = n - 1;
+
+                int mid = start/2 + end/2 ;
+
+                while(start <= end) {
+                    int midElement = arr[mid] ;
+
+                    // element found
+                    if (midElement == target) {
+                        return mid;
+                    }
+
+                    // check in left part and neglect right part
+                    if (target < midElement) {
+                        end = mid - 1;
+                    } else { 
+                        // check in right part and neglect left part
+                        start = mid + 1 ;
+                    }
+
+                    mid = start/2 + end/2 ;
+                }
+
+                return -1 ; 
+            }
+
+            int main() {
+                int arr[] = {2, 4, 6, 8, 9, 11, 23} ;
+                int n = 7 ;
+                int target = 232 ;
+
+                cout << binarySearch(arr, n, target) << endl;
+                return 0;
+            }
+            ```
