@@ -76,5 +76,5 @@
                 ![3 places where the target value exists](../../notes-pics/16-1-lecture/love-babbar/lecture-16-1-4.png)
         - code example ✅
             ![code example](../../notes-pics/16-1-lecture/love-babbar/lecture-16-1-5.png)
-
-            
+            - behind the scene , this is happening & how we get `O(log n)` time complexity of binary search algo 
+                ![behind the scene , this happens](../../notes-pics/16-1-lecture/love-babbar/lecture-16-1-6.png)
