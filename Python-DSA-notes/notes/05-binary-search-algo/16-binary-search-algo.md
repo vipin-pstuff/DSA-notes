@@ -25,6 +25,19 @@
     - Eg : inside an array , if the data is random order then we can't apply binary search algo on that array 💡💡💡
 
 - understanding binary search algo
+    - about it 
+        - what is it ? 
+            - binary search algo also called Divide & Conquerer Technique
+            - it's a searching technique & 
+        - why ? 
+            - due to it , our number of comparisons becomes less means we don't need to traverse the complete array again & again
+            - Eg : `2^10` is easy to do linear search & find out the target value  <br>
+                but `2^100` then we can't do linear search 
+        - advantage of it 
+            - due to it , in each iteration , we're dividing the array into sub-array & neglecting the one part of the array
+            - time complexity `O(log n)`
+        - space complexity : `O(1)`
+        - when we do recursion , then our code will become even less than we just wrote
     - Example : 
         - we have given input i.e `[3, 5, 7, 9, 11, 15, 18]` which is in increasing order
         - we need to find out target i.e `15` , so whether 15 is present in this array or not
@@ -80,6 +93,9 @@
                 ![behind the scene , this happens](../../notes-pics/16-1-lecture/love-babbar/lecture-16-1-6.png)
             - doubt <br>
                 ![doubt](../../notes-pics/16-1-lecture/love-babbar/lecture-16-1-7.png)
+    - time complexity of binary search algo
+        ![how O(log n) time complexity of binary search algo](../../notes-pics/16-1-lecture/love-babbar/lecture-16-1-8.png)
+        - at the end , if only 1 block is left , then means length of an array is `1` , that's why we took `1`
     - code 
         ```cpp
         int binarySearch(int arr[], int n, int target) {
@@ -126,14 +142,14 @@
         - in this code , there's 1 mistake i.e `int mid = (start + end) / 2` . so on this line of code , <br>
             integer can be overflow. so integer range is `[-2^31, 2^31 - 1]` , so if we have `start value = 2` <br>
             & `end value = 2^31 - 1` then we'll get this <br>
-            ![integer overflow on that line of code](../../notes-pics/16-1-lecture/love-babbar/lecture-16-1-8.png)
+            ![integer overflow on that line of code](../../notes-pics/16-1-lecture/love-babbar/lecture-16-1-9.png)
         - we can write this line of code i.e `int mid = (start + end) / 2` in different way , so that we don't get integer overflow error
             - `1st way` <br>
-                ![1st way](../../notes-pics/16-1-lecture/love-babbar/lecture-16-1-9.png)
+                ![1st way](../../notes-pics/16-1-lecture/love-babbar/lecture-16-1-10.png)
                 - do this way i.e `s/2 + e/2` , we'll not go out of range which means we're in safe side
                 - here `s` means starting index value of the element & `e` means ending index value of the element 
             - `2nd way` <br>
-                ![2nd way](../../notes-pics/16-1-lecture/love-babbar/lecture-16-1-10.png)
+                ![2nd way](../../notes-pics/16-1-lecture/love-babbar/lecture-16-1-11.png)
                 - instead of using 2nd way , just use the 1st way 
         - making code , bug free & avoiding the integer overflow error
             ```cpp
@@ -141,7 +157,7 @@
                 int start = 0;
                 int end = n - 1;
 
-                int mid = start/2 + end/2 ;
+                int mid = start/2 + end/2 ; // OR int mid = start + (end - start) / 2;
 
                 while(start <= end) {
                     int midElement = arr[mid] ;
@@ -159,7 +175,7 @@
                         start = mid + 1 ;
                     }
 
-                    mid = start/2 + end/2 ;
+                    mid = start/2 + end/2 ; // OR mid = start + (end - start) / 2;
                 }
 
                 return -1 ; 
@@ -174,3 +190,9 @@
                 return 0;
             }
             ```
+            - `mid = start/2 + end/2` check is it giving correct output or not <br>
+                but `mid = start + (end - start) / 2` is working correctly ✔️✔️✔️
+            - to know about `vector` in c++ , see the STL video
+
+
+            
