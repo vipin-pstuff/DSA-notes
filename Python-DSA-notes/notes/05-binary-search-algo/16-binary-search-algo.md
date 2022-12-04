@@ -134,7 +134,7 @@
             int main() {
                 int arr[] = {2, 4, 6, 8, 9, 11, 23} ;
                 int n = 7 ;
-                int target = 232 ;
+                int target = 23 ;
 
                 cout << binarySearch(arr, n, target) << endl;
                 return 0;
@@ -263,7 +263,113 @@
     - approach
         ![approach](../../notes-pics/16-1-lecture/love-babbar/lecture-16-1-13.png)
     - code
-        ```cpp
+        - code of first occurrence
+            ```cpp
+            int firstOcc(int arr[], int n, int target) {
+                int start = 0 ;
+                int end = 1 ;
 
-        ```
+                int mid = start + (end - start)/2 ;
+                int ans = -1; // here we used -1 means we're saying that if we don't get the answer then return -1
+                    // this variable i.e ans will contain index of that element which is first occurrence 
+                while(start <= end) {
+                    int midElement = arr[mid];
 
+                    // element found
+                    if (midElement == target) {
+                        ans = mid;
+                        end = mid - 1; // for first occurrence , we search on left side instead of doing in right side 
+                                        // which is obvious 💡💡💡
+                    }
+
+                    // check in left part & neglect right part
+                    if (target < midElement) {
+                        end = mid - 1;
+                    } else {
+                        // check in right part & neglect left part
+                        start = mid+1;
+                    }
+
+                    mid = start + (end - start)/2 ;
+                }
+                return ans;
+            }
+
+            int main() {
+                int arr[] = {2, 3, 3, 3, 4, 7, 9} ;
+                int n = 7 ;
+                int target = 3 ;
+
+                cout << binarySearch(arr, n, target) << endl;
+                return 0;
+            }
+            ```
+            - dry run for first occurrence 
+                ![dry run](../../notes-pics/16-1-lecture/love-babbar/lecture-16-1-14.png)
+        - code of last occurrence
+            - for last occurrence , we need to check on right side which is obvious 💡💡💡
+            - & we just need to change the single statement inside `midElement == target` condition <br>
+                i.e from `end = mid - 1` into `end = mid + 1`
+            ```cpp
+            int firstOcc(int arr[], int n, int target) {
+                int start = 0 ;
+                int end = 1 ;
+
+                int mid = start + (end - start)/2 ;
+                int ans = -1; // here we used -1 means we're saying that if we don't get the answer then return -1
+                    // this variable i.e ans will contain index of that element which is first occurrence 
+                while(start <= end) {
+                    int midElement = arr[mid];
+
+                    // element found
+                    if (midElement == target) {
+                        ans = mid;
+                        end = mid + 1; 
+                            // for last occurrence , we search on right side instead of doing in left side 
+                            // which is obvious ✔️
+                    }
+
+                    // check in left part & neglect right part
+                    if (target < midElement) {
+                        end = mid - 1;
+                    } else {
+                        // check in right part & neglect left part
+                        start = mid+1;
+                    }
+
+                    mid = start + (end - start)/2 ;
+                }
+                return ans;
+            }
+
+            int main() {
+                int arr[] = {2, 3, 3, 3, 4, 7, 9} ;
+                int n = 7 ;
+                int target = 3 ;
+
+                cout << binarySearch(arr, n, target) << endl;
+                return 0;
+            }
+            ```
+
+- `ques` : find total no. of occurrence of element in sorted array ?
+    - understand
+        - we have 2 ways to solve this question 
+            - `1st way` : linear search which has time complexity is `O(n)` 
+            - `2nd way` : binary search algo which has time complexity is `O(log n)` , so formula is `last - first + 1` , <br>
+                we'll get value of last & first via those 2 functions i.e first occurrence & last occurrence
+        ![example](../../notes-pics/16-1-lecture/love-babbar/lecture-16-1-15.png)
+
+- what we learned yet 
+    - binary search algo
+    - STL - binary search inbuilt function , lower bound (first occurrence) & upper bound (last occurrence) <br>
+        they're same i.e first & last occurrence
+
+- `ques` : find fixed point in a sorted array
+    - understanding  
+        - fixed point - means both that value & index of that value is same , means value == index
+        - input array `[-10, -5, 0, 3, 7]` <br>
+            so we can see that `3` is a value & it's index number is also `3` , so we can say that's fixed point <br>
+            so output is `3` 
+    - approach
+        - brute force approach
