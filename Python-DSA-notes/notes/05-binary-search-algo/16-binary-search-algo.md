@@ -372,4 +372,30 @@
             so we can see that `3` is a value & it's index number is also `3` , so we can say that's fixed point <br>
             so output is `3` 
     - approach
-        - brute force approach
+        - `1st` : brute force approach
+            - doing linear search & comparing target value with the index value of that element
+            - so time complexity is O(n)
+            - but let's say interviewer want answer in O(log n) , so use binary search 
+        - `2nd` : binary search algo approach
+            - so we can use binary search algo because in the question , the input array is already in a sorted array <br>
+                but when we were using linear search then we didn't take the advantage of binary search 💡💡💡 
+                ![explanation](../../notes-pics/16-1-lecture/love-babbar/lecture-16-1-16.png)
+                - DRY RUN explanation <br>
+                    ![DRY RUN explanation](../../notes-pics/16-1-lecture/love-babbar/lecture-16-1-17.png)
+            - problem with this approach : 
+                - what if we have multiple fixed points (homework)
+            - this problem is giving TLE
+        - `3rd` : binary search algo with different way
+            - use this `mid - 1 < start` to make a condition over this `arr[mid] < mid` <br>
+                use this condition `mid + 1 > start` to make a condition over this `arr[mid] > mid`
+            - do it as homework
+
+- `ques` : find pivot element in an array
+- `ques` : search in a rotated & sorted array
+- `ques` : peak in mountain array
+- `ques` : square root using binary search
+- `ques` : check if N & it's double exists `leetcode`
+- `ques` : search in a sorted array of unknown size `leetcode`
+
+- homework
+    - `1` : what to do when we have multiple fixed points
