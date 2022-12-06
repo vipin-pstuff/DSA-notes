@@ -2,6 +2,7 @@
 
 - questions on binary search
     ![questions on binary search](../../notes-pics/16-1-lecture/love-babbar/lecture-16-1-0.png)
+    - ques : search in a sorted array of unknown size `google question` 
 
 ## lecture - love babbar (paid course)
 
