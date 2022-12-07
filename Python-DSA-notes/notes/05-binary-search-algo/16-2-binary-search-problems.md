@@ -27,7 +27,12 @@
                     ![applying binary search algo in both ways](../../notes-pics/16-2-lecture/love-babbar/lecture-16-2-2.png)
                 - what will be the algo/steps
                     ![time complexity & algo steps](../../notes-pics/16-2-lecture/love-babbar/lecture-16-2-3.png)
-                    
+            - how to find that row which contain the target value ? 👍
+                ![approach explain : how to find that row which contain the target value](../../notes-pics/16-2-lecture/love-babbar/lecture-16-2-4.png)
+                - conclusion <br> 
+                    ![conclusion](../../notes-pics/16-2-lecture/love-babbar/lecture-16-2-5.png)
 
+                    -- again right the second conclusion of the approach here
+                 
 
 
