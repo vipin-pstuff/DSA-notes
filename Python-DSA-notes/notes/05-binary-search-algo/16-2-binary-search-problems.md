@@ -31,8 +31,21 @@
                 ![approach explain : how to find that row which contain the target value](../../notes-pics/16-2-lecture/love-babbar/lecture-16-2-4.png)
                 - conclusion <br> 
                     ![conclusion](../../notes-pics/16-2-lecture/love-babbar/lecture-16-2-5.png)
+                    ![summary of those 5 conditions](../../notes-pics/16-2-lecture/love-babbar/lecture-16-2-6.png)
+            - so we need to apply binary search algo 2 times
+            - student's doubts
+                - `1` : here in above approach , we're using 2 pointer approach , but i need 1 pointer approach
+                    ![student doubts](../../notes-pics/16-2-lecture/love-babbar/lecture-16-2-7.png)
+                - `2` : what if we apply binary search algo in each row inside 2D sorted array 
+                    - then time complexity is number of rows * log of column i.e `O(n * logm)` 💡💡💡
+                    - another approach to solve this question 
+                        ![another approach](../../notes-pics/16-2-lecture/love-babbar/lecture-16-2-8.png)
+                        - check this another approach solution on YT love babbar DSA course
 
-                    -- again right the second conclusion of the approach here
-                 
+- advice to become better programmer
+    - after finding the approach of a question then do DRY RUN 5 times with different test cases 🔥🔥🔥
+    - this practice will help you to become better & you'll be able to visualize the code in better way 
+
+
 
 
