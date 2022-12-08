@@ -41,9 +41,35 @@
                     - another approach to solve this question 
                         ![another approach](../../notes-pics/16-2-lecture/love-babbar/lecture-16-2-8.png)
                         - check this another approach solution on YT love babbar DSA course
+        - DRY RUN
+            ![DRY RUN - finding the row which contain the target value](../../notes-pics/16-2-lecture/love-babbar/lecture-16-2-9.png)
+            ![DRY RUN - after finding that row , then finding the target value](../../notes-pics/16-2-lecture/love-babbar/lecture-16-2-10.png)
+        - code
+            ```cpp
+            #include <iostream>
+            using namespace std;
+
+            bool search(int arr[][3], int n, int m, int target) {
+
+            }
+
+            int main() {
+                int arr[3][3] = {1, 5, 9, 14, 20, 23, 30, 34, 43};
+
+                int n = 3;
+                int m = 3;
+                int target = 34;
+                cout << search(arr, n, m, target);
+
+                return 0;
+            }
+            ```
 
 - advice to become better programmer
-    - after finding the approach of a question then do DRY RUN 5 times with different test cases 🔥🔥🔥
+    - after finding the approach of a question then do DRY RUN 5 times with different test cases 🔥🔥🔥 <br>
+        & to visualize more , you can print those variables also like this 
+        ![visualize the code](../../notes-pics/16-2-lecture/love-babbar/how-to-visualize-the-code.png)
+        - so this the basic debugging if you stuck in the code
     - this practice will help you to become better & you'll be able to visualize the code in better way 
 
 
