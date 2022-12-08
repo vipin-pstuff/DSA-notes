@@ -45,25 +45,133 @@
             ![DRY RUN - finding the row which contain the target value](../../notes-pics/16-2-lecture/love-babbar/lecture-16-2-9.png)
             ![DRY RUN - after finding that row , then finding the target value](../../notes-pics/16-2-lecture/love-babbar/lecture-16-2-10.png)
         - code
-            ```cpp
-            #include <iostream>
-            using namespace std;
+            - STEP 1 : creating search() function to find the row which contain the target element
+                ```cpp
+                #include <iostream>
+                using namespace std;
 
-            bool search(int arr[][3], int n, int m, int target) {
+                bool search(int arr[][3], int n, int m, int target) {
+                    // find row 
+                    int s = 0; // starting row
+                    int e = n-1; // ending row
 
-            }
+                    int mid = s + (e-s)/2; // we wrote this formula because integer overflow error will never come
+                        // but if we use (s + e)/2 then there's a chance that inter overflow error will happen 💡💡💡
 
-            int main() {
-                int arr[3][3] = {1, 5, 9, 14, 20, 23, 30, 34, 43};
+                    // here why we use <= instead of < 
+                        // because it's already discussed in a previous lecture
+                    while(s <= e) {
+                        // check starting element of row
+                        if (arr[mid][0] == target) {
+                            cout << row << " " << 0 << endl;     // printing coordinates of that target element
+                            return true ;
+                        }
 
-                int n = 3;
-                int m = 3;
-                int target = 34;
-                cout << search(arr, n, m, target);
+                        // check ending element of row
+                        if (arr[mid][m-1] == target) { // here (m - 1) means last column
+                            cout << row << " " << mid-1 << endl; // printing coordinates of that target element
+                            return true;
+                        }
 
-                return 0;
-            }
-            ```
+                        // check if element is present in between starting & ending element 
+                        if (target > arr[mid][0] && target < arr[mid][m-1]) {
+                            
+                            // apply binary search on column
+                            bool ans = binarySearch(arr, n, m, mid, target);
+                            return ans;
+                        }
+
+                        // CHECK upper part
+                        if (target < arr[mid][0]) 
+                            e = mid - 1;
+
+                        // check lower part
+                        if (target > arr[mid][m-1])
+                            e = mid + 1;
+
+                        mid = s + (e-s)/2;
+                    }
+
+                    return false;
+                }
+
+                int main() {
+                    int arr[3][3] = {1, 5, 9, 14, 20, 23, 30, 34, 43};
+
+                    int n = 3;
+                    int m = 3;
+                    int target = 34;
+                    cout << search(arr, n, m, target);
+
+                    return 0;
+                }
+                ```
+            - STEP 2 : writing binary search algo to find the target element inside that row (which contain the target element)
+                ```cpp
+                #include <iostream>
+                using namespace std;
+
+                bool binarySearch(int arr[][3], int n, int m, int row, int target) {
+                    int s = 0;
+                    int e = m-1;
+
+                    int mid = s + (e-s)/2;
+
+                    while(s <= e) {
+                        if (arr[row][mid] == target) {
+                            cout << row << " " << mid << endl;
+                            return true;
+                        }
+
+                        if (arr[row][mid] < target) {
+                            s = mid + 1;
+                        } else {
+                            e = mid - 1;
+                        }
+                        mid = s + (e-s)/2;
+                    }
+                    return false;
+                }
+
+                // put code from STEP 1
+                ```
+            - STEP 3 : using DRY Concept 
+                - here we can see that we use this line of code i.e `int mid = s + (e-s)/2;` 2 times <br>
+                    it as a global variable inside binarySearch() function & inside while loop of binarySearch() function  
+                - so we can put this line of code i.e `int mid = s + (e-s)/2;` inside only while loop <br>
+                    then we don't need to define this `mid = s + (e-s)/2;` again
+                ```cpp
+                #include <iostream>
+                using namespace std;
+
+                bool binarySearch(int arr[][3], int n, int m, int row, int target) {
+                    int s = 0;
+                    int e = m-1;
+
+                    while(s <= e) {
+                        int mid = s + (e-s)/2;
+
+                        if (arr[row][mid] == target) {
+                            cout << row << " " << mid << endl;
+                            return true;
+                        }
+
+                        if (arr[row][mid] < target) {
+                            s = mid + 1;
+                        } else {
+                            e = mid - 1;
+                        }
+
+                        // mid = s + (e-s)/2; 
+                            // -- how we don't need to define this again 
+                                // because we used define mid variable inside while loop itself
+                            // but if you use previous way then it's more readable 
+                    }
+                    return false;
+                }
+
+                // put code from STEP 1
+                ```
 
 - advice to become better programmer
     - after finding the approach of a question then do DRY RUN 5 times with different test cases 🔥🔥🔥 <br>
