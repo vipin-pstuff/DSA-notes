@@ -3,6 +3,7 @@
 - questions on binary search
     ![questions on binary search](../../notes-pics/16-1-lecture/love-babbar/lecture-16-1-0.png)
     - ques : search in a sorted array of unknown size `google question` 
+    - in this questions sheet , last 2 questions are really important even these questions are in leetcode premium
 
 ## lecture - love babbar (paid course)
 

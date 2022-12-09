@@ -50,6 +50,7 @@
                 #include <iostream>
                 using namespace std;
 
+                // here finding the row which has the target value
                 bool search(int arr[][3], int n, int m, int target) {
                     // find row 
                     int s = 0; // starting row
@@ -144,9 +145,10 @@
                 #include <iostream>
                 using namespace std;
 
+                // here we're finding that column which has the target value
                 bool binarySearch(int arr[][3], int n, int m, int row, int target) {
-                    int s = 0;
-                    int e = m-1;
+                    int s = 0; // start column
+                    int e = m-1; // ending column
 
                     while(s <= e) {
                         int mid = s + (e-s)/2;
@@ -172,6 +174,18 @@
 
                 // put code from STEP 1
                 ```
+            - student's doubts
+                - `3` : if we again & again checking the same start & end element i.e
+                   ![doubt](../../notes-pics/16-2-lecture/love-babbar/lecture-16-2-11.png)
+        - another approach
+            - making code little bit small - by love babbar 💡💡💡
+                ![making code little bit small](../../notes-pics/16-2-lecture/love-babbar/lecture-16-2-12.png)
+            - `3rd approach` : this questions has been done on YT by using `% , & , |` 
+
+- homework  
+    - in leetcode , use tags i.e binary search & 2D array , so do total 5 questions of this combination topic <br>
+        do 3 Easy , 1 medium , 1 hard
+                
 
 - advice to become better programmer
     - after finding the approach of a question then do DRY RUN 5 times with different test cases 🔥🔥🔥 <br>
@@ -180,6 +194,14 @@
         - so this the basic debugging if you stuck in the code
     - this practice will help you to become better & you'll be able to visualize the code in better way 
 
+- tip to learn a concept in a better way 👍👍👍
+    - instead of doing 50 or more than 50 questions on 2D array is not worth it 
+    - so as soon as we learn new topics like recursion , median in a sorted 2D array , binary search , graph <br>
+        then we'll learn about 2D array more in those different topics 
 
-
-
+- what best/bigger project mean ? 👍👍👍
+    - means complex project you're making 
+    - unique 
+    - new tech stack you're using , so references of that technology is not enough to learn
+    - it's subject matter of expert are very less or you worked on that tech stack , so you become subject matter of expert
+    - you know all the questions & it's alternatives 
