@@ -18,5 +18,9 @@
 
 - ques : EKO SPOJ
     - https://www.spoj.com/problems/EKO/
+        - we'll do this question only then the same technique will be applied on these other questions
+        - story questions are like this question  
+    - understand 
+        ![understanding the question](../../notes-pics/16-3-lecture/love-babbar/lecture-16-3-0.png)
 
 
