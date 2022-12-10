@@ -34,5 +34,7 @@
         - doubt : what if height of a tree is less than the height (which set for cutting all those trees) <br> 
             so answer will be `0` 
     - approach
-        - `1st approach` : brute force
+        - `1st approach` : brute force (means doing hardwork & code not optimize)
+            ![brute force approach](../../notes-pics/16-3-lecture/love-babbar/lecture-16-3-1.png) <br>
+          
             
