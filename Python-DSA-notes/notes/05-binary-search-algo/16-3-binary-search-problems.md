@@ -39,4 +39,6 @@
         - `2nd approach` : using binary search algo (optimizing the solution)
             ![what is TLE & how to avoid it , what is constraints](../../notes-pics/16-3-lecture/love-babbar/lecture-16-3-2.png) 
             ![approach STEP 1](../../notes-pics/16-3-lecture/love-babbar/lecture-16-3-3.png) 
+            ![approach STEP 2](../../notes-pics/16-3-lecture/love-babbar/lecture-16-3-4.png) <br>
+            so can we write the code like this
             
