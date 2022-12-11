@@ -36,5 +36,7 @@
     - approach
         - `1st approach` : brute force (means doing hardwork & code not optimize)
             ![brute force approach](../../notes-pics/16-3-lecture/love-babbar/lecture-16-3-1.png) <br>
-          
+        - `2nd approach` : using binary search algo (optimizing the solution)
+            ![what is TLE & how to avoid it , what is constraints](../../notes-pics/16-3-lecture/love-babbar/lecture-16-3-2.png) 
+            ![approach STEP 1](../../notes-pics/16-3-lecture/love-babbar/lecture-16-3-3.png) 
             
