@@ -53,9 +53,37 @@
                     e = mid - 1;
                 }
             }
+
+            bool isPossibleSolution(int mid, int arr[], int target) {}
             ```
-        - DRY RUN with example & understanding going right & left 💡💡💡
-            ![DRY RUN with example & what is means by going right & left side](../../notes-pics/16-3-lecture/love-babbar/lecture-16-3-5.png) 
+            - DRY RUN with example & understanding going right & left 💡💡💡
+                ![DRY RUN with example & what is means by going right & left side](../../notes-pics/16-3-lecture/love-babbar/lecture-16-3-5.png) 
+                - checking mid value whether it's a possible answer or not
+                    ![DRY RUN for isPossibleSolution() function](../../notes-pics/16-3-lecture/love-babbar/lecture-16-3-6.png) 
+                - basically , the game is all about right & left 
+                - & most of the time `isPossibleSolution()` function is solved via brute force solution <br>
+                    but if you want to optimize this also , then you can do 💡💡💡
+                - if you have confusion in left & right then see this 💡
+                    ![confusion in right & left approach](../../notes-pics/16-3-lecture/love-babbar/lecture-16-3-7.png) 
+            - working only on isPossibleSolution() function
+                ```
+                bool isPossibleSolution(int mid, int arr[], int target) {
+                    sum = 0 ; --> this variable will calculate the sum
+                    for (i -> 0 -> < n) {
+                        int difference = 0;
+                        if (arr[i] > mid) ---> means if the size of a tree is bigger than the size of our cutter machine
+                                                then we'll find the difference means do subtraction 💡💡💡 
+                            difference = arr[i] - mid ;
+                        sum = sum + difference ;
+                    }
+
+                    -- here we're doing comparison
+                    if (sum >= target)
+                        return true
+                    else 
+                        return false
+                }
+                ```
 
 
 - advice 👍
