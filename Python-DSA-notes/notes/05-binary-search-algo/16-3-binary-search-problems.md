@@ -40,5 +40,24 @@
             ![what is TLE & how to avoid it , what is constraints](../../notes-pics/16-3-lecture/love-babbar/lecture-16-3-2.png) 
             ![approach STEP 1](../../notes-pics/16-3-lecture/love-babbar/lecture-16-3-3.png) 
             ![approach STEP 2](../../notes-pics/16-3-lecture/love-babbar/lecture-16-3-4.png) <br>
-            so can we write the code like this
+            so can we write the code like this 
+            ```
+            s = 0 , e = Max(arr)
+            while(s <= e) {
+                int mid = (s+e)/2;
+                if (isPossibleSolution(mid)) {
+                    ans = mid ; ---> here storing the answer
+                    s = mid + 1 ; ---> for right side means going up
+                } else {
+                    // left means going down
+                    e = mid - 1;
+                }
+            }
+            ```
+        - DRY RUN with example & understanding going right & left 💡💡💡
+            ![DRY RUN with example & what is means by going right & left side](../../notes-pics/16-3-lecture/love-babbar/lecture-16-3-5.png) 
+
+
+- advice 👍
+    - do DRY RUN on pen & paper to understand that problem clearly 
             
