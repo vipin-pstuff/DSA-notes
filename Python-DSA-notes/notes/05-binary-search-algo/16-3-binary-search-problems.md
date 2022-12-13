@@ -66,25 +66,107 @@
                 - if you have confusion in left & right then see this 💡
                     ![confusion in right & left approach](../../notes-pics/16-3-lecture/love-babbar/lecture-16-3-7.png) 
             - working only on isPossibleSolution() function
-                ```
+                ```cpp
                 bool isPossibleSolution(int mid, int arr[], int target) {
-                    sum = 0 ; --> this variable will calculate the sum
-                    for (i -> 0 -> < n) {
-                        int difference = 0;
-                        if (arr[i] > mid) ---> means if the size of a tree is bigger than the size of our cutter machine
-                                                then we'll find the difference means do subtraction 💡💡💡 
+                    sum = 0 ; // --> this variable will calculate the sum
+                    for (i -> 0 -> < n) { // --> here we're traversing on each tree
+                        int difference = 0; // --> by-default we're set the difference as 0
+                        if (arr[i] > mid) // ---> means if the size of a tree is bigger than the size of our cutter machine
+                                            // then we'll find the difference means do subtraction 💡💡💡 
+                                            // means we'll cut them & get the difference like 6 , 0 , 9 & then 0 getting in the example
                             difference = arr[i] - mid ;
-                        sum = sum + difference ;
+
+                        sum = sum + difference ; // --> here we're adding all those differences which we're getting 
+                                                    // like this 6 + 0 + 9 + 0 = 15
                     }
 
-                    -- here we're doing comparison
+                    // -- here we're doing comparison
                     if (sum >= target)
                         return true
                     else 
                         return false
                 }
                 ```
+                ![DRY RUN of isPossibleSolution() function](../../notes-pics/16-3-lecture/love-babbar/lecture-16-3-8.png) 
+                - & we're showing the size/height of the cutter machine through that `mid` value 💡💡💡 
+    - code
+        ```cpp
+        #include <iostream>
+        #include <algorithm>
+        using namespace std;
 
+        // here we took as bool -> for this function
+            // because we're calling this function inside -> if statement
+        bool isPossibleSolution(int mid, int arr[], int n, int target) {
+            
+            int sum = 0;
+            for (int i=0; i<n; i++) {
+                int diff = 0;
+
+                if (arr[i] > mid) 
+                    diff = arr[i] - mid;
+
+                sum = sum + diff ;
+            }
+
+            if (sum >= target) 
+                return true ;
+            else 
+                return false;
+        }
+
+        int getMaxHeightOfSaw(int arr[], int n, int target) {
+            sort(arr, arr + n) ;
+                // why we're sorting because while doing DRY RUN , love babbar didn't told about this ✅
+                // so we're sorting because you'll say that we did becuz we're using binary search
+                    // which is not , because the search space is already sorted
+                    // What Love Babbar told earlier that binary search algo will be applied 
+                        // on monotonic function (means either increasing or decreasing)
+                    // & we're applying binary search algo on 0 to 18
+                        // don't you think that 0 to 18 is already sorted or not ?
+                        // so Yes , because 0 to 18 is a counting which is already sorted
+                    // so we're not applying binary search algo on height of all the trees 
+                        // we're applying it on 0 to 18 counting 💡💡💡
+                    // but why we did sorting ? 
+                        // because to get the last element as ending element that's it 
+
+            int s = 0 ;
+            int e = arr[n-1] ;
+
+            int ans = -1;
+
+            while(s <= e){
+                int mid = s + (e-s)/2;
+
+                if (isPossibleSolution(mid, arr, n, target)) {
+                    // store ans
+                    ans = mid ;
+                    // move to right
+                    s = mid + 1;
+                } else {
+                    // move to left
+                    e = mid - 1;
+                }
+            }
+            
+            return ans;
+        }
+
+        int main() {
+            int arr[] = {15, 8, 18, 6};
+            int target = 30 ;
+
+            cout << getMaxHeightOfSaw(arr, 4, target) << endl ;
+
+            int ans = getMaxHeightOfSaw(arr, 4, target);
+            cout << "Answer is " << ans << endl ;
+
+            return 0;
+        }
+
+        // output : Answer is 4
+        ```
+    - DRY RUN of code
 
 - advice 👍
     - do DRY RUN on pen & paper to understand that problem clearly 
