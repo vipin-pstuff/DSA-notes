@@ -167,6 +167,7 @@
         // output : Answer is 4
         ```
     - DRY RUN of code
+        ![DRY RUN](../../notes-pics/16-3-lecture/love-babbar/lecture-16-3-9.png) 
 
 - advice 👍
     - do DRY RUN on pen & paper to understand that problem clearly 
