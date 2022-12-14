@@ -180,6 +180,7 @@
             so we were already know that TC will come in `n log n` , so that's why , we also did `sort()` <br>
             which doesn't create any negative impact
     - advice to do questions of search space solution
+        ![tips to solve questions of search space solution](../../notes-pics/16-3-lecture/love-babbar/lecture-16-3-11.png) 
 
 - advice 👍
     - do DRY RUN on pen & paper to understand that problem clearly 
