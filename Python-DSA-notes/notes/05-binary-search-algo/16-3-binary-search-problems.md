@@ -168,7 +168,22 @@
         ```
     - DRY RUN of code
         ![DRY RUN](../../notes-pics/16-3-lecture/love-babbar/lecture-16-3-9.png) 
+        - & we're updating the mid value via while loop
+        - here we used `sort()` function to get the max value i.e end value or <br>
+            second way is we can do for loop & traverse on each element of an array & get the max value i.e end value 
+    - time complexity of code
+        ![TC](../../notes-pics/16-3-lecture/love-babbar/lecture-16-3-10.png) 
+        - & space complexity is O(1) because `1st` : we didn't took additional space except binary search <br>
+            `2nd` : inside isPossibleSolution() , we took space for only variables 
+        - one thing we miss i.e we used `sort()` , so it's time complexity is `n log n` , so `n log n` + `n log n` = `n log n` <br> 
+            that's why we did `sort()` instead of doing linear search via loop to get the max value <br>
+            so we were already know that TC will come in `n log n` , so that's why , we also did `sort()` <br>
+            which doesn't create any negative impact
+    - advice to do questions of search space solution
 
 - advice 👍
     - do DRY RUN on pen & paper to understand that problem clearly 
+    - whenever you find any alternative approach that problem then don't do code directly , do these  <br>
+        `1st` : understand the approach correctly <br>
+        `2nd` : then DRY RUN that approach with different test cases to check whether it's correctly in different test cases or not
             
