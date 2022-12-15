@@ -15,6 +15,9 @@
     - `4` : painter partition
     - `5` : EKO spoj
     - `6` : roti prata
+    - & for more ques on binary search algo , check interviewBit <br>
+        but if you're able to do these 6 questions by yourself then that's it <br>
+        no more questions you need to do
 
 - ques : EKO SPOJ
     - https://www.spoj.com/problems/EKO/
@@ -181,6 +184,41 @@
             which doesn't create any negative impact
     - advice to do questions of search space solution
         ![tips to solve questions of search space solution](../../notes-pics/16-3-lecture/love-babbar/lecture-16-3-11.png) 
+    - if you're getting TLE , but there's no problem in the approach <br>
+        so chances are integer overflow because `sum = sum + diff` & `sum` is integer type , so you can take `long` integer datatype <br> 
+        then no problem will come
+
+- ques : https://www.spoj.com/problems/PRATA
+    - we can solve this ques via hashmap also 
+    - understanding 
+        ```
+        p -> paratha you need to make , p can be any value , let's say 10 paratha we need to make
+        L -> cooks (means we have L cooks)
+                |
+                +--> rank --> R 
+                (means each cook have a rank, let's say babbar cook has 1st rank)
+        
+        - so if any cook has rank -> R then
+            1st paratha (will be made) in R minute 
+            (so babbar has a rank i.e 1st rank , so he'll make 1st paratha in Rmin)
+
+            2nd paratha -> 2Rmin (means babbar will make 2nd paratha in 2 * 1 i.e in 2min he'll make)
+
+            3rd paratha -> 3Rmin (means babbar will make 3rd paratha in 3 * 1 i.e in 3min he'll make)
+
+        ques - find minimum time to get order done ? 
+            means - we need to tell in how much time will take to make total P paratha 
+            means tell the minimum time 
+        ```
+        ```
+        question is saying that we have total 4 cooks
+
+        & their ranks is : 1 , 2 , 3 , 4
+
+        total paratha we need to make is 10
+        ```
+    - approach 
+
 
 - advice 👍
     - do DRY RUN on pen & paper to understand that problem clearly 
