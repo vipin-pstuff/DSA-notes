@@ -192,22 +192,22 @@
     - we can solve this ques via hashmap also 
     - understanding 
         ```
-        p -> paratha you need to make , p can be any value , let's say 10 paratha we need to make
+        p -> prata you need to make , p can be any value , let's say 10 prata we need to make
         L -> cooks (means we have L cooks)
                 |
                 +--> rank --> R 
                 (means each cook have a rank, let's say babbar cook has 1st rank)
         
         - so if any cook has rank -> R then
-            1st paratha (will be made) in R minute 
-            (so babbar has a rank i.e 1st rank , so he'll make 1st paratha in Rmin)
+            1st prata (will be made) in R minute 
+            (so babbar has a rank i.e 1st rank , so he'll make 1st prata in Rmin)
 
-            2nd paratha -> 2Rmin (means babbar will make 2nd paratha in 2 * 1 i.e in 2min he'll make)
+            2nd prata -> 2Rmin (means babbar will make 2nd prata in 2 * 1 i.e in 2min he'll make)
 
-            3rd paratha -> 3Rmin (means babbar will make 3rd paratha in 3 * 1 i.e in 3min he'll make)
+            3rd prata -> 3Rmin (means babbar will make 3rd prata in 3 * 1 i.e in 3min he'll make)
 
         ques - find minimum time to get order done ? 
-            means - we need to tell in how much time will take to make total P paratha 
+            means - we need to tell in how much time will take to make total P prata 
             means tell the minimum time 
         ```
         ```
@@ -215,9 +215,13 @@
 
         & their ranks is : 1 , 2 , 3 , 4
 
-        total paratha we need to make is 10
+        total prata we need to make is 10
         ```
     - approach 
+        - brute force
+            ![brute force STEP - 1](../../notes-pics/16-3-lecture/love-babbar/lecture-16-3-12.png) 
+            ![brute force STEP - 2](../../notes-pics/16-3-lecture/love-babbar/lecture-16-3-13.png) 
+        - optimize approach via binary search algo
 
 
 - advice 👍
