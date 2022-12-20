@@ -222,7 +222,7 @@
             ![brute force STEP - 1](../../notes-pics/16-3-lecture/love-babbar/lecture-16-3-12.png) 
             ![brute force STEP - 2](../../notes-pics/16-3-lecture/love-babbar/lecture-16-3-13.png) 
         - optimize approach via binary search algo
-
+            ![optimize approach](../../notes-pics/16-3-lecture/love-babbar/lecture-16-3-14.png) 
 
 - advice 👍
     - do DRY RUN on pen & paper to understand that problem clearly 
