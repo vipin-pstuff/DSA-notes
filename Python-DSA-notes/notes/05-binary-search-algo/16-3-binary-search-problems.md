@@ -10,14 +10,16 @@
 
 - eg : of search space reduction questions (which are based on binary search algo) are 
     - `1` : book allocation problem (which is already done on YT)
-    - `2` : find square root via BS
-    - `3` : aggressive cows
+    - `2` : find square root via BS (which is already done on YT)
+    - `3` : aggressive cows (which is already done on YT)
     - `4` : painter partition
     - `5` : EKO spoj
     - `6` : roti prata
     - & for more ques on binary search algo , check interviewBit <br>
         but if you're able to do these 6 questions by yourself then that's it <br>
         no more questions you need to do
+    - these search space reduction questions are not included in paid DSA course , it's covered in CP <br>
+        & these search space reduction questions are advance questions
 
 - ques : EKO SPOJ
     - https://www.spoj.com/problems/EKO/
@@ -223,10 +225,83 @@
             ![brute force STEP - 2](../../notes-pics/16-3-lecture/love-babbar/lecture-16-3-13.png) 
         - optimize approach via binary search algo
             ![optimize approach](../../notes-pics/16-3-lecture/love-babbar/lecture-16-3-14.png) 
+        - code approach
+            ![1st part](../../notes-pics/16-3-lecture/love-babbar/lecture-16-3-15.png) 
+            ![2nd part](../../notes-pics/16-3-lecture/love-babbar/lecture-16-3-16.png) 
+    - code
+        ```cpp
+        #include <iostream>
+        #include <vector>
+        #include <algorithm>
+        typedef long long int ll;
+        using namespace std;
+        bool isValid(vector<ll > v, ll p,int time) {
+            ll sum = 0;
+            for (ll i = 0; i < v.size(); i++)// this loop will give no. of paratha made in the specified time
+            {
+                int t = time;
+                int count = 0,k=1;
+                while (t>0) {
+                    t = t - k*v[i];
+                    if (t >= 0) {
+                        count++;
+                        k++;
+                    }
+                }
+                sum += count;
+                //cout << count << endl;
+            }
+            //cout << "parathas made " << sum << endl;
+            if (sum < p)
+                return false;
+
+            return true;
+        }
+
+        ll check_ans(vector<ll> v, ll p)
+        {
+            ll s = 0, e = (v[0] * p*(p + 1)) / 2;// we can consider the maximum time taking that all th parathas are cooked by the first cook
+            ll mid = (s + e) / 2;
+            ll  ans;
+            while (s <= e) {
+                //cout << s << " " << e << " " << mid << endl;
+                if (isValid(v,p,mid)) {
+                    //cout << "valid"<<endl<<endl;
+                    ans = mid;
+                    e = mid - 1;
+                }
+                else {
+                //    cout << "not valid" << endl;
+                    s = mid + 1;
+                }
+                mid = (s + e) / 2;
+            }
+            return ans;
+        }
+
+        int main() {
+            ll p, size;
+            cin >> p >> size;
+            vector<ll> v;
+            while (size--) {
+                int d;
+                cin >> d;
+                v.push_back(d);
+            }
+            sort(v.begin(), v.end());
+            ll ans = check_ans(v, p);
+            cout << ans << endl;
+
+            return 0;
+        }
+        ```
 
 - advice 👍
     - do DRY RUN on pen & paper to understand that problem clearly 
     - whenever you find any alternative approach that problem then don't do code directly , do these  <br>
         `1st` : understand the approach correctly <br>
         `2nd` : then DRY RUN that approach with different test cases to check whether it's correctly in different test cases or not
-            
+
+- interview advice
+    - no one is 100% ready , you just give yourself a target each day like do 50 binary search questions , etc  
+    - & achieve that target & put extra effort also 
