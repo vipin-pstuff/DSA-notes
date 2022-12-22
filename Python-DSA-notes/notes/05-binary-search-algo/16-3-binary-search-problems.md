@@ -190,7 +190,7 @@
         so chances are integer overflow because `sum = sum + diff` & `sum` is integer type , so you can take `long` integer datatype <br> 
         then no problem will come
 
-- ques : https://www.spoj.com/problems/PRATA
+- ques : Roti Prata : https://www.spoj.com/problems/PRATA
     - we can solve this ques via hashmap also 
     - understanding 
         ```

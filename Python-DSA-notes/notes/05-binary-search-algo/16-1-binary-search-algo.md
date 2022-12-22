@@ -392,7 +392,7 @@
                 use this condition `mid + 1 > start` to make a condition over this `arr[mid] > mid`
             - do it as homework
 
-- `ques` : find pivot element in an array
+- `ques` : find index of pivot element in an sorted & rotated array or find pivot in an array
 - `ques` : search in a rotated & sorted array
 - `ques` : peak in mountain array
 - `ques` : square root using binary search
