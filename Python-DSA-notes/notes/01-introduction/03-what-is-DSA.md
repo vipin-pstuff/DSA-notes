@@ -154,7 +154,8 @@
             which has READ operation fast 💡💡💡
 
 - `what is an algorithm ?` : 
-    - means it's a way to solve a problem or it's a procedure & set of rules to solve a problem 💡💡💡
+    - means it's a way to solve a problem or it's a procedure & set of rules to solve a problem <br>
+        or algorithm means breaking down the problem into mathematical steps 💡💡💡 
     - Eg : we have to fetch 10 post out of 1 million in a particular order according to user preference <br>
         so for this we need to set an algorithm i.e search engine algorithm (made by google) to find <br>
         out data related to a search string & you need to fetch that post based on many factors <br>
